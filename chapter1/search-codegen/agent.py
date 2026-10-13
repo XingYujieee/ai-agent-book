@@ -14,6 +14,7 @@ import time
 from typing import Any, Dict, List, Literal, Optional
 
 import requests
+from urllib.parse import urlsplit
 
 logger = logging.getLogger(__name__)
 
@@ -32,10 +33,13 @@ class GPT5NativeAgent:
         self.api_key = api_key
         self.base_url = base_url.rstrip("/")
         self.model = model
+        hostname = urlsplit(self.base_url).hostname or ""
         self.provider = (
             "openai" if self.base_url == "https://api.openai.com/v1" else
             "openrouter" if "openrouter.ai" in self.base_url else
-            "dashscope" if "dashscope" in self.base_url else
+            "dashscope" if hostname == "dashscope.aliyuncs.com"
+            or hostname == "dashscope-intl.aliyuncs.com"
+            or hostname.endswith(".maas.aliyuncs.com") else
             "custom"
         )
         self.conversation_history: List[Dict[str, Any]] = []
