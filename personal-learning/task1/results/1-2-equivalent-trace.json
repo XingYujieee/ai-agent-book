@@ -1,0 +1,54 @@
+{
+  "experiment_id": "1-2-equivalent",
+  "evidence_mode": "derived_from_real_api_trace",
+  "source_file": "experiment-1-3-asean.json",
+  "source_sha256": "00207ffd94368da8c4d4d1449e9c61a811992486c680cc40c79f33ba4255bae0",
+  "provider": "dashscope",
+  "model": "qwen3.7-plus",
+  "response_id": "resp_a3ab0c11-03f3-9baf-96cd-9ebc0df40362",
+  "request": "东盟 10 国首都之间最近的一对是哪两个？请搜索并用 Python 计算",
+  "events": [
+    {
+      "index": 1,
+      "type": "web_search_call",
+      "status": "completed",
+      "query": "\"ASEAN\" capitals coordinates latitude longitude",
+      "source_count": 20
+    },
+    {
+      "index": 3,
+      "type": "web_search_call",
+      "status": "completed",
+      "query": "Bandar Seri Begawan coordinates",
+      "source_count": 0
+    },
+    {
+      "index": 5,
+      "type": "code_interpreter_call",
+      "status": "completed",
+      "code_present": true,
+      "output_count": 1
+    },
+    {
+      "index": 7,
+      "type": "code_interpreter_call",
+      "status": "completed",
+      "code_present": true,
+      "output_count": 1
+    },
+    {
+      "index": 9,
+      "type": "message",
+      "status": "completed"
+    }
+  ],
+  "checks": {
+    "real_api_success": true,
+    "two_distinct_completed_searches": true,
+    "search_precedes_final_answer": true,
+    "answer_present": true,
+    "citations_present": true
+  },
+  "scope_note": "DashScope Responses hosted search; not Moonshot Kimi Formula or a separately executed 1-2 run. The same real call also used Python for 1-3.",
+  "passed": true
+}
