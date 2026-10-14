@@ -1,0 +1,40 @@
+{
+  "evidence_mode": "local_ollama_run",
+  "backend": "ollama",
+  "model": "qwen3:0.6b",
+  "trials": {
+    "initial": {
+      "file": "2-1-local-tool-trace.txt",
+      "sha256": "8645f778523d1c0775da7b1fe1efd990304a9195638f4c23ced0f98447b3eb50",
+      "tool_calls": [
+        "get_current_time",
+        "code_interpreter"
+      ],
+      "final_answer": "The current time in Vancouver is **12:57:42 UTC** (2026-10-14). The date is **2026-10-14**. Since no weather function is available, I cannot retrieve the current weather in Vancouver."
+    },
+    "guided": {
+      "file": "2-1-local-guided-trace.txt",
+      "sha256": "c11a410bf1859103900289b8ccd520d40034fe43857bf8d50046832834ea8a2f",
+      "tool_calls": [
+        "get_current_time",
+        "get_current_temperature"
+      ],
+      "final_answer": "The current time in Vancouver, Canada, is **12:45**, with a temperature of **14.4°C** (overcast conditions, humidity 89%, wind speed 3.8 km/h)."
+    },
+    "corrected": {
+      "file": "2-1-local-corrected-trace.txt",
+      "sha256": "4d19c157a91023aac324c21eded68679293c3a3d436381ef6dfa91a15cfd6a86",
+      "tool_calls": [
+        "get_current_time",
+        "get_current_temperature"
+      ],
+      "final_answer": "The current time in America/Vancouver is **12:59:34** (UTC+7), and the temperature in Vancouver is **14.4°C**. "
+    }
+  },
+  "benchmark_sha256": "948ced110555677c58d13814a8c792ae2d0c45a11923a4992096d7dcecf8fcca",
+  "quality_notes": {
+    "initial": "Weather tool was not called; no weather in final answer.",
+    "guided": "Both intended tools called, but final time matched weather observation timestamp rather than time tool.",
+    "corrected": "Correct time field and temperature, but UTC -0700 was misstated as UTC+7."
+  }
+}

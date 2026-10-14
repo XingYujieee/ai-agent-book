@@ -1,0 +1,20 @@
+{
+  "experiment_id": "2-9-equivalent",
+  "provider": "dashscope",
+  "model": "qwen3.7-plus",
+  "task": "Use only read_file to read the first 3 lines of README.md. Quote its first heading exactly, then give a final answer. Do not change or create any project file.",
+  "arms": {
+    "disabled": {
+      "success": true,
+      "final_answer": "** The first heading of `README.md` is `# System-Hint Enhanced AI Agent / Agent 状态栏（System Hint）实验`. No project files were created or modified.",
+      "trajectory_file": "2-9-disabled-trajectory.json",
+      "tool_calls": 1
+    },
+    "full": {
+      "success": true,
+      "final_answer": "The first heading of README.md is `# System-Hint Enhanced AI Agent / Agent 状态栏（System Hint）实验`. No project files were changed or created.",
+      "trajectory_file": "2-9-full-trajectory.json",
+      "tool_calls": 1
+    }
+  }
+}

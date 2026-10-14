@@ -1,0 +1,44 @@
+{
+  "evidence_mode": "reanalyzed_repository_model_matrices",
+  "source": "chapter2/attention_visualization/runs/exp2-2-qwen3-0.6b-20260730-v3/attention_matrices.npz",
+  "source_sha256": "ff744b3d6ce7e2d7cf8673da9a8da5f1821254d988de8558490bf74e6c014530",
+  "metrics": {
+    "layer_0": {
+      "shape": [
+        9,
+        9
+      ],
+      "max_future_attention": 0.0,
+      "first_token_mean_attention": 0.14692465960979462,
+      "row_sum_range": [
+        0.9996052384376526,
+        1.000270128250122
+      ]
+    },
+    "layer_13": {
+      "shape": [
+        9,
+        9
+      ],
+      "max_future_attention": 0.0,
+      "first_token_mean_attention": 0.7388916015625,
+      "row_sum_range": [
+        0.9998571872711182,
+        1.000485897064209
+      ]
+    },
+    "layer_27": {
+      "shape": [
+        9,
+        9
+      ],
+      "max_future_attention": 0.0,
+      "first_token_mean_attention": 0.8317894339561462,
+      "row_sum_range": [
+        0.9997329115867615,
+        1.0004234313964844
+      ]
+    }
+  },
+  "note": "No local model inference was run for this reanalysis."
+}

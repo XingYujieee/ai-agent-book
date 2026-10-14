@@ -1,0 +1,59 @@
+{
+  "evidence_mode": "reanalyzed_repository_campaign",
+  "source": "chapter2/system-hint/runs/exp2-8-kimi-k3-20260730-v1/comparison.json",
+  "source_sha256": "e923de2214804e0e2c944a8e05cc588d078a1e08a8580386405ef96f09558993",
+  "unique_runs": 65,
+  "expected_unique_runs": 65,
+  "contrasts": [
+    {
+      "feature": "timestamps_raw",
+      "enabled_passes": 5,
+      "control_passes": 3,
+      "n_per_arm": 5,
+      "delta": 0.4
+    },
+    {
+      "feature": "timestamps_guided",
+      "enabled_passes": 5,
+      "control_passes": 3,
+      "n_per_arm": 5,
+      "delta": 0.4
+    },
+    {
+      "feature": "tool_counter",
+      "enabled_passes": 5,
+      "control_passes": 5,
+      "n_per_arm": 5,
+      "delta": 0.0
+    },
+    {
+      "feature": "todo_list",
+      "enabled_passes": 0,
+      "control_passes": 1,
+      "n_per_arm": 5,
+      "delta": -0.2
+    },
+    {
+      "feature": "detailed_errors",
+      "enabled_passes": 4,
+      "control_passes": 5,
+      "n_per_arm": 5,
+      "delta": -0.2
+    },
+    {
+      "feature": "system_state",
+      "enabled_passes": 5,
+      "control_passes": 5,
+      "n_per_arm": 5,
+      "delta": 0.0
+    },
+    {
+      "feature": "combined",
+      "enabled_passes": 5,
+      "control_passes": 3,
+      "n_per_arm": 5,
+      "delta": 0.4
+    }
+  ],
+  "note": "Historical Kimi campaign, not new model calls. Effects vary by feature and case."
+}

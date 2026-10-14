@@ -1,0 +1,15 @@
+{
+  "evidence_mode": "revalidated_repository_deck_plus_own_offline_demo",
+  "source_deck": "chapter2/agent-skills-ppt/runs/exp2-6-kimi-pptx-20260731-v1/workspace/output/attention-is-all-you-need.pptx",
+  "source_deck_sha256": "be890e73d6b4bf91d888079ffb4cd7f63435bfcadd7046b580d64627907de41d",
+  "source_slides": 13,
+  "source_visuals_embedded_byte_identical": {
+    "fig1-03.png": true,
+    "fig2-04.png": true,
+    "fig3-13.png": true,
+    "table2-08.png": true
+  },
+  "own_offline_deck": "demo-presentation.pptx",
+  "own_offline_slides": 9,
+  "note": "The 13-slide official-Skill deck is repository historical evidence; the 9-slide offline demonstration was generated locally and has no PDF figures."
+}

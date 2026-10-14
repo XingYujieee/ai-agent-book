@@ -1,0 +1,79 @@
+{
+  "evidence_mode": "reanalyzed_repository_api_runs",
+  "model": "kimi-k2.6",
+  "arms": {
+    "correct": {
+      "source": "result_correct_20260718_kimi_k2_6.json",
+      "sha256": "de132ccbc073c868bf0d15ec055fedaeea802f36623c82bdf27585b3ce97f909",
+      "success": true,
+      "iterations": 3,
+      "first_ttft_s": 2.328,
+      "mean_ttft_s": 6.054,
+      "prompt_tokens": 7567,
+      "cached_tokens": 768,
+      "cached_share_percent": 10.1,
+      "tool_calls": 3
+    },
+    "dynamic_profile": {
+      "source": "result_dynamic_profile_20260718_kimi_k2_6.json",
+      "sha256": "a588f8e46681499d7c7040d698adf1cb3c4b88f3aaaf5a3a4992704e262ef4be",
+      "success": true,
+      "iterations": 3,
+      "first_ttft_s": 2.206,
+      "mean_ttft_s": 5.986,
+      "prompt_tokens": 7652,
+      "cached_tokens": 768,
+      "cached_share_percent": 10.0,
+      "tool_calls": 3
+    },
+    "dynamic_system": {
+      "source": "result_dynamic_system_20260718_kimi_k2_6.json",
+      "sha256": "341e2e0e8a1c27f72f980327e55eaab2fee945b74e0ba493f4d8f4119770d122",
+      "success": true,
+      "iterations": 3,
+      "first_ttft_s": 2.497,
+      "mean_ttft_s": 8.085,
+      "prompt_tokens": 7639,
+      "cached_tokens": 768,
+      "cached_share_percent": 10.1,
+      "tool_calls": 3
+    },
+    "shuffled_tools": {
+      "source": "result_shuffled_tools_20260718_kimi_k2_6.json",
+      "sha256": "54448c1753fc2147fddc01b402c62ff2fccf9d45910d28338462368d53d90cd9",
+      "success": true,
+      "iterations": 3,
+      "first_ttft_s": 7.818,
+      "mean_ttft_s": 11.122,
+      "prompt_tokens": 7568,
+      "cached_tokens": 256,
+      "cached_share_percent": 3.4,
+      "tool_calls": 3
+    },
+    "sliding_window": {
+      "source": "result_sliding_window_20260718_kimi_k2_6.json",
+      "sha256": "be4ebe470f490bda96524cbc62ef418dd98e68f9766bdb471b44a0bbc93d5759",
+      "success": false,
+      "iterations": 5,
+      "first_ttft_s": 2.234,
+      "mean_ttft_s": 3.649,
+      "prompt_tokens": 2224,
+      "cached_tokens": 1510,
+      "cached_share_percent": 67.9,
+      "tool_calls": 5
+    },
+    "text_format": {
+      "source": "result_text_format_20260718_kimi_k2_6.json",
+      "sha256": "e664e4ed27c7592e8e1934e8dd7ad493315e583aea15b6b1cea04add66ebb1f7",
+      "success": true,
+      "iterations": 3,
+      "first_ttft_s": 6.189,
+      "mean_ttft_s": 14.432,
+      "prompt_tokens": 7430,
+      "cached_tokens": 674,
+      "cached_share_percent": 9.1,
+      "tool_calls": 3
+    }
+  },
+  "note": "Historical API runs; not rerun on this machine. Sliding-window smaller prompt is not evidence of better task completion."
+}

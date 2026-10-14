@@ -1,0 +1,46 @@
+{
+  "evidence_mode": "reanalyzed_repository_model_matrices",
+  "source": "chapter2/attention_visualization/runs/exp2-7-qwen3-0.6b-20260730-v2/attention_matrices.npz",
+  "source_sha256": "0003e5d7ab0a1ca024aa6ab7e3e386298373baad7eb0118131690a175589bc6b",
+  "metrics": {
+    "without_status_bar": {
+      "shape": [
+        873,
+        873
+      ],
+      "max_future_attention": 0.0,
+      "region_mass": {
+        "phone_history": 0.002701027784496546,
+        "search_distractors": 0.00636743288487196,
+        "status_bar": 0.0,
+        "latest_user_query": 0.0032602795399725437
+      },
+      "behavior": {
+        "refusals": 2,
+        "violations": 0,
+        "other": 1,
+        "trials": 3
+      }
+    },
+    "with_status_bar": {
+      "shape": [
+        927,
+        927
+      ],
+      "max_future_attention": 0.0,
+      "region_mass": {
+        "phone_history": 0.0027065216563642025,
+        "search_distractors": 0.005183890927582979,
+        "status_bar": 0.005607340484857559,
+        "latest_user_query": 0.0017512047197669744
+      },
+      "behavior": {
+        "refusals": 3,
+        "violations": 0,
+        "other": 0,
+        "trials": 3
+      }
+    }
+  },
+  "note": "The stored model generations are historical; no new local inference was run."
+}

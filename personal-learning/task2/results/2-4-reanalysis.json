@@ -1,0 +1,52 @@
+{
+  "evidence_mode": "reanalyzed_repository_campaign",
+  "source": "chapter2/prompt-engineering/runs/exp2-4-kimi-k3-20260730-v7/comparison.json",
+  "source_sha256": "db50e79128f96ea222054fd7571574e895fa6cef994274c49913c1324e4ccfc5",
+  "model": "kimi-k3",
+  "provider_reported": "openai",
+  "arms": {
+    "baseline": {
+      "successes": 7,
+      "tasks": 10,
+      "success_rate_percent": 70.0,
+      "mean_steps": 16.6,
+      "mean_tool_calls": 12.3
+    },
+    "tone_trump": {
+      "successes": 6,
+      "tasks": 10,
+      "success_rate_percent": 60.0,
+      "mean_steps": 14.4,
+      "mean_tool_calls": 10.4
+    },
+    "tone_casual": {
+      "successes": 9,
+      "tasks": 10,
+      "success_rate_percent": 90.0,
+      "mean_steps": 14.6,
+      "mean_tool_calls": 10.2
+    },
+    "wiki_random": {
+      "successes": 8,
+      "tasks": 10,
+      "success_rate_percent": 80.0,
+      "mean_steps": 15.7,
+      "mean_tool_calls": 11.6
+    },
+    "no_tool_desc": {
+      "successes": 9,
+      "tasks": 10,
+      "success_rate_percent": 90.0,
+      "mean_steps": 13.7,
+      "mean_tool_calls": 9.7
+    },
+    "all_ablations": {
+      "successes": 8,
+      "tasks": 10,
+      "success_rate_percent": 80.0,
+      "mean_steps": 13.9,
+      "mean_tool_calls": 9.3
+    }
+  },
+  "note": "Historical Kimi Tau-Bench campaign; no new Tau-Bench model calls in this reanalysis. n=10 per arm, so differences are descriptive."
+}

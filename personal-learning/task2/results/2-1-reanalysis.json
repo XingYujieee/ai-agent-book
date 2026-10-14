@@ -1,0 +1,41 @@
+{
+  "evidence_mode": "reanalyzed_repository_local_run",
+  "source": "chapter2/local_llm_serving/runs/exp2-1-qwen3-0.6b-20260730-v2/evidence.json",
+  "source_sha256": "d2d564eec23beb606fb30599deb2959774a3534467b04b48db99e7da35cbcbc9",
+  "original_host": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.11.4"
+  },
+  "model": "qwen3:0.6b",
+  "summary": {
+    "model_digest": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+    "local_model_verified": true,
+    "tool_case_passed": true,
+    "mean_tool_case_decode_tokens_per_second": 106.72048078372569,
+    "exceeded_100_tokens_per_second_on_this_host": true,
+    "cache_observation": {
+      "hit_ttft_s": [
+        0.1363926245830953,
+        1.1033918326720595,
+        2.1105050831101835,
+        1.57185516692698,
+        1.5853260830044746
+      ],
+      "miss_ttft_s": [
+        0.8947271667420864,
+        1.6584319579415023,
+        1.7556201671250165,
+        1.5738307079300284,
+        1.6585514163598418
+      ],
+      "hit_mean_s": 1.3014941580593586,
+      "miss_mean_s": 1.508232283219695,
+      "miss_over_hit": 1.1588467561534053,
+      "hit_faster_in_pairs": 4,
+      "matched_pairs": 5
+    }
+  },
+  "note": "This is repository historical Ollama evidence from a macOS host, not a model run on the current Windows computer."
+}

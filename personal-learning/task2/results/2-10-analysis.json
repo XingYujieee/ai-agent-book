@@ -1,0 +1,85 @@
+{
+  "source": "personal-learning/task2/results/2-10-qwen-six-strategies.json",
+  "source_sha256": "e4ce832b3f7cb1e76766466817d8f192b952a309b6cfe2a5a9904c4e6abf0e84",
+  "model": "qwen3.7-plus",
+  "simulated_context_budget_tokens": 3500,
+  "max_iterations": 4,
+  "search_web": "mock results; no Serper key",
+  "strategy_count": 6,
+  "successful_strategies": 0,
+  "rows": [
+    {
+      "strategy": "no_compression",
+      "success": false,
+      "iterations": 4,
+      "tool_calls": 7,
+      "context_overflows": 1,
+      "total_tokens": 17277,
+      "compression_ratio": 1.336,
+      "total_original_size": 4354,
+      "total_compressed_size": 5818,
+      "error": "Context window exceeded - 14,733 tokens in last request (limit: 3500)"
+    },
+    {
+      "strategy": "non_context_aware_individual_summary",
+      "success": false,
+      "iterations": 4,
+      "tool_calls": 11,
+      "context_overflows": 1,
+      "total_tokens": 31852,
+      "compression_ratio": 1.718,
+      "total_original_size": 4570,
+      "total_compressed_size": 7850,
+      "error": null
+    },
+    {
+      "strategy": "non_context_aware_combined_summary",
+      "success": false,
+      "iterations": 4,
+      "tool_calls": 15,
+      "context_overflows": 0,
+      "total_tokens": 8075,
+      "compression_ratio": 1.311,
+      "total_original_size": 8111,
+      "total_compressed_size": 10630,
+      "error": null
+    },
+    {
+      "strategy": "context_aware_summary",
+      "success": false,
+      "iterations": 4,
+      "tool_calls": 14,
+      "context_overflows": 0,
+      "total_tokens": 6880,
+      "compression_ratio": 1.076,
+      "total_original_size": 6231,
+      "total_compressed_size": 6703,
+      "error": null
+    },
+    {
+      "strategy": "context_aware_with_citations",
+      "success": false,
+      "iterations": 4,
+      "tool_calls": 15,
+      "context_overflows": 0,
+      "total_tokens": 7436,
+      "compression_ratio": 1.367,
+      "total_original_size": 6285,
+      "total_compressed_size": 8593,
+      "error": null
+    },
+    {
+      "strategy": "windowed_context",
+      "success": false,
+      "iterations": 4,
+      "tool_calls": 13,
+      "context_overflows": 0,
+      "total_tokens": 7244,
+      "compression_ratio": 1.597,
+      "total_original_size": 4080,
+      "total_compressed_size": 6517,
+      "error": null
+    }
+  ],
+  "interpretation": "All six strategies failed to produce a final answer within four iterations. Ratios above 1 mean retained text expanded rather than shrank. Mock search prevents factual validation."
+}
