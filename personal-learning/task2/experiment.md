@@ -38,7 +38,7 @@
 
 运行 `agent-skills-ppt/demo.py --offline`，顺序看到薄目录、`SKILL.md`、参考文档和捆绑脚本的加载，生成[九页 PPT](results/demo-presentation.pptx)，并由 `python-pptx` 重新打开。仓库作者使用官方 PPTX Skill 生成的论文演示文稿为 13 页；我重新核对了它的 SHA-256、页数，并验证四张源论文图与 PPTX 内嵌图字节相同：[核对结果](results/2-6-reanalysis.json)。本机离线大纲没有论文图片，也没有模型自行选择 Skill。
 
-依据聊天里已经明确提出的学习心得写法，创建[写作 Skill 初版](personal-cn-writing/SKILL.md)。它包含触发条件、四条带例子的规则、范围和例外，通过 `quick_validate.py`。用提示注入实验做了一次[新题目试写](2-7-calibration.md)。没有本人原创范文及本人修改，不能确认它复现了个人文风。
+学习者进一步描述了目标风格：“克制、简洁、优美、有深意，有些地方会有趣”，并允许用生成范文代替本人原创文章做练习。我据此生成[四篇样本](2-7-generated-samples.md)，更新[写作 Skill](personal-cn-writing/SKILL.md)的触发条件、五条带正反例的原则、范围和例外，再用未出现在样本中的状态栏题目做[改写前后对照](2-7-calibration.md)。Skill 通过 `quick_validate.py`。样本与改写均由助手完成，能验证流程和规则是否可用，不能验证它复现了学习者的个人文风。
 
 ## 2-9 · 状态栏
 

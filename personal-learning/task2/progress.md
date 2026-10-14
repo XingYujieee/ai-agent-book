@@ -10,7 +10,7 @@
 | 2-4 提示工程 | 复算历史 Tau-Bench 六组成功率及平均工具数 | [复算结果](results/2-4-reanalysis.json) | 不是本人的新 Tau-Bench 在线评测；每组 10 题 |
 | 2-5 提示注入 | 百炼 `qwen3.7-plus` 跑 3 种攻击 × 4 种防御 × 每格 3 次 | [36 次矩阵](results/2-5-qwen-matrix.json)：12 格均为 0/3 | 无法从这组全零数据量出逐层防御的增益；脚本仅保存聚合矩阵 |
 | 2-6 PPT Skill | 跑本机离线三层加载，生成并重新打开 9 页 PPT；核对仓库历史 13 页官方 Skill 成品和四张原图 | [本机 PPT](results/demo-presentation.pptx)、[成品复核](results/2-6-reanalysis.json) | 本机离线版用内置大纲且无论文原图；13 页成品是作者历史运行 |
-| 2-7 写作 Skill | 创建可加载的[初版](personal-cn-writing/SKILL.md)，通过校验，并用新题目试写前后版本 | [校准记录](2-7-calibration.md) | 缺少本人 3–5 篇原创范文及本人修改，个人风格效果尚未验收 |
+| 2-7 写作 Skill | 按本人描述生成[四篇练习范文](2-7-generated-samples.md)，更新可加载的[Skill](personal-cn-writing/SKILL.md)，在新题目上对照试写 | [校准记录](2-7-calibration.md) | 样本由助手生成，未经过本人逐句修改；这是目标风格练习，不是个人文风复现验证 |
 | 2-8 状态栏注意力 | 重算有无状态栏的注意力区域质量，并核对历史 3+3 次回答 | [复算结果](results/2-8-reanalysis.json) | 基于仓库历史模型矩阵，本机未重新生成注意力张量 |
 | 2-9 状态栏 | 本机离线预览；百炼同任务对比全开/全关；复算历史 65 次 Kimi 结果 | [本机对比](results/2-9-qwen-comparison.json)、[历史复算](results/2-9-historical-reanalysis.json) | 简单读文件任务两组均成功，不能证明状态栏提高成功率 |
 | 2-10 上下文压缩 | 百炼同任务跑完六种策略，模拟搜索并收紧上下文预算 | [运行结果](results/2-10-qwen-six-strategies.json)、[复核摘要](results/2-10-analysis.json) | 六组均未在四轮内完成；全部累计保存文本比原文长 |
@@ -22,4 +22,4 @@
 - `python -m pytest chapter2/context-compression/test_token_tracking.py chapter2/context-compression/test_null_content_compression.py -q`：1 项通过。
 - 写作 Skill 用 `quick_validate.py` 校验通过。
 
-2.7 的原版个人风格验收需要本人原创范文；其它历史复算也不能冒充本机原版复现。
+2.7 已按本人允许的替代方案完成；原版个人风格验收仍需本人原创范文及改稿。其它历史复算也不能冒充本机原版复现。

@@ -1,26 +1,27 @@
 ---
 name: personal-cn-writing
-description: Draft concise Chinese first-person study reflections and course feedback for this learner when the request is to express their own learning process. Do not use for technical instructions, research reports, or claims about experiments without records.
+description: Write concise Chinese first-person learning reflections or one-sentence course feedback in the learner's requested restrained, graceful, thoughtful, occasionally playful style. Use experiment records as the factual basis; do not use for lab logs or technical instructions.
 ---
 
-# Personal study writing · provisional version
+# 中文学习心得写作
 
-This version reflects the learner's explicit requests in this chat. It still needs calibration against 3–5 articles written by the learner. Do not describe its output as a verified match to the learner's prose.
+这是按学习者口述的目标风格建立的写作 Skill。配套的四篇范文由助手生成，只用于展示目标写法，不是学习者的原创文章或文风验证。需要长文示例时再读 [生成范文](../2-7-generated-samples.md)。
 
-## Use
+## 写作流程
 
-Use this skill for a short course reflection, learning心得, or one-sentence feedback written in the first person. Start from the learner's actual experiment records. Ask which observations were personally made if the records do not establish them.
+先从实际记录找一两个亲自观察到的细节，再写它改变了自己的哪种判断。缺少记录时不要补造实验、感受、数字或成功结论。若任务只要一句课程反馈，就只写一句。
 
-## Principles
+## 风格原则
 
-1. **Write in first person and name the action.** Example: replace “本章使学习者理解了 Agent” with “我打开轨迹后，看到模型在工具返回后又发起了一次搜索”。
-2. **Use one concrete observation before the takeaway.** Example: replace “上下文工程非常重要” with “隐藏工具结果后，我看到调用次数从 1 次增加到 6 次；这让我开始检查过程，而不只看答案”。Only use numbers present in the current record.
-3. **Keep sentences direct and short.** Example: replace “通过本次实验的深入学习，我对相关技术产生了更为全面的认识” with “这次实验让我知道，工具执行成功不代表模型看到了结果”。
-4. **Mark what was not personally reproduced.** Example: write “我重画了仓库保存的注意力矩阵；本机没有重新运行该模型” when that is the evidence. Do not turn repository historical runs into the learner's own model calls.
+1. **克制地写结论。** 让观察承载判断，不堆“深刻认识”“极大提升”。例：写“模型调用了工具，时间却仍答错了”，不写“我全面掌握了工具调用机制”。
+2. **简洁，但留下必要的停顿。** 一段只推进一个想法；长句可拆开，短句不必句句像口号。例：“六组都跑完了。没有一组在四轮内收尾。”
+3. **用轻巧的意象带出深意。** 意象必须贴合事实，并且每篇至多一处。例：“缓存像一张保存得很勤的草稿；草稿还在，题却未必做对。”不要用空泛的宏大比喻盖住实验结果。
+4. **偶尔有趣，不强行抖机灵。** 幽默落在意料之外的结果上，不取笑人或掩盖失败。例：“摘要越写越长，倒像给上下文添了一份附录。”整篇已有严肃结论时，可完全不用笑点。
+5. **让证据与边界同在。** 明确“我运行了”“我复算了仓库数据”“这是模拟搜索”等不同来源。数字只取自记录；没有本人验证的文风，不称为“复现了我的写法”。
 
-## Scope and exceptions
+## 作用范围与例外
 
-- One-sentence feedback should remain one sentence when requested.
-- A factual lab log should preserve commands, providers, limitations, and result paths even if that makes it longer than a reflection.
-- Keep technical terms such as KV Cache, ReAct, tool call, and Agent when they help identify what was tested.
-- Revise these principles only after checking the learner's own writing and their edits to a fresh draft; do not infer a general writing personality from short chat commands.
+- 学习心得可以优美，实验记录仍以命令、模型、结果和限制为主。
+- 保留 KV Cache、Agent、tool call 等必要术语，不为文采改写技术含义。
+- 根据写作任务调整：一句反馈不塞进例子和比喻；长篇笔记用标题帮助检索。
+- 如果学习者后续提供真实文章或逐句修改，应优先按新证据调整此 Skill，并更新范文的身份说明。
