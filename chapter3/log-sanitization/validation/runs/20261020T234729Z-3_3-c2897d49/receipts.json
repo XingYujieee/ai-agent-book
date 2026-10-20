@@ -1,0 +1,2186 @@
+[
+  {
+    "purpose": "llm:structured_cn",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "客户身份证号11010519491231002X，手机号13800138000。"
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:18.4979504Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 3398335600,
+      "load_duration": 14644200,
+      "prompt_eval_count": 176,
+      "prompt_eval_duration": 2352202000,
+      "eval_count": 184,
+      "eval_duration": 805010000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"cn_id_card\",\n      \"value\": \"11010519491231002X\",\n      \"start\": 0,\n      \"end\": 1000000000000000,\n      \"confidence\": 0.9999999999999999\n    },\n    {\n      \"type\": \"cn_phone\",\n      \"value\": \"13800138000\",\n      \"start\": 0,\n      \"end\": 1000000000000000,\n      \"confidence\": 0.9999999999999999\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 3399.243,
+    "usage": {
+      "prompt_tokens": 176,
+      "completion_tokens": 184
+    }
+  },
+  {
+    "purpose": "hybrid-after-regex:structured_cn",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "客户身份证号11010519491231002X，手机号[REDACTED_CN_PHONE]。"
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:19.0887708Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 589793600,
+      "load_duration": 3070500,
+      "prompt_eval_count": 173,
+      "prompt_eval_duration": 31364000,
+      "eval_count": 122,
+      "eval_duration": 533395999,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"cn_id_card\",\n      \"value\": \"11010519491231002X\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.0\n    },\n    {\n      \"type\": \"us_ssn\",\n      \"value\": \"[REDACTED_CN_PHONE]\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 591.356,
+    "usage": {
+      "prompt_tokens": 173,
+      "completion_tokens": 122
+    }
+  },
+  {
+    "purpose": "llm:structured_us",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "SSN 123-45-6789; Visa 4111 1111 1111 1111; ticket 123-45-6780 is not an SSN."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:19.7217068Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 626662900,
+      "load_duration": 5488200,
+      "prompt_eval_count": 197,
+      "prompt_eval_duration": 30754000,
+      "eval_count": 108,
+      "eval_duration": 573194000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"ssn\",\n      \"value\": \"SSN 123-45-6789; Visa 4111 1111 1111 1111; ticket 123-45-6780 is not an SSN\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 632.01,
+    "usage": {
+      "prompt_tokens": 197,
+      "completion_tokens": 108
+    }
+  },
+  {
+    "purpose": "hybrid-after-regex:structured_us",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "SSN [REDACTED_US_SSN]; Visa [REDACTED_CREDIT_CARD]; ticket [REDACTED_US_SSN] is not an SSN."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:20.2431373Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 520395400,
+      "load_duration": 2707600,
+      "prompt_eval_count": 178,
+      "prompt_eval_duration": 22423000,
+      "eval_count": 108,
+      "eval_duration": 476869000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"SSN\",\n      \"value\": \"[REDACTED_US_SSN]\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    },\n    {\n      \"type\": \"Visa\",\n      \"value\": \"[REDACTED_CREDIT_CARD]\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 522.17,
+    "usage": {
+      "prompt_tokens": 178,
+      "completion_tokens": 108
+    }
+  },
+  {
+    "purpose": "llm:credentials",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "postgres://alice:S3cr3t-Pass@db.internal:5432/prod failed; retry token=not-a-real-token-but-secret"
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:20.6131115Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 366366700,
+      "load_duration": 5278600,
+      "prompt_eval_count": 172,
+      "prompt_eval_duration": 27480000,
+      "eval_count": 60,
+      "eval_duration": 315216000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"secret\",\n      \"value\": \"S3cr3t-Pass\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.5\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 369.275,
+    "usage": {
+      "prompt_tokens": 172,
+      "completion_tokens": 60
+    }
+  },
+  {
+    "purpose": "hybrid-after-regex:credentials",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "postgres://alice:[REDACTED_PASSWORD]@db.internal:5432/prod failed; retry token=[REDACTED_SECRET]"
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:21.0924317Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 478134600,
+      "load_duration": 2657200,
+      "prompt_eval_count": 172,
+      "prompt_eval_duration": 22127000,
+      "eval_count": 102,
+      "eval_duration": 450186000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"password\",\n      \"value\": \"[REDACTED_PASSWORD]\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    },\n    {\n      \"type\": \"secret\",\n      \"value\": \"[REDACTED_SECRET]\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 478.999,
+    "usage": {
+      "prompt_tokens": 172,
+      "completion_tokens": 102
+    }
+  },
+  {
+    "purpose": "llm:natural_password",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "用户说：我网银的登录口令是‘Blue moon over river 77’，请帮我记住。"
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:21.4439243Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 348757100,
+      "load_duration": 3082700,
+      "prompt_eval_count": 166,
+      "prompt_eval_duration": 21317000,
+      "eval_count": 57,
+      "eval_duration": 308067000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"password\",\n      \"value\": \"Blue moon over river 77\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 1\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 349.981,
+    "usage": {
+      "prompt_tokens": 166,
+      "completion_tokens": 57
+    }
+  },
+  {
+    "purpose": "hybrid-after-regex:natural_password",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "用户说：我网银的登录口令是‘Blue moon over river 77’，请帮我记住。"
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:21.7722076Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 327250600,
+      "load_duration": 8921400,
+      "prompt_eval_count": 166,
+      "prompt_eval_duration": 17639000,
+      "eval_count": 57,
+      "eval_duration": 296474000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"password\",\n      \"value\": \"Blue moon over river 77\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 1\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 328.27,
+    "usage": {
+      "prompt_tokens": 166,
+      "completion_tokens": 57
+    }
+  },
+  {
+    "purpose": "llm:address",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Please ship replacements to apartment 3B, 1847 Maple Street, Portland, Oregon 97205 after Tuesday."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:22.1370073Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 363777500,
+      "load_duration": 2833100,
+      "prompt_eval_count": 170,
+      "prompt_eval_duration": 21452000,
+      "eval_count": 68,
+      "eval_duration": 336469000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"address\",\n      \"value\": \"1847 Maple Street, Portland, Oregon 97205\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 364.639,
+    "usage": {
+      "prompt_tokens": 170,
+      "completion_tokens": 68
+    }
+  },
+  {
+    "purpose": "hybrid-after-regex:address",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Please ship replacements to apartment 3B, 1847 Maple Street, Portland, Oregon 97205 after Tuesday."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:22.5173261Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 379271200,
+      "load_duration": 3334000,
+      "prompt_eval_count": 170,
+      "prompt_eval_duration": 17245000,
+      "eval_count": 68,
+      "eval_duration": 334595000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"address\",\n      \"value\": \"1847 Maple Street, Portland, Oregon 97205\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 380.593,
+    "usage": {
+      "prompt_tokens": 170,
+      "completion_tokens": 68
+    }
+  },
+  {
+    "purpose": "llm:medical",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Chart note: patient Maria Chen, MRN-789456, was diagnosed with stage II breast cancer and starts doxorubicin Friday."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:22.9875395Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 468146000,
+      "load_duration": 5021200,
+      "prompt_eval_count": 173,
+      "prompt_eval_duration": 22826000,
+      "eval_count": 82,
+      "eval_duration": 433141000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"address\",\n      \"value\": \"Maria Chen, MRN-789456, was diagnosed with stage II breast cancer and starts doxorubicin Friday.\",\n      \"start\": 0,\n      \"end\": 100,\n      \"confidence\": 0.5\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 469.762,
+    "usage": {
+      "prompt_tokens": 173,
+      "completion_tokens": 82
+    }
+  },
+  {
+    "purpose": "hybrid-after-regex:medical",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Chart note: patient Maria Chen, MRN-789456, was diagnosed with stage II breast cancer and starts doxorubicin Friday."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:23.4478014Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 459229600,
+      "load_duration": 2739800,
+      "prompt_eval_count": 173,
+      "prompt_eval_duration": 16256000,
+      "eval_count": 82,
+      "eval_duration": 436564000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"address\",\n      \"value\": \"Maria Chen, MRN-789456, was diagnosed with stage II breast cancer and starts doxorubicin Friday.\",\n      \"start\": 0,\n      \"end\": 100,\n      \"confidence\": 0.5\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 460.076,
+    "usage": {
+      "prompt_tokens": 173,
+      "completion_tokens": 82
+    }
+  },
+  {
+    "purpose": "llm:passport",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Traveler passport P987654321 expires 2027-04-09; booking code P987654320 is unrelated."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:23.978435Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 529563900,
+      "load_duration": 2792000,
+      "prompt_eval_count": 182,
+      "prompt_eval_duration": 24661000,
+      "eval_count": 115,
+      "eval_duration": 499409000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"passport\",\n      \"value\": \"P987654321\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.0\n    },\n    {\n      \"type\": \"booking_code\",\n      \"value\": \"P987654320\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 530.391,
+    "usage": {
+      "prompt_tokens": 182,
+      "completion_tokens": 115
+    }
+  },
+  {
+    "purpose": "hybrid-after-regex:passport",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Traveler passport P987654321 expires 2027-04-09; booking code P987654320 is unrelated."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:24.4978223Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 518305300,
+      "load_duration": 3085900,
+      "prompt_eval_count": 182,
+      "prompt_eval_duration": 22146000,
+      "eval_count": 115,
+      "eval_duration": 489669000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"passport\",\n      \"value\": \"P987654321\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.0\n    },\n    {\n      \"type\": \"booking_code\",\n      \"value\": \"P987654320\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 519.243,
+    "usage": {
+      "prompt_tokens": 182,
+      "completion_tokens": 115
+    }
+  },
+  {
+    "purpose": "llm:financial",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Wire account 4429853327 routing 123006800. Product SKU 4429853328 should remain visible."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:25.2055911Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 706613500,
+      "load_duration": 2896000,
+      "prompt_eval_count": 183,
+      "prompt_eval_duration": 22296000,
+      "eval_count": 167,
+      "eval_duration": 663312000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"credit_card\",\n      \"value\": \"4429853327\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.5\n    },\n    {\n      \"type\": \"routing_number\",\n      \"value\": \"123006800\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.5\n    },\n    {\n      \"type\": \"product_sku\",\n      \"value\": \"4429853328\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.5\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 707.721,
+    "usage": {
+      "prompt_tokens": 183,
+      "completion_tokens": 167
+    }
+  },
+  {
+    "purpose": "hybrid-after-regex:financial",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Wire account 4429853327 routing 123006800. Product SKU 4429853328 should remain visible."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:25.9371201Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 731005900,
+      "load_duration": 2841800,
+      "prompt_eval_count": 183,
+      "prompt_eval_duration": 18952000,
+      "eval_count": 167,
+      "eval_duration": 650436000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"credit_card\",\n      \"value\": \"4429853327\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.5\n    },\n    {\n      \"type\": \"routing_number\",\n      \"value\": \"123006800\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.5\n    },\n    {\n      \"type\": \"product_sku\",\n      \"value\": \"4429853328\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.5\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 732.336,
+    "usage": {
+      "prompt_tokens": 183,
+      "completion_tokens": 167
+    }
+  },
+  {
+    "purpose": "llm:email_bearer",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Authorization: Bearer fakeBearerToken1234567890; notify alice.wang@example.com."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:26.2888966Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 349368900,
+      "load_duration": 5430300,
+      "prompt_eval_count": 166,
+      "prompt_eval_duration": 22492000,
+      "eval_count": 57,
+      "eval_duration": 301667000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"email\",\n      \"value\": \"alice.wang@example.com\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 350.778,
+    "usage": {
+      "prompt_tokens": 166,
+      "completion_tokens": 57
+    }
+  },
+  {
+    "purpose": "hybrid-after-regex:email_bearer",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Authorization: Bearer [REDACTED_BEARER_TOKEN]; notify [REDACTED_EMAIL]."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:26.7194058Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 428867500,
+      "load_duration": 4748600,
+      "prompt_eval_count": 163,
+      "prompt_eval_duration": 26943000,
+      "eval_count": 61,
+      "eval_duration": 393137000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"email\",\n      \"value\": \"notify [REDACTED_EMAIL]_\",\n      \"start\": 0,\n      \"end\": 1,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 430.757,
+    "usage": {
+      "prompt_tokens": 163,
+      "completion_tokens": 61
+    }
+  },
+  {
+    "purpose": "llm:negative_numbers",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Metrics: latency 13800138000 ns, build 4111111111111112 vectors, model XR-7003. None identify a person."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:27.4255386Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 704863900,
+      "load_duration": 2536300,
+      "prompt_eval_count": 191,
+      "prompt_eval_duration": 23435000,
+      "eval_count": 172,
+      "eval_duration": 674528000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"metrics\",\n      \"value\": \"latency 13800138000 ns\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    },\n    {\n      \"type\": \"build\",\n      \"value\": \"build 4111111111111112\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    },\n    {\n      \"type\": \"model\",\n      \"value\": \"model XR-7003\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 705.622,
+    "usage": {
+      "prompt_tokens": 191,
+      "completion_tokens": 172
+    }
+  },
+  {
+    "purpose": "hybrid-after-regex:negative_numbers",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Metrics: latency [REDACTED_CN_PHONE] ns, build 4111111111111112 vectors, model XR-7003. None identify a person."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:27.9970776Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 570509400,
+      "load_duration": 3230300,
+      "prompt_eval_count": 187,
+      "prompt_eval_duration": 25968000,
+      "eval_count": 96,
+      "eval_duration": 520347999,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"metrics\",\n      \"value\": \"latency [REDACTED_CN_PHONE] ns, build 4111111111111112 vectors, model XR-7003. None identify a person.\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 571.471,
+    "usage": {
+      "prompt_tokens": 187,
+      "completion_tokens": 96
+    }
+  },
+  {
+    "purpose": "llm:negative_language",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "The password field must contain at least 12 characters. Never log a user's real password."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:28.3607963Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 362689500,
+      "load_duration": 3189400,
+      "prompt_eval_count": 161,
+      "prompt_eval_duration": 22893000,
+      "eval_count": 53,
+      "eval_duration": 316195000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"password\",\n      \"value\": \"password\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 363.599,
+    "usage": {
+      "prompt_tokens": 161,
+      "completion_tokens": 53
+    }
+  },
+  {
+    "purpose": "hybrid-after-regex:negative_language",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "The password field must contain at least 12 characters. Never log a user's real password."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:28.6972587Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 334644000,
+      "load_duration": 6974700,
+      "prompt_eval_count": 161,
+      "prompt_eval_duration": 17498000,
+      "eval_count": 53,
+      "eval_duration": 300617000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"password\",\n      \"value\": \"password\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 336.378,
+    "usage": {
+      "prompt_tokens": 161,
+      "completion_tokens": 53
+    }
+  },
+  {
+    "purpose": "llm:mixed_context",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Support transcript: 'call me at 13912345678'. Agent replied that order 13912345679 ships tomorrow and wrote password: hunter2xyz."
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:29.0720163Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 373724700,
+      "load_duration": 3300700,
+      "prompt_eval_count": 187,
+      "prompt_eval_duration": 25562000,
+      "eval_count": 65,
+      "eval_duration": 340667000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"phone_number\",\n      \"value\": \"13912345678\",\n      \"start\": 0,\n      \"end\": 10,\n      \"confidence\": 0.5\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 374.523,
+    "usage": {
+      "prompt_tokens": 187,
+      "completion_tokens": 65
+    }
+  },
+  {
+    "purpose": "hybrid-after-regex:mixed_context",
+    "provider": "ollama-local",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen3:0.6b",
+    "request": {
+      "model": "qwen3:0.6b",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You detect sensitive information in logs. Return exact substrings only.\nTypes include cn_id_card, cn_phone, us_ssn, credit_card, password, secret,\naddress, medical_record, medical_diagnosis, treatment, passport, bank_account,\nrouting_number, bearer_token, email, private_key, and api_key. Distinguish a\nreal disclosed value from a field name, instruction, product code, metric, or\nexplicit decoy. start/end are zero-based Python slice offsets and confidence is\n0..1. Return JSON matching the schema; never redact or paraphrase the value."
+        },
+        {
+          "role": "user",
+          "content": "Support transcript: 'call me at [REDACTED_CN_PHONE]'. Agent replied that order [REDACTED_CN_PHONE] ships tomorrow and wrote password: [REDACTED_SECRET]"
+        }
+      ],
+      "format": {
+        "type": "object",
+        "properties": {
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "value",
+                "start",
+                "end",
+                "confidence"
+              ]
+            }
+          }
+        },
+        "required": [
+          "findings"
+        ]
+      },
+      "options": {
+        "temperature": 0,
+        "seed": 37,
+        "num_predict": 1200
+      },
+      "stream": false,
+      "think": false
+    },
+    "response": {
+      "model": "qwen3:0.6b",
+      "created_at": "2026-10-20T23:47:29.603158Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 530636600,
+      "load_duration": 13351300,
+      "prompt_eval_count": 182,
+      "prompt_eval_duration": 26427000,
+      "eval_count": 106,
+      "eval_duration": 485665000,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"findings\": [\n    {\n      \"type\": \"real disclosed value\",\n      \"value\": \"REDACTED_CN_PHONE\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    },\n    {\n      \"type\": \"real disclosed value\",\n      \"value\": \"REDACTED_SECRET\",\n      \"start\": 0,\n      \"end\": 0,\n      \"confidence\": 0.0\n    }\n  ]\n}",
+        "thinking": null,
+        "images": null,
+        "tool_name": null,
+        "tool_calls": null
+      },
+      "logprobs": null
+    },
+    "parse_error": null,
+    "latency_ms": 531.329,
+    "usage": {
+      "prompt_tokens": 182,
+      "completion_tokens": 106
+    }
+  }
+]

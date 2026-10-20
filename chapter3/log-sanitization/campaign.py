@@ -129,13 +129,21 @@ def llm_findings(client: ollama.Client, model: str, text: str, purpose: str, rec
         "format": SCHEMA,
         "options": {"temperature": 0, "seed": 37, "num_predict": 1200},
         "stream": False,
+        "think": False,
     }
     started = time.perf_counter()
     response = client.chat(**request)
     latency = (time.perf_counter() - started) * 1000
     raw_text = response["message"]["content"]
-    parsed = json.loads(raw_text)
-    findings = normalize_findings(text, parsed.get("findings") or [])
+    parse_error = None
+    try:
+        parsed = json.loads(raw_text)
+        findings = normalize_findings(text, parsed.get("findings") or [])
+    except (json.JSONDecodeError, AttributeError, TypeError, ValueError) as exc:
+        # Keep the failed model response in the receipts so the campaign can
+        # finish without silently treating malformed output as a valid result.
+        parse_error = f"{type(exc).__name__}: {exc}"
+        findings = []
     receipts.append({
         "purpose": purpose,
         "provider": "ollama-local",
@@ -143,6 +151,7 @@ def llm_findings(client: ollama.Client, model: str, text: str, purpose: str, rec
         "model": model,
         "request": request,
         "response": jsonable(response),
+        "parse_error": parse_error,
         "latency_ms": round(latency, 3),
         "usage": {
             "prompt_tokens": response.get("prompt_eval_count"),
@@ -236,7 +245,8 @@ def main() -> int:
         print(f"[{index}/{len(cases)}] {case['id']} complete")
 
     summaries = {strategy: aggregate(rows) for strategy, rows in results.items()}
-    full = len(cases) == len(CASES) and len(receipts) == len(CASES) * 2
+    malformed = [row["purpose"] for row in receipts if row["parse_error"]]
+    full = len(cases) == len(CASES) and len(receipts) == len(CASES) * 2 and not malformed
     evidence = {
         "status": "passed" if full else "partial",
         "configuration": {
@@ -254,8 +264,10 @@ def main() -> int:
             "structured_semistructured_natural_language_cases": len(cases) >= len(CASES),
             "regex_llm_hybrid_compared": set(results) == {"regex", "llm", "hybrid"},
             "leakage_utility_latency_measured": True,
+            "all_model_responses_parseable": not malformed,
             "passed": full,
         },
+        "malformed_responses": malformed,
         "summary": summaries,
         "dataset": cases,
         "results": dict(results),

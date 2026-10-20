@@ -1,0 +1,1052 @@
+{
+  "scope": "Read-only SHA-256 audit of baseline Git blobs; no historical experiment was rerun. Working-tree CRLF bytes are intentionally excluded.",
+  "baseline_ref": "6ccf611d",
+  "latest_files": 11,
+  "author_passed": 11,
+  "artifact_hashes_matched": 33,
+  "artifact_hashes_total": 33,
+  "input_totals": {
+    "matched": 551,
+    "mismatched": 6,
+    "missing": 2,
+    "external": 0
+  },
+  "rows": [
+    {
+      "experiment": "3-8",
+      "project": "agentic-rag",
+      "author_status": "passed",
+      "run_id": "20260729T205807Z-3_8-7fcb32a5",
+      "artifacts": {
+        "evidence.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "receipts.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "manifest.json": {
+          "committed": true,
+          "sha256_matches": true
+        }
+      },
+      "inputs": {
+        "matched": 291,
+        "mismatched": 0,
+        "missing": 0,
+        "external": 0
+      },
+      "input_exceptions": [],
+      "acceptance_false": [],
+      "summary": {
+        "metrics": {
+          "baseline": {
+            "complex": {
+              "n": 4,
+              "evidence_recall": 0.08333333333333333,
+              "judge_correctness": 1.0,
+              "citation_valid_rate": 0.25,
+              "mean_search_count": 1,
+              "mean_latency_ms": 8106.144
+            },
+            "simple": {
+              "n": 3,
+              "evidence_recall": 1.0,
+              "judge_correctness": 1.0,
+              "citation_valid_rate": 1.0,
+              "mean_search_count": 1,
+              "mean_latency_ms": 21355.736333333334
+            },
+            "overall": {
+              "n": 7,
+              "evidence_recall": 0.47619047619047616,
+              "judge_correctness": 1.0,
+              "citation_valid_rate": 0.5714285714285714,
+              "mean_search_count": 1,
+              "mean_latency_ms": 13784.540714285715
+            }
+          },
+          "agentic": {
+            "complex": {
+              "n": 4,
+              "evidence_recall": 0.9166666666666666,
+              "judge_correctness": 1.25,
+              "citation_valid_rate": 1.0,
+              "mean_search_count": 3.5,
+              "mean_latency_ms": 65656.88825
+            },
+            "simple": {
+              "n": 3,
+              "evidence_recall": 1.0,
+              "judge_correctness": 1.0,
+              "citation_valid_rate": 1.0,
+              "mean_search_count": 1,
+              "mean_latency_ms": 22209.607666666667
+            },
+            "overall": {
+              "n": 7,
+              "evidence_recall": 0.9523809523809523,
+              "judge_correctness": 1.1428571428571428,
+              "citation_valid_rate": 1.0,
+              "mean_search_count": 2.4285714285714284,
+              "mean_latency_ms": 47036.62514285714
+            }
+          }
+        },
+        "api_calls": 45,
+        "token_usage": {
+          "prompt_tokens": 67977,
+          "completion_tokens": 19762,
+          "total_tokens": 87739
+        },
+        "errors": 0
+      }
+    },
+    {
+      "experiment": "3-9",
+      "project": "agentic-rag-for-user-memory",
+      "author_status": "passed",
+      "run_id": "20260729T214519Z-3_9-1bbf4623",
+      "artifacts": {
+        "evidence.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "receipts.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "manifest.json": {
+          "committed": true,
+          "sha256_matches": true
+        }
+      },
+      "inputs": {
+        "matched": 61,
+        "mismatched": 1,
+        "missing": 0,
+        "external": 0
+      },
+      "input_exceptions": [
+        {
+          "path": "chapter3\\memory_rag_campaign.py",
+          "reason": "hash differs"
+        }
+      ],
+      "acceptance_false": [],
+      "summary": {
+        "aggregate": {
+          "plain": {
+            "layer1": {
+              "n": 20,
+              "pass_rate": 0.95,
+              "mean_reward": 0.86875,
+              "hallucination_rate": 0.05
+            },
+            "layer2": {
+              "n": 20,
+              "pass_rate": 0.75,
+              "mean_reward": 0.73125,
+              "hallucination_rate": 0.1
+            },
+            "layer3": {
+              "n": 20,
+              "pass_rate": 0.65,
+              "mean_reward": 0.725,
+              "hallucination_rate": 0.1
+            },
+            "overall": {
+              "n": 60,
+              "pass_rate": 0.7833333333333333,
+              "mean_reward": 0.775,
+              "hallucination_rate": 0.08333333333333333
+            }
+          }
+        },
+        "api_calls": 253,
+        "token_usage": {
+          "prompt_tokens": 804972,
+          "completion_tokens": 136007,
+          "total_tokens": 940979
+        },
+        "errors": 0,
+        "resumed_cases": 60
+      }
+    },
+    {
+      "experiment": "3-10",
+      "project": "contextual-retrieval",
+      "author_status": "passed",
+      "run_id": "20260729T205807Z-3_10-35531780",
+      "artifacts": {
+        "evidence.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "receipts.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "manifest.json": {
+          "committed": true,
+          "sha256_matches": true
+        }
+      },
+      "inputs": {
+        "matched": 5,
+        "mismatched": 0,
+        "missing": 1,
+        "external": 0
+      },
+      "input_exceptions": [
+        {
+          "path": "chapter3\\contextual-retrieval\\document_store.json",
+          "reason": "missing"
+        }
+      ],
+      "acceptance_false": [],
+      "summary": {
+        "methods": {
+          "plain_bm25": {
+            "n": 15,
+            "recall_at_k": {
+              "1": 0.6,
+              "3": 0.8666666666666667,
+              "5": 0.9333333333333333
+            },
+            "mrr": 0.7508333333333334
+          },
+          "contextual_bm25": {
+            "n": 15,
+            "recall_at_k": {
+              "1": 0.8,
+              "3": 0.8666666666666667,
+              "5": 0.9333333333333333
+            },
+            "mrr": 0.8555555555555555
+          },
+          "plain_dense": {
+            "n": 15,
+            "recall_at_k": {
+              "1": 0.8666666666666667,
+              "3": 1.0,
+              "5": 1.0
+            },
+            "mrr": 0.9222222222222223
+          },
+          "contextual_dense": {
+            "n": 15,
+            "recall_at_k": {
+              "1": 0.9333333333333333,
+              "3": 1.0,
+              "5": 1.0
+            },
+            "mrr": 0.9666666666666667
+          },
+          "plain_hybrid": {
+            "n": 15,
+            "recall_at_k": {
+              "1": 0.7333333333333333,
+              "3": 0.9333333333333333,
+              "5": 0.9333333333333333
+            },
+            "mrr": 0.8444444444444444
+          },
+          "contextual_hybrid": {
+            "n": 15,
+            "recall_at_k": {
+              "1": 0.8666666666666667,
+              "3": 0.9333333333333333,
+              "5": 1.0
+            },
+            "mrr": 0.9133333333333333
+          }
+        },
+        "index_time": {
+          "context_generation_ms": 61804.353,
+          "embedding_ms": 365453.495,
+          "usage": {
+            "prompt_tokens": 219888,
+            "completion_tokens": 8846,
+            "total_tokens": 228734
+          },
+          "estimated_cost_usd": 0.033918,
+          "pricing_assumption": {
+            "input_per_million_usd": 0.11,
+            "output_per_million_usd": 1.1
+          }
+        },
+        "errors": 0
+      }
+    },
+    {
+      "experiment": "3-11",
+      "project": "contextual-retrieval-for-user-memory",
+      "author_status": "passed",
+      "run_id": "20260729T214519Z-3_11-9b99feb4",
+      "artifacts": {
+        "evidence.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "receipts.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "manifest.json": {
+          "committed": true,
+          "sha256_matches": true
+        }
+      },
+      "inputs": {
+        "matched": 121,
+        "mismatched": 1,
+        "missing": 0,
+        "external": 0
+      },
+      "input_exceptions": [
+        {
+          "path": "chapter3\\memory_rag_campaign.py",
+          "reason": "hash differs"
+        }
+      ],
+      "acceptance_false": [],
+      "summary": {
+        "aggregate": {
+          "plain": {
+            "layer1": {
+              "n": 20,
+              "pass_rate": 0.95,
+              "mean_reward": 0.86875,
+              "hallucination_rate": 0.05
+            },
+            "layer2": {
+              "n": 20,
+              "pass_rate": 0.75,
+              "mean_reward": 0.73125,
+              "hallucination_rate": 0.1
+            },
+            "layer3": {
+              "n": 20,
+              "pass_rate": 0.65,
+              "mean_reward": 0.725,
+              "hallucination_rate": 0.1
+            },
+            "overall": {
+              "n": 60,
+              "pass_rate": 0.7833333333333333,
+              "mean_reward": 0.775,
+              "hallucination_rate": 0.08333333333333333
+            }
+          },
+          "contextual": {
+            "layer1": {
+              "n": 20,
+              "pass_rate": 0.95,
+              "mean_reward": 0.8625,
+              "hallucination_rate": 0.05
+            },
+            "layer2": {
+              "n": 20,
+              "pass_rate": 0.75,
+              "mean_reward": 0.740625,
+              "hallucination_rate": 0.1
+            },
+            "layer3": {
+              "n": 20,
+              "pass_rate": 0.9,
+              "mean_reward": 0.8375,
+              "hallucination_rate": 0.05
+            },
+            "overall": {
+              "n": 60,
+              "pass_rate": 0.8666666666666667,
+              "mean_reward": 0.8135416666666667,
+              "hallucination_rate": 0.06666666666666667
+            }
+          },
+          "dual_layer": {
+            "layer1": {
+              "n": 20,
+              "pass_rate": 0.95,
+              "mean_reward": 0.878125,
+              "hallucination_rate": 0.05
+            },
+            "layer2": {
+              "n": 20,
+              "pass_rate": 1.0,
+              "mean_reward": 0.959375,
+              "hallucination_rate": 0.0
+            },
+            "layer3": {
+              "n": 20,
+              "pass_rate": 0.9,
+              "mean_reward": 0.9125,
+              "hallucination_rate": 0.05
+            },
+            "overall": {
+              "n": 60,
+              "pass_rate": 0.95,
+              "mean_reward": 0.9166666666666666,
+              "hallucination_rate": 0.03333333333333333
+            }
+          }
+        },
+        "api_calls": 448,
+        "token_usage": {
+          "prompt_tokens": 1727047,
+          "completion_tokens": 505121,
+          "total_tokens": 2232168
+        },
+        "errors": 0,
+        "resumed_cases": 60
+      }
+    },
+    {
+      "experiment": "3-4",
+      "project": "dense-embedding",
+      "author_status": "passed",
+      "run_id": "20260729T182946Z-3_4-2555ea60",
+      "artifacts": {
+        "evidence.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "receipts.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "manifest.json": {
+          "committed": true,
+          "sha256_matches": true
+        }
+      },
+      "inputs": {
+        "matched": 2,
+        "mismatched": 1,
+        "missing": 0,
+        "external": 0
+      },
+      "input_exceptions": [
+        {
+          "path": "chapter3\\dense-embedding\\benchmark.py",
+          "reason": "hash differs"
+        }
+      ],
+      "acceptance_false": [],
+      "summary": {
+        "embedding_latency_ms": 55429.937,
+        "annoy": {
+          "build_ms": 13.203,
+          "recall_at_k": 1.0,
+          "query_latency_ms": {
+            "mean": 0.2336004702374339,
+            "p50": 0.22620847448706627,
+            "p95": 0.2634833101183176
+          },
+          "serialized_bytes": 1396720,
+          "incremental_update": {
+            "items_added": 60,
+            "latency_ms": 8.274,
+            "requires_full_rebuild": true,
+            "recall_at_k_after_update": 1.0
+          }
+        },
+        "hnsw": {
+          "build_ms": 77.682,
+          "recall_at_k": 1.0,
+          "query_latency_ms": {
+            "mean": 0.25732293259352446,
+            "p50": 0.2595204859972,
+            "p95": 0.2800690243020654
+          },
+          "serialized_bytes": 1018716,
+          "incremental_update": {
+            "items_added": 60,
+            "latency_ms": 33.833,
+            "requires_full_rebuild": false,
+            "recall_at_k_after_update": 1.0
+          }
+        }
+      }
+    },
+    {
+      "experiment": "3-3",
+      "project": "log-sanitization",
+      "author_status": "passed",
+      "run_id": "20260729T185603Z-3_3-7f84f416",
+      "artifacts": {
+        "evidence.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "receipts.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "manifest.json": {
+          "committed": true,
+          "sha256_matches": true
+        }
+      },
+      "inputs": {
+        "matched": 0,
+        "mismatched": 0,
+        "missing": 0,
+        "external": 0
+      },
+      "input_exceptions": [],
+      "acceptance_false": [],
+      "summary": {
+        "regex": {
+          "cases": 12,
+          "mean_precision": 0.4166666666666666,
+          "mean_recall": 0.5,
+          "mean_typed_exact": 0.4166666666666667,
+          "residual_leaks": 9,
+          "mean_utility": 0.954197478750736,
+          "mean_latency_ms": 0.09875
+        },
+        "llm": {
+          "cases": 12,
+          "mean_precision": 0.5138888888888888,
+          "mean_recall": 0.6944444444444445,
+          "mean_typed_exact": 0.3333333333333333,
+          "residual_leaks": 3,
+          "mean_utility": 0.7548189868403488,
+          "mean_latency_ms": 3010.9979999999996
+        },
+        "hybrid": {
+          "cases": 12,
+          "mean_precision": 0.4861111111111111,
+          "mean_recall": 0.7777777777777777,
+          "mean_typed_exact": 0.5,
+          "residual_leaks": 2,
+          "mean_utility": 0.8744827477131053,
+          "mean_latency_ms": 2951.5082500000003
+        }
+      }
+    },
+    {
+      "experiment": "3-6",
+      "project": "retrieval-pipeline",
+      "author_status": "passed",
+      "run_id": "20260729T183512Z-3_6-a398d0f7",
+      "artifacts": {
+        "evidence.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "receipts.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "manifest.json": {
+          "committed": true,
+          "sha256_matches": true
+        }
+      },
+      "inputs": {
+        "matched": 2,
+        "mismatched": 1,
+        "missing": 0,
+        "external": 0
+      },
+      "input_exceptions": [
+        {
+          "path": "chapter3\\retrieval-pipeline\\fusion.py",
+          "reason": "hash differs"
+        }
+      ],
+      "acceptance_false": [],
+      "summary": {
+        "sparse": {
+          "recall@k": 0.8333333333333334,
+          "mrr": 0.7916666666666666,
+          "ndcg@k": 0.8025774794642881,
+          "latency_ms": {
+            "mean": 29.646694504966337,
+            "p50": 0.10129157453775406,
+            "p95": 354.74016703665257
+          }
+        },
+        "dense": {
+          "recall@k": 1.0,
+          "mrr": 1.0,
+          "ndcg@k": 1.0,
+          "latency_ms": {
+            "mean": 164.16664922144264,
+            "p50": 162.6114579848945,
+            "p95": 183.55158297345042
+          }
+        },
+        "rrf": {
+          "recall@k": 1.0,
+          "mrr": 1.0,
+          "ndcg@k": 1.0,
+          "latency_ms": {
+            "mean": 193.8208055216819,
+            "p50": 165.03987507894635,
+            "p95": 517.3575421795249
+          }
+        },
+        "weighted": {
+          "recall@k": 1.0,
+          "mrr": 0.9583333333333334,
+          "ndcg@k": 0.9692441461309548,
+          "latency_ms": {
+            "mean": 193.82462510839105,
+            "p50": 165.04266718402505,
+            "p95": 517.3604171723127
+          }
+        },
+        "rerank": {
+          "recall@k": 1.0,
+          "mrr": 0.9027777777777778,
+          "ndcg@k": 0.9275774794642881,
+          "latency_ms": {
+            "mean": 236.57109351673475,
+            "p50": 210.11475007981062,
+            "p95": 552.1125011146069
+          }
+        }
+      }
+    },
+    {
+      "experiment": "3-5",
+      "project": "sparse-embedding",
+      "author_status": "passed",
+      "run_id": "20260729T183232Z-3_5-f9f70b37",
+      "artifacts": {
+        "evidence.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "receipts.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "manifest.json": {
+          "committed": true,
+          "sha256_matches": true
+        }
+      },
+      "inputs": {
+        "matched": 2,
+        "mismatched": 1,
+        "missing": 0,
+        "external": 0
+      },
+      "input_exceptions": [
+        {
+          "path": "chapter3\\sparse-embedding\\bm25_engine.py",
+          "reason": "hash differs"
+        }
+      ],
+      "acceptance_false": [],
+      "summary": {
+        "exact_keyword_recall_at_5": 1.0,
+        "exact_keyword_mrr": 1.0,
+        "synonym_only_recall_at_5": 0.0,
+        "synonym_only_mrr": 0.0
+      }
+    },
+    {
+      "experiment": "3-7",
+      "project": "structured-index",
+      "author_status": "passed",
+      "run_id": "20260729T200642Z-3_7-4d2d5f9c",
+      "artifacts": {
+        "evidence.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "receipts.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "manifest.json": {
+          "committed": true,
+          "sha256_matches": true
+        }
+      },
+      "inputs": {
+        "matched": 4,
+        "mismatched": 1,
+        "missing": 0,
+        "external": 0
+      },
+      "input_exceptions": [
+        {
+          "path": "chapter3\\structured-index\\config.py",
+          "reason": "hash differs"
+        }
+      ],
+      "acceptance_false": [],
+      "summary": {
+        "raptor": {
+          "concept-detail": {
+            "n": 4,
+            "mean_citation_recall": 1.0,
+            "mean_judge_score": 4.0,
+            "mean_query_latency_ms": 10825.52175
+          },
+          "relationship-multi-hop": {
+            "n": 4,
+            "mean_citation_recall": 0.9166666666666666,
+            "mean_judge_score": 4.0,
+            "mean_query_latency_ms": 16744.6045
+          },
+          "overall": {
+            "n": 8,
+            "mean_citation_recall": 0.9583333333333334,
+            "mean_judge_score": 4.0,
+            "mean_query_latency_ms": 13785.063125
+          }
+        },
+        "graphrag": {
+          "concept-detail": {
+            "n": 4,
+            "mean_citation_recall": 1.0,
+            "mean_judge_score": 3.0,
+            "mean_query_latency_ms": 11719.119749999998
+          },
+          "relationship-multi-hop": {
+            "n": 4,
+            "mean_citation_recall": 0.9166666666666666,
+            "mean_judge_score": 4.0,
+            "mean_query_latency_ms": 15248.592
+          },
+          "overall": {
+            "n": 8,
+            "mean_citation_recall": 0.9583333333333334,
+            "mean_judge_score": 3.5,
+            "mean_query_latency_ms": 13483.855875000001
+          }
+        }
+      }
+    },
+    {
+      "experiment": "3-12",
+      "project": "structured-knowledge-extraction",
+      "author_status": "passed",
+      "run_id": "20260730T044309Z-3_12-3ab8ec7b",
+      "artifacts": {
+        "evidence.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "receipts.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "manifest.json": {
+          "committed": true,
+          "sha256_matches": true
+        }
+      },
+      "inputs": {
+        "matched": 2,
+        "mismatched": 0,
+        "missing": 1,
+        "external": 0
+      },
+      "input_exceptions": [
+        {
+          "path": "chapter3\\structured-knowledge-extraction\\data\\official\\CAIL2018_ALL_DATA.zip",
+          "reason": "missing"
+        }
+      ],
+      "acceptance_false": [],
+      "summary": {
+        "schema": {
+          "core_factors": 16,
+          "extension_factors": {
+            "盗窃罪": 12,
+            "故意伤害罪": 12,
+            "诈骗罪": 11
+          }
+        },
+        "clustering": {
+          "盗窃罪": {
+            "n": 120,
+            "candidates": [
+              {
+                "k": 2,
+                "silhouette": 0.055282737063116594
+              },
+              {
+                "k": 3,
+                "silhouette": 0.03972701197191193
+              },
+              {
+                "k": 4,
+                "silhouette": 0.05774984479270547
+              },
+              {
+                "k": 5,
+                "silhouette": 0.06135051269189759
+              }
+            ],
+            "selected_k": 5,
+            "selected_silhouette": 0.06135051269189759
+          },
+          "故意伤害罪": {
+            "n": 120,
+            "candidates": [
+              {
+                "k": 2,
+                "silhouette": 0.19414503497994334
+              },
+              {
+                "k": 3,
+                "silhouette": 0.06397112295025512
+              },
+              {
+                "k": 4,
+                "silhouette": 0.2174184498493351
+              },
+              {
+                "k": 5,
+                "silhouette": 0.18815962696351274
+              }
+            ],
+            "selected_k": 4,
+            "selected_silhouette": 0.2174184498493351
+          },
+          "诈骗罪": {
+            "n": 120,
+            "candidates": [
+              {
+                "k": 2,
+                "silhouette": 0.14269671395800465
+              },
+              {
+                "k": 3,
+                "silhouette": 0.11429764715608941
+              },
+              {
+                "k": 4,
+                "silhouette": 0.0807308294912691
+              },
+              {
+                "k": 5,
+                "silhouette": 0.09275116600967648
+              }
+            ],
+            "selected_k": 2,
+            "selected_silhouette": 0.14269671395800465
+          }
+        },
+        "prototypes": 11,
+        "heldout_judge_means": {
+          "prototype_grounding": 3.75,
+          "numeric_fidelity": 3.5833333333333335,
+          "uncertainty_and_caution": 3.75,
+          "heldout_usefulness": 3.5833333333333335
+        },
+        "api_calls": 117,
+        "token_usage": {
+          "prompt_tokens": 521611,
+          "completion_tokens": 436579,
+          "total_tokens": 958190
+        },
+        "errors": 0
+      }
+    },
+    {
+      "experiment": "3-1-and-3-2",
+      "project": "user-memory",
+      "author_status": "passed",
+      "run_id": "20260730T043652Z-3_1_and_3_2-16200e94",
+      "artifacts": {
+        "evidence.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "receipts.json": {
+          "committed": true,
+          "sha256_matches": true
+        },
+        "manifest.json": {
+          "committed": true,
+          "sha256_matches": true
+        }
+      },
+      "inputs": {
+        "matched": 61,
+        "mismatched": 0,
+        "missing": 0,
+        "external": 0
+      },
+      "input_exceptions": [],
+      "acceptance_false": [],
+      "summary": {
+        "aggregate": {
+          "advanced_json_cards": {
+            "layer1": {
+              "n": 20,
+              "pass_rate": 0.9,
+              "mean_reward": 0.784375,
+              "hallucination_rate": 0.1
+            },
+            "layer2": {
+              "n": 20,
+              "pass_rate": 0.6,
+              "mean_reward": 0.7,
+              "hallucination_rate": 0.0
+            },
+            "layer3": {
+              "n": 20,
+              "pass_rate": 0.95,
+              "mean_reward": 0.9625,
+              "hallucination_rate": 0.0
+            },
+            "overall": {
+              "n": 60,
+              "pass_rate": 0.8166666666666667,
+              "mean_reward": 0.815625,
+              "hallucination_rate": 0.03333333333333333
+            }
+          },
+          "enhanced_notes": {
+            "layer1": {
+              "n": 20,
+              "pass_rate": 0.85,
+              "mean_reward": 0.759375,
+              "hallucination_rate": 0.1
+            },
+            "layer2": {
+              "n": 20,
+              "pass_rate": 0.8,
+              "mean_reward": 0.85,
+              "hallucination_rate": 0.0
+            },
+            "layer3": {
+              "n": 20,
+              "pass_rate": 0.95,
+              "mean_reward": 0.9625,
+              "hallucination_rate": 0.0
+            },
+            "overall": {
+              "n": 60,
+              "pass_rate": 0.8666666666666667,
+              "mean_reward": 0.8572916666666667,
+              "hallucination_rate": 0.03333333333333333
+            }
+          },
+          "json_cards": {
+            "layer1": {
+              "n": 20,
+              "pass_rate": 0.95,
+              "mean_reward": 0.834375,
+              "hallucination_rate": 0.05
+            },
+            "layer2": {
+              "n": 20,
+              "pass_rate": 0.7,
+              "mean_reward": 0.753125,
+              "hallucination_rate": 0.05
+            },
+            "layer3": {
+              "n": 20,
+              "pass_rate": 0.9,
+              "mean_reward": 0.9,
+              "hallucination_rate": 0.1
+            },
+            "overall": {
+              "n": 60,
+              "pass_rate": 0.85,
+              "mean_reward": 0.8291666666666667,
+              "hallucination_rate": 0.06666666666666667
+            }
+          },
+          "notes": {
+            "layer1": {
+              "n": 20,
+              "pass_rate": 0.9,
+              "mean_reward": 0.8,
+              "hallucination_rate": 0.05
+            },
+            "layer2": {
+              "n": 20,
+              "pass_rate": 0.65,
+              "mean_reward": 0.721875,
+              "hallucination_rate": 0.05
+            },
+            "layer3": {
+              "n": 20,
+              "pass_rate": 0.85,
+              "mean_reward": 0.8875,
+              "hallucination_rate": 0.0
+            },
+            "overall": {
+              "n": 60,
+              "pass_rate": 0.8,
+              "mean_reward": 0.803125,
+              "hallucination_rate": 0.03333333333333333
+            }
+          }
+        },
+        "token_usage": {
+          "prompt_tokens": 2764882,
+          "completion_tokens": 2000654,
+          "total_tokens": 4765536
+        },
+        "by_mode": {
+          "notes": {
+            "api_calls": 260,
+            "token_usage": {
+              "prompt_tokens": 662861,
+              "completion_tokens": 438410,
+              "total_tokens": 1101271
+            },
+            "latency_ms": {
+              "total": 9920610.951999996,
+              "mean_per_call": 38156.19596923077
+            }
+          },
+          "enhanced_notes": {
+            "api_calls": 260,
+            "token_usage": {
+              "prompt_tokens": 635218,
+              "completion_tokens": 352250,
+              "total_tokens": 987468
+            },
+            "latency_ms": {
+              "total": 8365401.234999998,
+              "mean_per_call": 32174.620134615383
+            }
+          },
+          "json_cards": {
+            "api_calls": 261,
+            "token_usage": {
+              "prompt_tokens": 657007,
+              "completion_tokens": 469100,
+              "total_tokens": 1126107
+            },
+            "latency_ms": {
+              "total": 10583750.727999993,
+              "mean_per_call": 40550.76907279694
+            }
+          },
+          "advanced_json_cards": {
+            "api_calls": 261,
+            "token_usage": {
+              "prompt_tokens": 809796,
+              "completion_tokens": 740894,
+              "total_tokens": 1550690
+            },
+            "latency_ms": {
+              "total": 16943773.900000006,
+              "mean_per_call": 64918.673946360155
+            }
+          }
+        },
+        "api_calls": 1042,
+        "errors": 0
+      }
+    }
+  ]
+}
