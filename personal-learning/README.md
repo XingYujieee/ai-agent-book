@@ -8,5 +8,6 @@
 | Task 1：第 1 章实验 1-1 至 1-4 | [学习心得](task1/reflection-and-feedback.md) | [学习笔记](task1/notes.md) | [进度结果](task1/progress.md) · [实验过程](task1/experiment.md) |
 | Task 2：第 2 章实验 2-1 至 2-10 | [学习心得](task2/reflection-and-feedback.md) | [学习笔记](task2/notes.md) | [进度结果](task2/progress.md) · [实验过程](task2/experiment.md) |
 | Task 3：第 3 章实验 3-1 至 3-12 | [学习心得](task3/reflection-and-feedback.md) | [学习笔记](task3/notes.md) | [进度结果](task3/progress.md) · [实验过程](task3/experiment.md) |
+| Task 4：第 4 章实验 4-1 至 4-5 | [学习心得](task4/reflection-and-feedback.md) | [学习笔记](task4/notes.md) | [进度结果](task4/progress.md) · [实验过程](task4/experiment.md) |
 
-资料来源：[原项目](https://github.com/bojieli/ai-agent-book) · [引言](https://github.com/bojieli/ai-agent-book/blob/main/book/introduction.md) · [第 1 章](../book/chapter1.md) · [第 2 章](../book/chapter2.md) · [第 3 章](../book/chapter3.md)
+资料来源：[原项目](https://github.com/bojieli/ai-agent-book) · [引言](https://github.com/bojieli/ai-agent-book/blob/main/book/introduction.md) · [第 1 章](../book/chapter1.md) · [第 2 章](../book/chapter2.md) · [第 3 章](../book/chapter3.md) · [第 4 章](../book/chapter4.md)

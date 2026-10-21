@@ -65,13 +65,32 @@ def _readline_before_timeout(stream: Any, timeout_seconds: float) -> str:
     encoding = getattr(stream, "encoding", None) or "utf-8"
     deadline = time.monotonic() + timeout_seconds
     data = bytearray()
+    if os.name == "nt":
+        # select() accepts sockets only on Windows. PeekNamedPipe also works
+        # for anonymous stdin pipes and lets the worker respect its deadline.
+        import ctypes
+        import msvcrt
+
+        handle = msvcrt.get_osfhandle(descriptor)
+        available = ctypes.c_ulong()
+        peek = ctypes.windll.kernel32.PeekNamedPipe
     while True:
         remaining = deadline - time.monotonic()
         if remaining <= 0:
             raise TimeoutError
-        readable, _, _ = select.select([descriptor], [], [], remaining)
-        if not readable:
-            raise TimeoutError
+        if os.name == "nt":
+            if not peek(handle, None, 0, None, ctypes.byref(available), None):
+                # Console stdin is not a pipe; poll its keyboard buffer.
+                if not msvcrt.kbhit():
+                    time.sleep(min(0.01, remaining))
+                    continue
+            elif available.value == 0:
+                time.sleep(min(0.01, remaining))
+                continue
+        else:
+            readable, _, _ = select.select([descriptor], [], [], remaining)
+            if not readable:
+                raise TimeoutError
         chunk = os.read(descriptor, 1)
         if not chunk:
             return data.decode(encoding, errors="replace")

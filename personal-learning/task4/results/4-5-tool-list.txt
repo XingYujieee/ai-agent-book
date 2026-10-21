@@ -1,0 +1,22 @@
+协作工具清单（实验 4-5）
+============================================================
+
+【子 Agent 管理】
+  - spawn_subagent               创建子 Agent（同步/异步，minimal/llm_generated 上下文策略）
+  - send_message_to_subagent     向子 Agent 发送后续消息并获取回复
+  - cancel_subagent              取消子 Agent（异步任务会中止后台协程）
+  - get_subagent_status          查询子 Agent 状态与结果（用于异步）
+
+【人类协作 (HITL)】
+  - request_admin_approval       关键决策前请求管理员批准（支持超时与默认行为）
+  - request_admin_input          向管理员请求补充输入
+  - respond_to_request           管理员对待处理请求作出批准/拒绝
+  - list_pending_requests        列出全部待处理的审批请求
+
+【多渠道通知】
+  - send_email                   发送邮件通知（SMTP / SendGrid）
+  - send_slack_message           通过 Webhook 发送 Slack 消息
+  - send_telegram_message        发送 Telegram 消息
+  - send_discord_message         通过 Webhook 发送 Discord 消息
+
+提示：`python main.py <子命令> -h` 查看每个工具的参数。

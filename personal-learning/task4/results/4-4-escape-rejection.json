@@ -1,0 +1,4 @@
+{
+  "success": false,
+  "error": "Path ..\\outside.py is outside workspace directory"
+}

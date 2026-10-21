@@ -1,0 +1,24 @@
+{
+  "source": "chapter4/multimodal-agent/create_sample.py",
+  "chart": {
+    "path": "results\\4-3-sample\\sample_chart.png",
+    "sha256": "15d1e76faed919679c242941ff6e042e15637e30fd61500a063897c3e458a982",
+    "pixels": [
+      900,
+      600
+    ]
+  },
+  "pdf": {
+    "path": "results\\4-3-sample\\sample_report.pdf",
+    "sha256": "bd2d117fa954837182d202e936755a7a734e5b2c703b5c651f64e7cf3e6fca65",
+    "pages": 1
+  },
+  "ground_truth_from_generator": {
+    "Q1": 120,
+    "Q2": 150,
+    "Q3": 95,
+    "Q4": 180
+  },
+  "all_exact_chart_values_absent_from_pdf_text": true,
+  "scope": "Checks the generated fixture and PDF text layer; does not compare three live model paradigms."
+}
