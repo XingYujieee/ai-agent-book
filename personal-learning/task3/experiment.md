@@ -1,6 +1,6 @@
 # Chapter 3 实验过程与结果
 
-环境：Windows、仓库 `.venv`（Python 3.13.9），本机 Ollama `qwen3:0.6b`。本次没有可用的云模型环境变量。历史正式结果属于作者先前的模型与数据环境；我从基线提交读取原始 Git 文件核对 SHA-256，见[审计报告](results/historical-evidence-audit.json)。
+这次我在 Windows 上用仓库的 `.venv`（Python 3.13.9）和本机 Ollama `qwen3:0.6b` 做实验，没有可用的云模型环境变量。作者以前跑出的正式结果，我从基线提交读取原始 Git 文件核对 SHA-256，结果放在[审计报告](results/historical-evidence-audit.json)里。
 
 ## 3-1、3-2：先确定记忆评估的标尺
 
