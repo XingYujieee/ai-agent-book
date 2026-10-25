@@ -1,0 +1,158 @@
+{
+  "chapter": 10,
+  "packaged_date": "2026-10-25",
+  "source_commit": "ac6e3f016f2a8449c3fde2343dad8b627b5e0ccd",
+  "scope": "This chapter's personal notes, reflection, progress, scripts and retained results. The archive is a learning-record snapshot; execution dependencies remain in the repository.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 519,
+      "sha256": "727924fa0e5842ece5a01de29ae44632314d45c54c6dd42532dfe6caff9ca739"
+    },
+    {
+      "path": "experiment.md",
+      "bytes": 3980,
+      "sha256": "e8c942c59d1e96f66470ba3f1a617b9b32e5b09aed5e6048acf8073e4d16a964"
+    },
+    {
+      "path": "notes.md",
+      "bytes": 2385,
+      "sha256": "a17fb3fd4d5d4a5ec146c58338dfeb717fe2c5c1dd74d599813c27e5232d40d5"
+    },
+    {
+      "path": "progress.md",
+      "bytes": 2318,
+      "sha256": "010e6df1887960b47c3d79226ad91288fa9567305c11feff0f88f12ee2654f47"
+    },
+    {
+      "path": "reflection-and-feedback.md",
+      "bytes": 828,
+      "sha256": "8205b6759c8272d28fcf4c42b6174a4d94640b684b98841460a114b1bda9be66"
+    },
+    {
+      "path": "results/check-summary.json",
+      "bytes": 4184,
+      "sha256": "9eff7361f65fec490a91390efbadcb0bed791bf81c8f5325a75a0e1eb34c987a"
+    },
+    {
+      "path": "results/checks/parallel.json",
+      "bytes": 540,
+      "sha256": "62d85ea9c3ec90f8a63b7ef544e894a696c0ef8c5a802357ac5b4d273dc6e98d"
+    },
+    {
+      "path": "results/checks/parallel.txt",
+      "bytes": 100,
+      "sha256": "45c740c4a48ac50a103da05cb789c204784d20a895f1cfc9ffe718ad648b13d2"
+    },
+    {
+      "path": "results/checks/registration.attempt1.json",
+      "bytes": 499,
+      "sha256": "8c490d0e091c1f7d116118a467bfc098f6b76fdd53cba8d0ff88bc032ab0cfbb"
+    },
+    {
+      "path": "results/checks/registration.attempt1.txt",
+      "bytes": 4619,
+      "sha256": "2653267d9fd8f0a56a78194fe280fb5132b757b81bef7bee7d631a85aea9ba28"
+    },
+    {
+      "path": "results/checks/registration.json",
+      "bytes": 499,
+      "sha256": "e96193a169594bb75f6e0b4d41b6e452acc0e1e7b3b429ae4fe30cf843d16ab1"
+    },
+    {
+      "path": "results/checks/registration.txt",
+      "bytes": 101,
+      "sha256": "79f3047fd12cb0593b9921137eaa0aeaa888539a9c3451b4c7d177be5d7a216d"
+    },
+    {
+      "path": "results/checks/roles.json",
+      "bytes": 424,
+      "sha256": "49f68a7a14f7a37aa69ad43033f99f7be0a3f9ddea2e693442a7e8075c7c4599"
+    },
+    {
+      "path": "results/checks/roles.txt",
+      "bytes": 101,
+      "sha256": "878e99bececdb707876b46d7f788b0f96438dc2f47de7f9d113fe41dc7634956"
+    },
+    {
+      "path": "results/checks/social.json",
+      "bytes": 566,
+      "sha256": "1da92e694b6c70176b2ec78d92e347a874178750c8c4486b3bee693b417bc47e"
+    },
+    {
+      "path": "results/checks/social.txt",
+      "bytes": 101,
+      "sha256": "09cdaf217d301664b8b183efaa9a1802c72bb10bc973744018c534f532d5adbf"
+    },
+    {
+      "path": "results/checks/translation.json",
+      "bytes": 433,
+      "sha256": "3654606253ab43d0cae93f7f09877620a672b6f2393857c7d2190d76db4a21d4"
+    },
+    {
+      "path": "results/checks/translation.txt",
+      "bytes": 101,
+      "sha256": "228a63dc23a7b23ba520fc7f5dcb9f79377800d45b2ccef4c479329712dcaec3"
+    },
+    {
+      "path": "results/checks/werewolf.json",
+      "bytes": 496,
+      "sha256": "37103cdfbf8918d440a08d558e9d5aaccf488908da8305912de34270c872a530"
+    },
+    {
+      "path": "results/checks/werewolf.txt",
+      "bytes": 100,
+      "sha256": "41fe40f7a03a1f6f0c4efbab77e4445edfe56209d360ba3ad0d17d1a02ed659c"
+    },
+    {
+      "path": "results/demos/roles-list.json",
+      "bytes": 313,
+      "sha256": "94e251e930bbc984943a548f8d89725718c2ad0f1cd115782e2982d2ae2ecf77"
+    },
+    {
+      "path": "results/demos/roles-list.txt",
+      "bytes": 2074,
+      "sha256": "985cfd888c3d5ab935b4c341f12232a5ac65fa685a2afd4726ad04f271cecb63"
+    },
+    {
+      "path": "results/demos/translation-plan.json",
+      "bytes": 461,
+      "sha256": "60e72bf82dc21f96b36ca024d800b07c02beb17e7aa69ae1eeaa3723b03ee269"
+    },
+    {
+      "path": "results/demos/translation-plan.txt",
+      "bytes": 4308,
+      "sha256": "4fc3e7dce26b4003d0409df402e2059f3b3187e79c379cfe920ae1a1ec8673ab"
+    },
+    {
+      "path": "results/demos/werewolf-offline.json",
+      "bytes": 489,
+      "sha256": "ef0375e973643b829974ffe26d73a1e36879b71d55368e2c4c30354d89d763be"
+    },
+    {
+      "path": "results/demos/werewolf-offline.txt",
+      "bytes": 15777,
+      "sha256": "98676ede307c609a6e4b3d0e81120bbc66d610b659ee8846ef9d9cf234bd703c"
+    },
+    {
+      "path": "results/eol-restoration.json",
+      "bytes": 5999,
+      "sha256": "cb080c845a38978a120e0cd00139bb028f17c6bda1b8a8608b4864f0d80d16da"
+    },
+    {
+      "path": "results/local-manifest.json",
+      "bytes": 4034,
+      "sha256": "bce204e36342f808a3d266f1ceca99c3078479a592cb76faeb9d9cda86aa71b9"
+    },
+    {
+      "path": "results/saved-evidence-review.json",
+      "bytes": 29278,
+      "sha256": "35313089a6ca958129d20a0692bf72455f3f4263ad5338e02c70bbf246cd0c9c"
+    },
+    {
+      "path": "results/werewolf-offline.json",
+      "bytes": 7611,
+      "sha256": "55eb940449b00c06254cbe1b325005c710e69abba478e50685f352dc5e98dd80"
+    }
+  ]
+}
