@@ -1,0 +1,63 @@
+{
+  "chapter": 3,
+  "packaged_date": "2026-10-25",
+  "source_commit": "ac6e3f016f2a8449c3fde2343dad8b627b5e0ccd",
+  "scope": "This chapter's personal notes, reflection, progress, scripts and retained results. The archive is a learning-record snapshot; execution dependencies remain in the repository.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 772,
+      "sha256": "8da640ab944044254db01372e65e156cdfd43fa67a5366fbb6b1da0f8dca3543"
+    },
+    {
+      "path": "experiment.md",
+      "bytes": 5991,
+      "sha256": "a9ee5d20d89d15d958097221bf02a46ef77e43a6a0160ad3284df114e7ba67ab"
+    },
+    {
+      "path": "notes.md",
+      "bytes": 2707,
+      "sha256": "33b894dee600c42bcf924be2f0859ea78a02ce10467e2535672e0e5171d6f93d"
+    },
+    {
+      "path": "progress.md",
+      "bytes": 4015,
+      "sha256": "40083bbd4335625b9247eeede642ef1d9df9a1e90fb1b7d84101a0f77548067e"
+    },
+    {
+      "path": "reflection-and-feedback.md",
+      "bytes": 926,
+      "sha256": "2d68570b00e4781de06f9be99cd4de4ad27776af29ece423de2318d073c43ba0"
+    },
+    {
+      "path": "results/3-11-offline.json",
+      "bytes": 4646,
+      "sha256": "99f59ff9ee2a92859761992dc9125104294899c1b3f182bbcf6099840013a925"
+    },
+    {
+      "path": "results/3-7-offline.json",
+      "bytes": 487,
+      "sha256": "c4416c7a9292a7bbc3c88611db1a835fcf66ad7337a70fe39fa6a9243c091902"
+    },
+    {
+      "path": "results/3-8-offline.json",
+      "bytes": 4078,
+      "sha256": "6c2b48275e75e72d505da6916eaaa1e8b4ad9db2c3074841954cc41ae8d2ee8b"
+    },
+    {
+      "path": "results/3-9-offline.json",
+      "bytes": 2283,
+      "sha256": "6926d2a5b431e1d6dfe511f3c1dc7c2c8fbb4e306f2894ec861fed32762f2f77"
+    },
+    {
+      "path": "results/historical-evidence-audit.json",
+      "bytes": 28663,
+      "sha256": "e2174e34add7909f206eced43ee0c611e2e71cc37f14f74d3dce22ed82f0ee7c"
+    },
+    {
+      "path": "verify_history.py",
+      "bytes": 4771,
+      "sha256": "ca23bde7a3eb44448c847a6a3b15f1ee958add0f749d5f2260d728f737cf0873"
+    }
+  ]
+}
