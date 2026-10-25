@@ -1,0 +1,17 @@
+{
+  "name": "logic-solver",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "demo.py",
+    "--mode",
+    "solver",
+    "--output",
+    "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\personal-learning\\task5\\results\\logic-solver.json"
+  ],
+  "cwd": "chapter5/code-for-logic",
+  "returncode": 0,
+  "seconds": 0.133,
+  "log": "logic-solver.txt"
+}

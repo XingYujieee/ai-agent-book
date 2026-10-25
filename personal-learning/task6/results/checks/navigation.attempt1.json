@@ -1,0 +1,21 @@
+{
+  "chapter": 6,
+  "name": "navigation",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter6/gemini-xlerobot-navigation",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_validator.py"
+  ],
+  "status": "failed",
+  "returncode": 1,
+  "duration_seconds": 0.833,
+  "checked_at": "2026-10-25T00:19:01.649502+00:00",
+  "log": "navigation.txt"
+}

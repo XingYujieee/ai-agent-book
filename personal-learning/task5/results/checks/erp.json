@@ -1,0 +1,21 @@
+{
+  "chapter": 5,
+  "name": "erp",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter5/erp-agent",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_parse_only.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 2.243,
+  "checked_at": "2026-10-25T00:18:53.368997+00:00",
+  "log": "erp.txt"
+}

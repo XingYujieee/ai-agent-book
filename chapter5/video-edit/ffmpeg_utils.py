@@ -13,6 +13,7 @@ import subprocess
 
 # macOS 自带字体；换平台时改这里即可（Linux 常见 DejaVuSans.ttf）。
 FONT_CANDIDATES = [
+    os.path.join(os.environ.get("WINDIR", "C:/Windows"), "Fonts", "arial.ttf"),
     "/System/Library/Fonts/Supplemental/Arial.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
     "/Library/Fonts/Arial.ttf",
@@ -22,7 +23,9 @@ FONT_CANDIDATES = [
 def find_font() -> str:
     for p in FONT_CANDIDATES:
         if os.path.exists(p):
-            return p
+            # The value is embedded in a drawtext filter, not passed as argv.
+            # Escape the drive separator twice for FFmpeg's two parser layers.
+            return p.replace("\\", "/").replace(":", r"\\:")
     return ""  # drawtext 会退化为默认字体
 
 

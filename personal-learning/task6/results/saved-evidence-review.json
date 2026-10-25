@@ -1,0 +1,939 @@
+{
+  "baseline_ref": "faa6db95",
+  "scope": "Historical Git blobs only; at most 40 declared artifacts per evidence file, no live API reproduction.",
+  "experiments": 14,
+  "evidence_files_present": 12,
+  "rows": [
+    {
+      "experiment": "6-1",
+      "title": "事件驱动的邮件处理 Agent",
+      "ledger_row": "| 6-1 | `agent-with-event-trigger/validation/experiment_6_1/credential_probe_20260730T064500Z` | blocked | false | `3f689dfee915503f61ca30e9b590e24c8950496ca90fbf365def83805e877d0a` (stale, see note) |",
+      "evidence": "chapter6/agent-with-event-trigger/validation/experiment_6_1/credential_probe_20260730T064500Z/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "5b8befd016806b719bec1eca4ac3caa12067308b65cdee19e8ef358bd8f864c5",
+      "ledger_hash_matches": false,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "blocked",
+        "official_complete": false
+      },
+      "declared_hash_entries": 2,
+      "sample_checks": [
+        {
+          "declared_path": "protocol.json",
+          "resolved_path": "chapter6/agent-with-event-trigger/validation/experiment_6_1/credential_probe_20260730T064500Z/protocol.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "summary.json",
+          "resolved_path": "chapter6/agent-with-event-trigger/validation/experiment_6_1/credential_probe_20260730T064500Z/summary.json",
+          "in_git": true,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "6-2",
+      "title": "带并行执行和打断能力的异步 Agent",
+      "ledger_row": "| 6-2 | `async-agent/validation/experiment_6_2/real_subprocess_20260730T052500Z` | passed | true | `fff6b43a2e3a0b706fdd68bca289119f726d3f827f3f4d837e97321f7d48a825` |",
+      "evidence": "chapter6/async-agent/validation/experiment_6_2/real_subprocess_20260730T052500Z/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "fff6b43a2e3a0b706fdd68bca289119f726d3f827f3f4d837e97321f7d48a825",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 8,
+      "sample_checks": [
+        {
+          "declared_path": "artifacts/scenario_2_report.html",
+          "resolved_path": "chapter6/async-agent/validation/experiment_6_2/real_subprocess_20260730T052500Z/artifacts/scenario_2_report.html",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "artifacts/scenario_4_report.json",
+          "resolved_path": "chapter6/async-agent/validation/experiment_6_2/real_subprocess_20260730T052500Z/artifacts/scenario_4_report.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "protocol.json",
+          "resolved_path": "chapter6/async-agent/validation/experiment_6_2/real_subprocess_20260730T052500Z/protocol.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "scenarios/async_command_and_immediate_question.json",
+          "resolved_path": "chapter6/async-agent/validation/experiment_6_2/real_subprocess_20260730T052500Z/scenarios/async_command_and_immediate_question.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "scenarios/interrupt_terminates_and_recovers.json",
+          "resolved_path": "chapter6/async-agent/validation/experiment_6_2/real_subprocess_20260730T052500Z/scenarios/interrupt_terminates_and_recovers.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "scenarios/parallel_progress_threshold_cancellation.json",
+          "resolved_path": "chapter6/async-agent/validation/experiment_6_2/real_subprocess_20260730T052500Z/scenarios/parallel_progress_threshold_cancellation.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "scenarios/queued_batch_to_japanese_html.json",
+          "resolved_path": "chapter6/async-agent/validation/experiment_6_2/real_subprocess_20260730T052500Z/scenarios/queued_batch_to_japanese_html.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "summary.json",
+          "resolved_path": "chapter6/async-agent/validation/experiment_6_2/real_subprocess_20260730T052500Z/summary.json",
+          "in_git": true,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "6-3",
+      "title": "模型原生异步与回合中途引导",
+      "ledger_row": "| 6-3 | `astra-async-steering/validation/runs/exp6-14-20260905-formal` | passed | true | `bfece1666a63131e44c911908f4b0a07e6afffb719e8463b7507840d7d998c9e` |",
+      "evidence": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "bfece1666a63131e44c911908f4b0a07e6afffb719e8463b7507840d7d998c9e",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 33,
+      "sample_checks": [
+        {
+          "declared_path": "01-async/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/01-async/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "01-async/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/01-async/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "01-async_steer/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/01-async_steer/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "01-async_steer/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/01-async_steer/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "01-steer_reasoning/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/01-steer_reasoning/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "01-steer_reasoning/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/01-steer_reasoning/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "01-sync/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/01-sync/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "01-sync/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/01-sync/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "01-unsupported_steer/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/01-unsupported_steer/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "01-unsupported_steer/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/01-unsupported_steer/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "02-async/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/02-async/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "02-async/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/02-async/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "02-async_steer/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/02-async_steer/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "02-async_steer/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/02-async_steer/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "02-steer_reasoning/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/02-steer_reasoning/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "02-steer_reasoning/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/02-steer_reasoning/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "02-sync/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/02-sync/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "02-sync/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/02-sync/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "02-unsupported_steer/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/02-unsupported_steer/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "02-unsupported_steer/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/02-unsupported_steer/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "03-async/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/03-async/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "03-async/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/03-async/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "03-async_steer/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/03-async_steer/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "03-async_steer/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/03-async_steer/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "03-steer_reasoning/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/03-steer_reasoning/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "03-steer_reasoning/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/03-steer_reasoning/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "03-sync/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/03-sync/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "03-sync/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/03-sync/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "03-unsupported_steer/acceptance.json",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/03-unsupported_steer/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "03-unsupported_steer/events.jsonl",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/03-unsupported_steer/events.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "source/experiment.py",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/source/experiment.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "source/requirements.txt",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/source/requirements.txt",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "source/test_judging.py",
+          "resolved_path": "chapter6/astra-async-steering/validation/runs/exp6-14-20260905-formal/source/test_judging.py",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "6-4",
+      "title": "构建传统语音 Agent",
+      "ledger_row": "| 6-4 | [传统语音 Agent](live-audio/) | 6-3 |",
+      "evidence": "chapter6/live-audio/backend/validation/real_pipeline_20260729_localwhisper_ark_fish/evidence.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "8b8f3aa52a64f6013891e05ca8336f3f50048e2cb9590fbf4e91abf7f0240d62",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 2,
+      "sample_checks": [
+        {
+          "declared_path": "microphone_input.wav",
+          "resolved_path": "chapter6/live-audio/backend/validation/real_pipeline_20260729_localwhisper_ark_fish/microphone_input.wav",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "models/silero_vad.onnx",
+          "resolved_path": "chapter6/live-audio/backend/validation/real_pipeline_20260729_localwhisper_ark_fish/models/silero_vad.onnx",
+          "in_git": false,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "6-5",
+      "title": "使用 Qwen2-Audio 模拟流式语音感知",
+      "ledger_row": "| 6-5 | [流式语音感知](streaming-speech/) | 6-4 |",
+      "evidence": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "3d02bce7ac422449bf29bdf61576377b44b9d7b8b046e2cd4f6a7e065f1da67b",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 22,
+      "sample_checks": [
+        {
+          "declared_path": ".gitattributes",
+          "resolved_path": ".gitattributes",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "/Users/boj/.cache/whisper/tiny.pt",
+          "resolved_path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/Users/boj/.cache/whisper/tiny.pt",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "README.md",
+          "resolved_path": "chapter6/streaming-speech/README.md",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "acceptance.json",
+          "resolved_path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/acceptance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "audio/sentence.wav",
+          "resolved_path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/audio/sentence.wav",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "config.json",
+          "resolved_path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/config.json",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "demo.py",
+          "resolved_path": "chapter6/streaming-speech/demo.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "evidence.json",
+          "resolved_path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/evidence.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "merges.txt",
+          "resolved_path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/merges.txt",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "prepare_scenarios.py",
+          "resolved_path": "chapter6/streaming-speech/prepare_scenarios.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "preprocessor_config.json",
+          "resolved_path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/preprocessor_config.json",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "qwen2_streaming.py",
+          "resolved_path": "chapter6/streaming-speech/qwen2_streaming.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "run.log",
+          "resolved_path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/run.log",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "run_official_experiment.py",
+          "resolved_path": "chapter6/streaming-speech/run_official_experiment.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "tokenizer.json",
+          "resolved_path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/tokenizer.json",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "tokenizer_config.json",
+          "resolved_path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/tokenizer_config.json",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "validation/scenarios/background_noise.wav",
+          "resolved_path": "chapter6/streaming-speech/validation/scenarios/background_noise.wav",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "validation/scenarios/long_pause.wav",
+          "resolved_path": "chapter6/streaming-speech/validation/scenarios/long_pause.wav",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "validation/scenarios/normal.wav",
+          "resolved_path": "chapter6/streaming-speech/validation/scenarios/normal.wav",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "vocab.json",
+          "resolved_path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/vocab.json",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "weights.safetensors",
+          "resolved_path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/weights.safetensors",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "whisper_baseline.py",
+          "resolved_path": "chapter6/streaming-speech/whisper_baseline.py",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "6-6",
+      "title": "本地运行 MiniCPM-o 4.5，对比端到端与自级联",
+      "ledger_row": "| 6-6 | [端到端全模态语音](end-to-end-speech/) | 6-5 |",
+      "evidence": "chapter6/end-to-end-speech/validation/runs/exp6-5-minicpmo45-20260801-v1/evidence.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "dcfe73476f96315252a13cc97457f5012c6dc4b047854a29da0bbad9fbe48e0f",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 10,
+      "sample_checks": [
+        {
+          "declared_path": "boxes-79.wav",
+          "resolved_path": "chapter6/end-to-end-speech/validation/runs/exp6-5-minicpmo45-20260801-v1/boxes-79.wav",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "demo.py",
+          "resolved_path": "chapter6/end-to-end-speech/demo.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "fixtures/cases.json",
+          "resolved_path": "chapter6/end-to-end-speech/fixtures/cases.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "pace-fast.wav",
+          "resolved_path": "chapter6/end-to-end-speech/validation/runs/exp6-5-minicpmo45-20260801-v1/pace-fast.wav",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "pace-slow.wav",
+          "resolved_path": "chapter6/end-to-end-speech/validation/runs/exp6-5-minicpmo45-20260801-v1/pace-slow.wav",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "requirements.txt",
+          "resolved_path": "chapter6/end-to-end-speech/requirements.txt",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "speech_model.py",
+          "resolved_path": "chapter6/end-to-end-speech/speech_model.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "tickets-42.wav",
+          "resolved_path": "chapter6/end-to-end-speech/validation/runs/exp6-5-minicpmo45-20260801-v1/tickets-42.wav",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "validate_evidence.py",
+          "resolved_path": "chapter6/end-to-end-speech/validate_evidence.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "validation/runs/exp6-5-minicpmo45-20260801-v1/outputs/spoken-math-boxes-response.wav",
+          "resolved_path": "chapter6/end-to-end-speech/validation/runs/exp6-5-minicpmo45-20260801-v1/outputs/spoken-math-boxes-response.wav",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "6-7",
+      "title": "基于 Fish Audio 的控制标记驱动 TTS",
+      "ledger_row": "| 6-7 | [控制标记 TTS](controllable-tts/) | 6-6 |",
+      "evidence": "chapter6/controllable-tts/validation/acceptance.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "d64aad2fa73e7f8522c98c0b7a0a1bf08cbbcffdac0ded2a382ed744bb128f4d",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 33,
+      "sample_checks": [
+        {
+          "declared_path": "demo.py",
+          "resolved_path": "chapter6/controllable-tts/demo.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "evaluate_audio_quality.py",
+          "resolved_path": "chapter6/controllable-tts/evaluate_audio_quality.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "markup.py",
+          "resolved_path": "chapter6/controllable-tts/markup.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "output/A_no_control_markers.mp3",
+          "resolved_path": "chapter6/controllable-tts/output/A_no_control_markers.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "output/B_single_reference.mp3",
+          "resolved_path": "chapter6/controllable-tts/output/B_single_reference.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "output/C_24_reference_library.mp3",
+          "resolved_path": "chapter6/controllable-tts/output/C_24_reference_library.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/frustrated_fast_casual.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/frustrated_fast_casual.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/frustrated_fast_formal.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/frustrated_fast_formal.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/frustrated_normal_casual.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/frustrated_normal_casual.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/frustrated_normal_formal.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/frustrated_normal_formal.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/frustrated_slow_casual.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/frustrated_slow_casual.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/frustrated_slow_formal.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/frustrated_slow_formal.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/happy_fast_casual.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/happy_fast_casual.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/happy_fast_formal.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/happy_fast_formal.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/happy_normal_casual.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/happy_normal_casual.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/happy_normal_formal.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/happy_normal_formal.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/happy_slow_casual.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/happy_slow_casual.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/happy_slow_formal.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/happy_slow_formal.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/neutral_fast_casual.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/neutral_fast_casual.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/neutral_fast_formal.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/neutral_fast_formal.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/neutral_normal_casual.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/neutral_normal_casual.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/neutral_normal_formal.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/neutral_normal_formal.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/neutral_slow_casual.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/neutral_slow_casual.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/neutral_slow_formal.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/neutral_slow_formal.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/thinking_fast_casual.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/thinking_fast_casual.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/thinking_fast_formal.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/thinking_fast_formal.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/thinking_normal_casual.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/thinking_normal_casual.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/thinking_normal_formal.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/thinking_normal_formal.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/thinking_slow_casual.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/thinking_slow_casual.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reference_audio/thinking_slow_formal.mp3",
+          "resolved_path": "chapter6/controllable-tts/reference_audio/thinking_slow_formal.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "tts.py",
+          "resolved_path": "chapter6/controllable-tts/tts.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "validation/audio_quality_study.json",
+          "resolved_path": "chapter6/controllable-tts/validation/audio_quality_study.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "voice_library.py",
+          "resolved_path": "chapter6/controllable-tts/voice_library.py",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "6-8",
+      "title": "运行 Computer Use（Anthropic 参考路径或开放模型路径）",
+      "ledger_row": "| 6-8 | [Anthropic Computer Use](claude-computer-use-native/) | 6-7 |",
+      "evidence": "chapter6/claude-computer-use-native/validation/runs/exp6-7-anthropic-native-20260803-v2/acceptance.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "fe7383ca9759200870ab61cb1a068b8ec32370feb5d4b2b7c1202aaac4bd7c33",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 0,
+      "sample_checks": []
+    },
+    {
+      "experiment": "6-9",
+      "title": "使用 browser-use 实现自动浏览器操作",
+      "ledger_row": "| 6-9 | [browser-use 开放模型](computer-use-open-model/) | 6-8 |",
+      "evidence": "chapter6/computer-use-open-model/validation/latest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "306a1dd6e704c36457912d19a6887b80714f85b4df7732712671f249780712db",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "passed"
+      },
+      "declared_hash_entries": 0,
+      "sample_checks": []
+    },
+    {
+      "experiment": "6-10",
+      "title": "真机遥操作 XLeRobot 整理桌面",
+      "ledger_row": "| 6-10 | [XLeRobot 真机遥操作](xlerobot-teleoperation/) | 6-9 |",
+      "evidence": null,
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "6-11",
+      "title": "在模拟器中测量同任务的理想控制上限",
+      "ledger_row": "| 6-11 | [模拟控制上限](xlerobot-teleoperation/) | 6-10 |",
+      "evidence": "chapter6/xlerobot-teleoperation/validation/runs/local-gpu/evidence.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "a71cb8d83a7890a02be6295952a1a452dcb618ecddfd036b80a7738ee797acbd",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "complete"
+      },
+      "declared_hash_entries": 2,
+      "sample_checks": [
+        {
+          "declared_path": "cells.json",
+          "resolved_path": "chapter6/xlerobot-teleoperation/validation/runs/local-gpu/cells.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "metrics.json",
+          "resolved_path": "chapter6/xlerobot-teleoperation/validation/runs/local-gpu/metrics.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "6-12",
+      "title": "使用 Gemini Robotics-ER 1.5 驱动 XLeRobot 自主整理桌面",
+      "ledger_row": "| 6-12 | [XLeRobot 自主操作](gemini-xlerobot-navigation/) | 6-11 |",
+      "evidence": null,
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "6-13",
+      "title": "在模拟器中比较三种自主整理桌面的闭环",
+      "ledger_row": "| 6-13 | [模拟闭环比较](gemini-xlerobot-navigation/) | 6-12 |",
+      "evidence": "chapter6/gemini-xlerobot-navigation/validation/runs/local-gpu/evidence.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "4f6134fc0ef687830a0aee23c20e6670b2377456f7760ce983d76553c480e071",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "complete"
+      },
+      "declared_hash_entries": 3,
+      "sample_checks": [
+        {
+          "declared_path": "metrics.json",
+          "resolved_path": "chapter6/gemini-xlerobot-navigation/validation/runs/local-gpu/metrics.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "predictive_episode_events.json",
+          "resolved_path": "chapter6/gemini-xlerobot-navigation/validation/runs/local-gpu/predictive_episode_events.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "scene_initial.png",
+          "resolved_path": "chapter6/gemini-xlerobot-navigation/validation/runs/local-gpu/scene_initial.png",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "6-14",
+      "title": "同一桌面任务的 RGB 跨环境测试",
+      "ledger_row": "| 6-14 | [RGB 跨环境测试](rgb-sim2real-grasping/) | 6-13 |",
+      "evidence": "chapter6/rgb-sim2real-grasping/validation/runs/local-gpu/evidence.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "fc03af6fda9dc9e348e8b1bf6d606465316df51fe67554c477444108027dbe3c",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "complete"
+      },
+      "declared_hash_entries": 5,
+      "sample_checks": [
+        {
+          "declared_path": "matrix.json",
+          "resolved_path": "chapter6/rgb-sim2real-grasping/validation/runs/local-gpu/matrix.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "metrics.json",
+          "resolved_path": "chapter6/rgb-sim2real-grasping/validation/runs/local-gpu/metrics.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "randomized_policy.pt",
+          "resolved_path": "chapter6/rgb-sim2real-grasping/validation/runs/local-gpu/randomized_policy.pt",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "source_preview.png",
+          "resolved_path": "chapter6/rgb-sim2real-grasping/validation/runs/local-gpu/source_preview.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "target_preview.png",
+          "resolved_path": "chapter6/rgb-sim2real-grasping/validation/runs/local-gpu/target_preview.png",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    }
+  ]
+}

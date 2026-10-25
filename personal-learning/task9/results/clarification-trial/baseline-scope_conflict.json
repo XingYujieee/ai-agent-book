@@ -1,0 +1,46 @@
+{
+  "arm": "baseline",
+  "case": "scope_conflict",
+  "expected": "ask",
+  "action": "ask",
+  "correct": true,
+  "seconds": 0.072,
+  "request": {
+    "model": "qwen3:0.6b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是编程助手。判断当前下一步，只输出 JSON：{\"action\":\"ask|confirm_spec|execute\",\"reason\":\"简短原因\"}。不要实际执行任何工具。"
+      },
+      {
+        "role": "user",
+        "content": "此前确认只改首页颜色，但我现在又想把登录流程也重做，具体怎么改还没想好。"
+      }
+    ],
+    "stream": false,
+    "think": false,
+    "format": "json",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_predict": 256
+    }
+  },
+  "response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-10-25T00:25:37.3035586Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"action\":\"ask\",\"reason\":\"简短原因\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 70958100,
+    "load_duration": 7183000,
+    "prompt_eval_count": 81,
+    "prompt_eval_cached_count": 43,
+    "prompt_eval_duration": 11819000,
+    "eval_count": 12,
+    "eval_duration": 43642000
+  }
+}

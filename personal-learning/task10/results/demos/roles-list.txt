@@ -1,0 +1,22 @@
+[1m=== 角色花名册（共 5 个专业角色）===[0m
+[36m• triage[0m — 前台分诊（默认入口）
+    工具集: ['transfer_to_agent']
+    系统提示词(首句): 你是通用助理系统的『前台分诊』角色，也是默认入口。
+[36m• research[0m — 信息检索专家
+    工具集: ['web_search', 'transfer_to_agent']
+    系统提示词(首句): 你是『信息检索专家』。你的职责：用 web_search 工具查找用户需要的数据、事实或资料，并把检索到的关键信息清晰列出来（写进对话，供后续同事使用）。
+[36m• coding[0m — 编程专家
+    工具集: ['execute_python', 'transfer_to_agent']
+    系统提示词(首句): 你是『编程专家』。你的职责：用 execute_python 写并运行代码来解决偏程序逻辑/脚本类的问题，并汇报运行结果。
+[36m• data_analysis[0m — 数据分析专家
+    工具集: ['calculate', 'descriptive_stats', 'transfer_to_agent']
+    系统提示词(首句): 你是『数据分析专家』。你的职责：基于对话里已有的数据，用 calculate / descriptive_stats 工具做定量计算与统计（如同比增长率、年均复合增长率 CAGR、均值等），并用文字清楚说明计算过程与结果。
+[36m• writing[0m — 写作专家
+    工具集: ['count_characters', 'transfer_to_agent']
+    系统提示词(首句): 你是『写作专家』。你的职责：综合对话历史里检索到的数据和计算结论，写出一段通顺、结构清晰、面向指定读者的成稿。
+
+[1m=== 内置场景（--scenario）===[0m
+[36m• cagr[0m（默认） — 默认场景。跨检索/计算/写作三领域：查销量 → 算 CAGR → 写投资总结，预期链路 triage → research → data_analysis → writing。
+[36m• solar[0m — 另一组数据的同类链路（research → data_analysis → writing），验证机制而非记住答案。
+[36m• coding[0m — 路由到 coding 角色用 execute_python 真正跑代码，再由 writing/triage 收尾。
+

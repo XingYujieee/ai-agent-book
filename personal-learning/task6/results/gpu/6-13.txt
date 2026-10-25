@@ -1,0 +1,326 @@
+{
+  "schema_version": "3.0",
+  "experiment_id": "6-12",
+  "status": "complete",
+  "kind": "desktop_manipulation_planning",
+  "seed": 20260808,
+  "tool_contract": [
+    "observe_scene",
+    "pick",
+    "place",
+    "verify_state",
+    "stop"
+  ],
+  "metrics": {
+    "device": {
+      "device": "cuda",
+      "torch": "2.11.0+cu128",
+      "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "capability": [
+        8,
+        6
+      ]
+    },
+    "protocol": {
+      "seeds": [
+        20260808,
+        20260809,
+        20260810
+      ],
+      "failure_probabilities": [
+        0.0,
+        0.25,
+        0.5
+      ],
+      "episodes_per_cell": 128,
+      "total_episodes": 3456
+    },
+    "models": [
+      {
+        "seed": 20260808,
+        "train_mse": 0.017159197479486465,
+        "test_mse": 0.017016882076859474
+      },
+      {
+        "seed": 20260809,
+        "train_mse": 0.01264232862740755,
+        "test_mse": 0.012364446185529232
+      },
+      {
+        "seed": 20260810,
+        "train_mse": 0.015084807761013508,
+        "test_mse": 0.014977166429162025
+      }
+    ],
+    "cells": [
+      {
+        "seed": 20260808,
+        "failure_probability": 0.0,
+        "mode": "open_loop",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 4.0,
+        "recoveries": 0
+      },
+      {
+        "seed": 20260808,
+        "failure_probability": 0.0,
+        "mode": "closed_loop",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.0,
+        "recoveries": 0
+      },
+      {
+        "seed": 20260808,
+        "failure_probability": 0.0,
+        "mode": "predictive",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.0,
+        "recoveries": 0
+      },
+      {
+        "seed": 20260808,
+        "failure_probability": 0.25,
+        "mode": "open_loop",
+        "episodes": 128,
+        "success_rate": 0.734375,
+        "mean_tool_calls": 4.0,
+        "recoveries": 34
+      },
+      {
+        "seed": 20260808,
+        "failure_probability": 0.25,
+        "mode": "closed_loop",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.53125,
+        "recoveries": 34
+      },
+      {
+        "seed": 20260808,
+        "failure_probability": 0.25,
+        "mode": "predictive",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.53125,
+        "recoveries": 34
+      },
+      {
+        "seed": 20260808,
+        "failure_probability": 0.5,
+        "mode": "open_loop",
+        "episodes": 128,
+        "success_rate": 0.53125,
+        "mean_tool_calls": 4.0,
+        "recoveries": 60
+      },
+      {
+        "seed": 20260808,
+        "failure_probability": 0.5,
+        "mode": "closed_loop",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.9375,
+        "recoveries": 60
+      },
+      {
+        "seed": 20260808,
+        "failure_probability": 0.5,
+        "mode": "predictive",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.9375,
+        "recoveries": 60
+      },
+      {
+        "seed": 20260809,
+        "failure_probability": 0.0,
+        "mode": "open_loop",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 4.0,
+        "recoveries": 0
+      },
+      {
+        "seed": 20260809,
+        "failure_probability": 0.0,
+        "mode": "closed_loop",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.0,
+        "recoveries": 0
+      },
+      {
+        "seed": 20260809,
+        "failure_probability": 0.0,
+        "mode": "predictive",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.0,
+        "recoveries": 0
+      },
+      {
+        "seed": 20260809,
+        "failure_probability": 0.25,
+        "mode": "open_loop",
+        "episodes": 128,
+        "success_rate": 0.734375,
+        "mean_tool_calls": 4.0,
+        "recoveries": 34
+      },
+      {
+        "seed": 20260809,
+        "failure_probability": 0.25,
+        "mode": "closed_loop",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.53125,
+        "recoveries": 34
+      },
+      {
+        "seed": 20260809,
+        "failure_probability": 0.25,
+        "mode": "predictive",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.53125,
+        "recoveries": 34
+      },
+      {
+        "seed": 20260809,
+        "failure_probability": 0.5,
+        "mode": "open_loop",
+        "episodes": 128,
+        "success_rate": 0.53125,
+        "mean_tool_calls": 4.0,
+        "recoveries": 60
+      },
+      {
+        "seed": 20260809,
+        "failure_probability": 0.5,
+        "mode": "closed_loop",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.9375,
+        "recoveries": 60
+      },
+      {
+        "seed": 20260809,
+        "failure_probability": 0.5,
+        "mode": "predictive",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.9375,
+        "recoveries": 60
+      },
+      {
+        "seed": 20260810,
+        "failure_probability": 0.0,
+        "mode": "open_loop",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 4.0,
+        "recoveries": 0
+      },
+      {
+        "seed": 20260810,
+        "failure_probability": 0.0,
+        "mode": "closed_loop",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.0,
+        "recoveries": 0
+      },
+      {
+        "seed": 20260810,
+        "failure_probability": 0.0,
+        "mode": "predictive",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.0,
+        "recoveries": 0
+      },
+      {
+        "seed": 20260810,
+        "failure_probability": 0.25,
+        "mode": "open_loop",
+        "episodes": 128,
+        "success_rate": 0.7421875,
+        "mean_tool_calls": 4.0,
+        "recoveries": 33
+      },
+      {
+        "seed": 20260810,
+        "failure_probability": 0.25,
+        "mode": "closed_loop",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.515625,
+        "recoveries": 33
+      },
+      {
+        "seed": 20260810,
+        "failure_probability": 0.25,
+        "mode": "predictive",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.515625,
+        "recoveries": 33
+      },
+      {
+        "seed": 20260810,
+        "failure_probability": 0.5,
+        "mode": "open_loop",
+        "episodes": 128,
+        "success_rate": 0.5390625,
+        "mean_tool_calls": 4.0,
+        "recoveries": 59
+      },
+      {
+        "seed": 20260810,
+        "failure_probability": 0.5,
+        "mode": "closed_loop",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.921875,
+        "recoveries": 59
+      },
+      {
+        "seed": 20260810,
+        "failure_probability": 0.5,
+        "mode": "predictive",
+        "episodes": 128,
+        "success_rate": 1.0,
+        "mean_tool_calls": 6.921875,
+        "recoveries": 59
+      }
+    ],
+    "deterministic_replay": true,
+    "wall_time_ms": 5751.433
+  },
+  "artifacts": [
+    {
+      "kind": "metrics",
+      "path": "metrics.json",
+      "sha256": "156123a5d39011bc265e947242cdbdea188f43bfec95b49a514a04135ec176cc"
+    },
+    {
+      "kind": "events",
+      "path": "predictive_episode_events.json",
+      "sha256": "b919dca380b5e1f050585b8aae455d7b8dd7ccdfa4692e1c386686f3d3b8d606"
+    },
+    {
+      "kind": "scene",
+      "path": "scene_initial.png",
+      "sha256": "00f1a1def2a03bf6526e2ffad2cb05099c885d4cf6da42eba0b5efe87892bee1"
+    }
+  ],
+  "xlerobot_robocrew_extension": {
+    "status": "gated",
+    "tool_adapter_required": true,
+    "actuation_attempted": false
+  },
+  "blockers": []
+}

@@ -1,0 +1,20 @@
+{
+  "name": "event-timer",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "event_loop_demo.py",
+    "--mock",
+    "--trigger",
+    "timer",
+    "--duration",
+    "2",
+    "--delay",
+    "0.2"
+  ],
+  "cwd": "chapter6/agent-with-event-trigger",
+  "returncode": 0,
+  "seconds": 2.402,
+  "log": "event-timer.txt"
+}

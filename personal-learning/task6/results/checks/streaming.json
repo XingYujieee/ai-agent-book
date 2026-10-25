@@ -1,0 +1,23 @@
+{
+  "chapter": 6,
+  "name": "streaming",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter6/streaming-speech",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_official_experiment.py",
+    "test_streaming.py",
+    "test_whisper_baseline.py"
+  ],
+  "status": "failed",
+  "returncode": 1,
+  "duration_seconds": 0.986,
+  "checked_at": "2026-10-25T00:37:43.069657+00:00",
+  "log": "streaming.txt"
+}

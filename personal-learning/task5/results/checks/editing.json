@@ -1,0 +1,25 @@
+{
+  "chapter": 5,
+  "name": "editing",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter5/video-edit",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_agents_llm_json.py",
+    "test_bare_output_filename.py",
+    "test_extract_json_adjacent.py",
+    "test_slowmo_factor_zero.py",
+    "test_slowmo_null_factor.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 11.101,
+  "checked_at": "2026-10-25T00:22:06.000719+00:00",
+  "log": "editing.txt"
+}

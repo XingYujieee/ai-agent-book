@@ -1,0 +1,21 @@
+{
+  "chapter": 5,
+  "name": "cad",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter5/cad-vs-diffusion",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_offline.py"
+  ],
+  "status": "failed",
+  "returncode": 1,
+  "duration_seconds": 12.198,
+  "checked_at": "2026-10-25T00:22:07.655665+00:00",
+  "log": "cad.txt"
+}

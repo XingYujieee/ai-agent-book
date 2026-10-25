@@ -1,0 +1,21 @@
+{
+  "chapter": 8,
+  "name": "dpo",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter8/premature-completion-dpo",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_pipeline.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 1.251,
+  "checked_at": "2026-10-25T00:19:11.534045+00:00",
+  "log": "dpo.txt"
+}

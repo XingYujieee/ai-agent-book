@@ -1,0 +1,13 @@
+{
+  "name": "trajectory-verifier",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "demo.py"
+  ],
+  "cwd": "chapter9/trajectory-verifier",
+  "returncode": 0,
+  "seconds": 0.218,
+  "log": "trajectory-verifier.txt"
+}

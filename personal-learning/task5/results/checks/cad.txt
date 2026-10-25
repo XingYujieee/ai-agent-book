@@ -1,0 +1,9 @@
+......                                                                   [100%]
+============================== warnings summary ===============================
+chapter5/cad-vs-diffusion/test_offline.py::test_fixture_dimensions_accurate
+chapter5/cad-vs-diffusion/test_offline.py::test_box_mesh_has_no_holes
+  C:\Users\21931\Documents\ChatGPT\AI Agent\ai-agent-book\chapter5\cad-vs-diffusion\measure.py:55: DeprecationWarning: DEPRECATED: replace `path.to_planar`->`path.to_2D), removal 1/1/2026
+    path2d, to_2d = section.to_planar()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+6 passed, 2 warnings in 1.53s

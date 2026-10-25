@@ -1,0 +1,21 @@
+{
+  "chapter": 7,
+  "name": "robot-eval",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter7/openvla-robotwin2-eval",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_experiment.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.782,
+  "checked_at": "2026-10-25T00:22:07.364892+00:00",
+  "log": "robot-eval.txt"
+}

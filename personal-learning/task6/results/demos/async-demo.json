@@ -1,0 +1,14 @@
+{
+  "name": "async-demo",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "demo.py",
+    "offline"
+  ],
+  "cwd": "chapter6/async-agent",
+  "returncode": 0,
+  "seconds": 13.537,
+  "log": "async-demo.txt"
+}

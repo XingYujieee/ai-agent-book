@@ -1,0 +1,21 @@
+{
+  "review_date": "2026-10-25",
+  "meaning": "Receipt identity only; experiment scope and failures are documented separately.",
+  "files": [
+    {
+      "path": "saved-evidence-review.json",
+      "bytes": 45896,
+      "sha256": "f021af86c2007dd600187a858b252c9960784a69485cc03c7d052788f9d30674"
+    },
+    {
+      "path": "checks/collaboration.json",
+      "bytes": 459,
+      "sha256": "142602c688671dfe12719f7cabb2a001075a17daf0310aa2afcf057673be455d"
+    },
+    {
+      "path": "checks/collaboration.txt",
+      "bytes": 114,
+      "sha256": "213f8c57bf2348a0aad6a9822ebe2b8cc55e4b8988aa047514605387acadf506"
+    }
+  ]
+}

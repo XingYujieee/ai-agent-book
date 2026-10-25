@@ -1,0 +1,13 @@
+{
+  "name": "dpo-mock",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "demo.py"
+  ],
+  "cwd": "chapter8/premature-completion-dpo",
+  "returncode": 0,
+  "seconds": 0.135,
+  "log": "dpo-mock.txt"
+}

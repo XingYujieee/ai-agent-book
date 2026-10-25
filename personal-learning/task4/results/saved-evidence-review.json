@@ -1,0 +1,940 @@
+{
+  "baseline_ref": "faa6db95",
+  "scope": "Historical Git blobs only; at most 40 declared artifacts per evidence file, no live API reproduction.",
+  "experiments": 5,
+  "evidence_files_present": 5,
+  "rows": [
+    {
+      "experiment": "4-1",
+      "title": "主动工具发现",
+      "ledger_row": "| 4-1 | `active-tool-discovery/validation/experiment_4_1/rerun_20260825` | passed | true | `e5a70588804b8bc1a5ba38c18fe7f4537e8284e62f745d8a6e03401833046dae` |",
+      "evidence": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "e5a70588804b8bc1a5ba38c18fe7f4537e8284e62f745d8a6e03401833046dae",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 20,
+      "sample_checks": [
+        {
+          "declared_path": "catalog.schemas.json.gz",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/catalog.schemas.json.gz",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "catalog_receipt.json",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/catalog_receipt.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "control/apple_stock_news/receipt.json",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/control/apple_stock_news/receipt.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "control/github_contributors_visualization/contributors.svg",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/control/github_contributors_visualization/contributors.svg",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "control/github_contributors_visualization/receipt.json",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/control/github_contributors_visualization/receipt.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "control/transformer_arxiv_download/papers/2608.23499v1.pdf",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/control/transformer_arxiv_download/papers/2608.23499v1.pdf",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "control/transformer_arxiv_download/papers/2608.23512v1.pdf",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/control/transformer_arxiv_download/papers/2608.23512v1.pdf",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "control/transformer_arxiv_download/papers/2608.23524v1.pdf",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/control/transformer_arxiv_download/papers/2608.23524v1.pdf",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "control/transformer_arxiv_download/receipt.json",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/control/transformer_arxiv_download/receipt.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "embedding_receipt.json",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/embedding_receipt.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "index/embeddings-all-MiniLM-L6-v2-f2d5d8db4024874c1de2.json",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/index/embeddings-all-MiniLM-L6-v2-f2d5d8db4024874c1de2.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "protocol.json",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/protocol.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "summary.json",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/summary.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "treatment/apple_stock_news/receipt.json",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/treatment/apple_stock_news/receipt.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "treatment/github_contributors_visualization/contributors.svg",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/treatment/github_contributors_visualization/contributors.svg",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "treatment/github_contributors_visualization/receipt.json",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/treatment/github_contributors_visualization/receipt.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "treatment/transformer_arxiv_download/papers/2608.23499v1.pdf",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/treatment/transformer_arxiv_download/papers/2608.23499v1.pdf",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "treatment/transformer_arxiv_download/papers/2608.23512v1.pdf",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/treatment/transformer_arxiv_download/papers/2608.23512v1.pdf",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "treatment/transformer_arxiv_download/papers/2608.23524v1.pdf",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/treatment/transformer_arxiv_download/papers/2608.23524v1.pdf",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "treatment/transformer_arxiv_download/receipt.json",
+          "resolved_path": "chapter4/active-tool-discovery/validation/experiment_4_1/rerun_20260825/treatment/transformer_arxiv_download/receipt.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "4-2",
+      "title": "感知工具 MCP 服务器",
+      "ledger_row": "| 4-2 | `perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z` | blocked | false | `f93ee0ad9bd1121ed9e7c9d730bbaf85847d03e89c9024487cfdf9f62b8557ab` |",
+      "evidence": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "f93ee0ad9bd1121ed9e7c9d730bbaf85847d03e89c9024487cfdf9f62b8557ab",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "blocked",
+        "official_complete": false
+      },
+      "declared_hash_entries": 46,
+      "sample_checks": [
+        {
+          "declared_path": "catalog_receipt.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/catalog_receipt.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "credential_preflight.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/credential_preflight.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "fixture_receipt.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/fixture_receipt.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "fixtures/documents/sample.docx",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/fixtures/documents/sample.docx",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "fixtures/documents/sample.pdf",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/fixtures/documents/sample.pdf",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "fixtures/documents/sample.pptx",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/fixtures/documents/sample.pptx",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "fixtures/downloads/iana-example.html",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/fixtures/downloads/iana-example.html",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "fixtures/media/ocr-source.png",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/fixtures/media/ocr-source.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "fixtures/media/spoken-marker.aiff",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/fixtures/media/spoken-marker.aiff",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "fixtures/media/visual-marker.mp4",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/fixtures/media/visual-marker.mp4",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "fixtures/mutation_workspace/.perception-trash/20260729T222549261369Z-415aba90c85d43b095a298d13db796be-moved.txt",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/fixtures/mutation_workspace/.perception-trash/20260729T222549261369Z-415aba90c85d43b095a298d13db796be-moved.txt",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "fixtures/mutation_workspace/escape-link",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/fixtures/mutation_workspace/escape-link",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "fixtures/mutation_workspace/nested/entry.txt",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/fixtures/mutation_workspace/nested/entry.txt",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "fixtures/outside-witness.txt",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/fixtures/outside-witness.txt",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "protocol.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/protocol.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/01_web_search.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/01_web_search.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/02_knowledge_base_search.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/02_knowledge_base_search.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/03_download.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/03_download.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/04_webpage_reader.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/04_webpage_reader.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/05_document_reader_pdf.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/05_document_reader_pdf.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/07_document_reader_pptx.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/07_document_reader_pptx.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/08_image_ocr.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/08_image_ocr.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/09_image_analyze.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/09_image_analyze.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/10_audio_transcribe.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/10_audio_transcribe.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/11_video_parser.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/11_video_parser.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/12_video_analyze.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/12_video_analyze.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/14_grep.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/14_grep.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/15_directory_list.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/15_directory_list.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/16_filesystem_copy.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/16_filesystem_copy.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/17_filesystem_move.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/17_filesystem_move.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/18_filesystem_delete.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/18_filesystem_delete.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/19_reject_parent_traversal.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/19_reject_parent_traversal.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/20_reject_absolute_path.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/20_reject_absolute_path.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/22_weather.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/22_weather.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/23_yfinance_quote.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/23_yfinance_quote.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/24_currency_converter.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/24_currency_converter.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/25_wikipedia_search.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/25_wikipedia_search.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/26_arxiv_search.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/26_arxiv_search.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/27_calendar_events.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/receipts/27_calendar_events.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "summary.json",
+          "resolved_path": "chapter4/perception-tools/validation/experiment_4_2/real_mcp_dashscope_intl_20260730T070000Z/summary.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "4-3",
+      "title": "多模态信息提取：三种技术范式的对比分析",
+      "ledger_row": "| 4-3 | `multimodal-agent/validation/runs/20260729T185433Z-4_2-e028c9db` | passed | true | `1a9cc7bfd48717e73a03ebbde7fd786c7da2811a15267715a3794c0f1220362e` |",
+      "evidence": "chapter4/multimodal-agent/validation/runs/20260729T185433Z-4_2-e028c9db/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "1a9cc7bfd48717e73a03ebbde7fd786c7da2811a15267715a3794c0f1220362e",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "passed"
+      },
+      "declared_hash_entries": 6,
+      "sample_checks": [
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter4/multimodal-agent/campaign.py",
+          "resolved_path": "chapter4/multimodal-agent/campaign.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter4/multimodal-agent/create_sample.py",
+          "resolved_path": "chapter4/multimodal-agent/create_sample.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter4/multimodal-agent/test_files/sample_chart.png",
+          "resolved_path": "chapter4/multimodal-agent/test_files/sample_chart.png",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter4/multimodal-agent/test_files/sample_report.pdf",
+          "resolved_path": "chapter4/multimodal-agent/test_files/sample_report.pdf",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "evidence.json",
+          "resolved_path": "chapter4/multimodal-agent/validation/runs/20260729T185433Z-4_2-e028c9db/evidence.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts.json",
+          "resolved_path": "chapter4/multimodal-agent/validation/runs/20260729T185433Z-4_2-e028c9db/receipts.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "4-4",
+      "title": "执行工具 MCP 服务器",
+      "ledger_row": "| 4-4 | `execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z` | blocked | false | `fde8976b91b149a61b7d468f4c825c1bdfdc9da3062cbfa66aaa1fd0f3d1966f` |",
+      "evidence": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "fde8976b91b149a61b7d468f4c825c1bdfdc9da3062cbfa66aaa1fd0f3d1966f",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "blocked",
+        "official_complete": false
+      },
+      "declared_hash_entries": 35,
+      "sample_checks": [
+        {
+          "declared_path": "artifacts/long_output.full.txt",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/artifacts/long_output.full.txt",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "catalog.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/catalog.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "llm_receipts.checkpoint.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/llm_receipts.checkpoint.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "llm_receipts.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/llm_receipts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "outside-witness.txt",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/outside-witness.txt",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "protocol.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/protocol.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/01_python_valid_write.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/01_python_valid_write.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/02_python_invalid_rejected.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/02_python_invalid_rejected.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/03_javascript_valid_write.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/03_javascript_valid_write.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/04_javascript_invalid_rejected.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/04_javascript_invalid_rejected.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/05_verified_edit.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/05_verified_edit.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/06_path_escape_rejected.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/06_path_escape_rejected.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/07_terminal_safe.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/07_terminal_safe.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/08_terminal_timeout.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/08_terminal_timeout.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/09_terminal_danger_rejected.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/09_terminal_danger_rejected.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/10_python_docker_sandbox.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/10_python_docker_sandbox.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/11_python_network_denied.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/11_python_network_denied.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/12_long_output_persisted.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/12_long_output_persisted.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/13_excel_formula_screenshot.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/13_excel_formula_screenshot.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/14_real_webhook.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/14_real_webhook.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/15_real_browser.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/15_real_browser.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/16_calendar_preflight.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/16_calendar_preflight.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/17_github_pr_preflight.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/17_github_pr_preflight.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/18_real_virtual_desktop.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/18_real_virtual_desktop.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/19_real_virtual_mobile.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/19_real_virtual_mobile.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/20_desktop_mobile_capabilities.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/receipts/20_desktop_mobile_capabilities.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "summary.json",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/summary.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "workspace/android-wifi-settings.png",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/workspace/android-wifi-settings.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "workspace/browser-example.png",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/workspace/browser-example.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "workspace/computer-use-example.png",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/workspace/computer-use-example.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "workspace/invoice.pdf",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/workspace/invoice.pdf",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "workspace/invoice.png",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/workspace/invoice.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "workspace/invoice.xlsx",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/workspace/invoice.xlsx",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "workspace/valid.js",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/workspace/valid.js",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "workspace/valid.py",
+          "resolved_path": "chapter4/execution-tools/validation/experiment_4_4/real_mcp_gui_20260802T093657Z/workspace/valid.py",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "4-5",
+      "title": "协作工具 MCP 服务器",
+      "ledger_row": "| 4-5 | `collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2` | blocked | false | `9fae8eadec1f9583ba03e21df5c8bc660cc8bec2ba328cf304bcaa0039bd97a3` |",
+      "evidence": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "9fae8eadec1f9583ba03e21df5c8bc660cc8bec2ba328cf304bcaa0039bd97a3",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "blocked",
+        "official_complete": false
+      },
+      "declared_hash_entries": 61,
+      "sample_checks": [
+        {
+          "declared_path": "catalog.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/catalog.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "human_decision.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/human_decision.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "llm_receipts.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/llm_receipts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "protocol.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/protocol.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/02_llm_generated_sync.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/02_llm_generated_sync.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/03_multi_turn_message.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/03_multi_turn_message.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/05_async_status_1.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/05_async_status_1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/06_async_status_2.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/06_async_status_2.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/08_async_status_4.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/08_async_status_4.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/09_async_status_5.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/09_async_status_5.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/11_async_status_7.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/11_async_status_7.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/12_async_status_8.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/12_async_status_8.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/14_async_status_10.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/14_async_status_10.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/16_async_status_12.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/16_async_status_12.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/17_async_status_13.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/17_async_status_13.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/19_async_status_15.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/19_async_status_15.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/20_async_status_16.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/20_async_status_16.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/22_async_status_18.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/22_async_status_18.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/23_async_status_19.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/23_async_status_19.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/25_async_status_21.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/25_async_status_21.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/26_async_status_22.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/26_async_status_22.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/28_async_status_24.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/28_async_status_24.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/29_async_status_25.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/29_async_status_25.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/31_async_status_27.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/31_async_status_27.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/32_async_status_28.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/32_async_status_28.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/34_async_status_30.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/34_async_status_30.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/36_async_status_32.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/36_async_status_32.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/37_async_status_33.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/37_async_status_33.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/39_async_status_35.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/39_async_status_35.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/40_async_status_36.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/40_async_status_36.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/42_async_status_38.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/42_async_status_38.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/43_async_status_39.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/43_async_status_39.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/45_async_status_41.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/45_async_status_41.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/46_cancel_spawn.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/46_cancel_spawn.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/48_cancelled_status.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/48_cancelled_status.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/49_hitl_pending.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/49_hitl_pending.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/51_hitl_approval.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/51_hitl_approval.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/52_hitl_timeout.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/52_hitl_timeout.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts/54_im_notification_preflight.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/receipts/54_im_notification_preflight.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "summary.json",
+          "resolved_path": "chapter4/collaboration-tools/validation/experiment_4_5/real_mcp_human_20260803_v2/summary.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    }
+  ]
+}

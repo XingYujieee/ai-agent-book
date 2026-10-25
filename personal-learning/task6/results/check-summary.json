@@ -1,0 +1,268 @@
+{
+  "jobs": 10,
+  "passed_jobs": 9,
+  "pytest_counts": {
+    "passed": 62,
+    "failed": 1
+  },
+  "rows": [
+    {
+      "chapter": 6,
+      "name": "async",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter6/async-agent",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_checkpoint_robustness.py",
+        "test_real_experiment.py",
+        "test_real_tasks.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 1.906,
+      "checked_at": "2026-10-25T00:22:01.736305+00:00",
+      "log": "async.txt",
+      "pytest_summary": "12 passed in 0.55s",
+      "counts": {
+        "passed": 12
+      }
+    },
+    {
+      "chapter": 6,
+      "name": "browser",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter6/computer-use-open-model",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "tests/test_config.py",
+        "tests/test_evidence.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.838,
+      "checked_at": "2026-10-25T00:18:59.850844+00:00",
+      "log": "browser.txt",
+      "pytest_summary": "7 passed in 0.13s",
+      "counts": {
+        "passed": 7
+      }
+    },
+    {
+      "chapter": 6,
+      "name": "mailbox",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter6/agent-with-event-trigger",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_unipile_mailbox_experiment.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 1.223,
+      "checked_at": "2026-10-25T00:18:54.764378+00:00",
+      "log": "mailbox.txt",
+      "pytest_summary": "4 passed in 0.68s",
+      "counts": {
+        "passed": 4
+      }
+    },
+    {
+      "chapter": 6,
+      "name": "navigation",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter6/gemini-xlerobot-navigation",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_validator.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 1.04,
+      "checked_at": "2026-10-25T00:22:05.791779+00:00",
+      "log": "navigation.txt",
+      "pytest_summary": "3 passed in 0.15s",
+      "counts": {
+        "passed": 3
+      }
+    },
+    {
+      "chapter": 6,
+      "name": "sim2real",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter6/rgb-sim2real-grasping",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_validator.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.758,
+      "checked_at": "2026-10-25T00:22:06.570892+00:00",
+      "log": "sim2real.txt",
+      "pytest_summary": "2 passed in 0.07s",
+      "counts": {
+        "passed": 2
+      }
+    },
+    {
+      "chapter": 6,
+      "name": "speech",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter6/end-to-end-speech",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "tests/test_demo.py",
+        "tests/test_speech_model.py",
+        "tests/test_validate_evidence.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.736,
+      "checked_at": "2026-10-25T00:18:59.012021+00:00",
+      "log": "speech.txt",
+      "pytest_summary": "7 passed in 0.17s",
+      "counts": {
+        "passed": 7
+      }
+    },
+    {
+      "chapter": 6,
+      "name": "steering",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter6/astra-async-steering",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_judging.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.765,
+      "checked_at": "2026-10-25T00:18:56.787596+00:00",
+      "log": "steering.txt",
+      "pytest_summary": "10 passed, 5 subtests passed in 0.17s",
+      "counts": {
+        "passed": 10
+      }
+    },
+    {
+      "chapter": 6,
+      "name": "streaming",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter6/streaming-speech",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_official_experiment.py",
+        "test_streaming.py",
+        "test_whisper_baseline.py"
+      ],
+      "status": "failed",
+      "returncode": 1,
+      "duration_seconds": 0.986,
+      "checked_at": "2026-10-25T00:37:43.069657+00:00",
+      "log": "streaming.txt",
+      "pytest_summary": "1 failed, 6 passed in 0.40s",
+      "counts": {
+        "failed": 1,
+        "passed": 6
+      }
+    },
+    {
+      "chapter": 6,
+      "name": "teleop",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter6/xlerobot-teleoperation",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_validator.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 3.475,
+      "checked_at": "2026-10-25T00:34:01.483003+00:00",
+      "log": "teleop.txt",
+      "pytest_summary": "3 passed in 2.79s",
+      "counts": {
+        "passed": 3
+      }
+    },
+    {
+      "chapter": 6,
+      "name": "tts",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter6/controllable-tts",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_fish_s1.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.988,
+      "checked_at": "2026-10-25T00:19:01.343020+00:00",
+      "log": "tts.txt",
+      "pytest_summary": "8 passed in 2.45s",
+      "counts": {
+        "passed": 8
+      }
+    }
+  ]
+}

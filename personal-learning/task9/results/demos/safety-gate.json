@@ -1,0 +1,14 @@
+{
+  "name": "safety-gate",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "run_experiment_9_7.py",
+    "--quick"
+  ],
+  "cwd": "chapter9/harness-safety-gate",
+  "returncode": 0,
+  "seconds": 0.135,
+  "log": "safety-gate.txt"
+}

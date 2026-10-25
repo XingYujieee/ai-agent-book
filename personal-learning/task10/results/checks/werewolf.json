@@ -1,0 +1,22 @@
+{
+  "chapter": 10,
+  "name": "werewolf",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter10/voice-werewolf",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_simultaneous_deaths_consensus.py",
+    "test_witch_killed_no_poison.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.741,
+  "checked_at": "2026-10-25T00:19:18.499716+00:00",
+  "log": "werewolf.txt"
+}

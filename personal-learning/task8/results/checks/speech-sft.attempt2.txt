@@ -1,0 +1,165 @@
+FFFF                                                                     [100%]
+================================== FAILURES ===================================
+___________________ test_sesame_tag_categories_are_explicit ___________________
+
+    def test_sesame_tag_categories_are_explicit():
+>       sesame = load("run_sesame")
+                 ^^^^^^^^^^^^^^^^^^
+
+test_experiment.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_experiment.py:13: in load
+    spec.loader.exec_module(module)
+<frozen importlib._bootstrap_external>:1027: in exec_module
+    ???
+<frozen importlib._bootstrap>:488: in _call_with_frames_removed
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    #!/usr/bin/env python3
+    """Run the Sesame CSM paralinguistic-tag half of Experiment 8-6."""
+    
+    from __future__ import annotations
+    
+    import argparse
+    import hashlib
+    import json
+    import os
+    import random
+    import re
+    import shutil
+    import tempfile
+    import time
+    from pathlib import Path
+    
+    import numpy as np
+    import soundfile as sf
+    import torch
+>   from datasets import Audio, load_dataset
+E   ModuleNotFoundError: No module named 'datasets'
+
+run_sesame.py:20: ModuleNotFoundError
+__________________ test_orpheus_collator_masks_label_padding __________________
+
+    def test_orpheus_collator_masks_label_padding():
+>       orpheus = load("run_orpheus")
+                  ^^^^^^^^^^^^^^^^^^^
+
+test_experiment.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_experiment.py:13: in load
+    spec.loader.exec_module(module)
+<frozen importlib._bootstrap_external>:1027: in exec_module
+    ???
+<frozen importlib._bootstrap>:488: in _call_with_frames_removed
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    #!/usr/bin/env python3
+    """Run the Orpheus half of Experiment 8-6 on one local CUDA GPU.
+    
+    The campaign deliberately keeps a held-out split and emits base/adapted audio
+    for identical prompts and seeds.  It is bounded for a workstation, but it is
+    not a one-batch smoke test: the default run encodes 144 real utterances and
+    performs 60 optimizer updates with effective batch size four.
+    """
+    
+    from __future__ import annotations
+    
+    import argparse
+    import hashlib
+    import json
+    import os
+    import random
+    import time
+    from pathlib import Path
+    
+    import numpy as np
+    import soundfile as sf
+    import torch
+>   import torchaudio.functional as AF
+E   ModuleNotFoundError: No module named 'torchaudio'
+
+run_orpheus.py:23: ModuleNotFoundError
+________________ test_sesame_collator_stacks_all_model_inputs _________________
+
+    def test_sesame_collator_stacks_all_model_inputs():
+>       sesame = load("run_sesame")
+                 ^^^^^^^^^^^^^^^^^^
+
+test_experiment.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_experiment.py:13: in load
+    spec.loader.exec_module(module)
+<frozen importlib._bootstrap_external>:1027: in exec_module
+    ???
+<frozen importlib._bootstrap>:488: in _call_with_frames_removed
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    #!/usr/bin/env python3
+    """Run the Sesame CSM paralinguistic-tag half of Experiment 8-6."""
+    
+    from __future__ import annotations
+    
+    import argparse
+    import hashlib
+    import json
+    import os
+    import random
+    import re
+    import shutil
+    import tempfile
+    import time
+    from pathlib import Path
+    
+    import numpy as np
+    import soundfile as sf
+    import torch
+>   from datasets import Audio, load_dataset
+E   ModuleNotFoundError: No module named 'datasets'
+
+run_sesame.py:20: ModuleNotFoundError
+____________________________ test_sha256_is_stable ____________________________
+
+tmp_path = WindowsPath('C:/Users/21931/AppData/Local/Temp/pytest-of-21931/pytest-35/test_sha256_is_stable0')
+
+    def test_sha256_is_stable(tmp_path):
+>       analysis = load("analyze_campaign")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_experiment.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_experiment.py:13: in load
+    spec.loader.exec_module(module)
+<frozen importlib._bootstrap_external>:1027: in exec_module
+    ???
+<frozen importlib._bootstrap>:488: in _call_with_frames_removed
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    #!/usr/bin/env python3
+    """Build the strict, hash-verified acceptance package for Experiment 8-6."""
+    
+    from __future__ import annotations
+    
+    import argparse
+    import hashlib
+    import itertools
+    import json
+    from pathlib import Path
+    
+    import librosa
+    import numpy as np
+    import soundfile as sf
+    import torch
+>   from huggingface_hub import hf_hub_download
+E   ModuleNotFoundError: No module named 'huggingface_hub'
+
+analyze_campaign.py:16: ModuleNotFoundError
+=========================== short test summary info ===========================
+FAILED test_experiment.py::test_sesame_tag_categories_are_explicit - ModuleNo...
+FAILED test_experiment.py::test_orpheus_collator_masks_label_padding - Module...
+FAILED test_experiment.py::test_sesame_collator_stacks_all_model_inputs - Mod...
+FAILED test_experiment.py::test_sha256_is_stable - ModuleNotFoundError: No mo...
+4 failed in 2.38s

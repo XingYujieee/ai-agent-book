@@ -1,0 +1,74 @@
+.....FF...........                                                       [100%]
+================================== FAILURES ===================================
+_____________________ test_make_test_video_bare_filename ______________________
+
+    def test_make_test_video_bare_filename():
+        out_name = "test_temp_bare_video.mp4"
+        if os.path.exists(out_name):
+            os.remove(out_name)
+        try:
+>           path = make_test_video.make(out_name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_bare_output_filename.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+make_test_video.py:52: in make
+    run(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+cmd = ['ffmpeg', '-y', '-f', 'lavfi', '-i', 'color=c=0x1E6B3A:s=1280x720:d=15:r=30', ...]
+desc = '生成场景 HIKING'
+
+    def run(cmd, desc="ffmpeg 命令"):
+        """执行命令，失败时抛出带 stderr 尾部的异常。"""
+        proc = subprocess.run(cmd, capture_output=True, text=True)
+        if proc.returncode != 0:
+            tail = "\n".join(proc.stderr.strip().splitlines()[-8:])
+>           raise RuntimeError(f"{desc} 执行失败（exit={proc.returncode}）：\n{tail}")
+E           RuntimeError: 生成场景 HIKING 执行失败（exit=3221225477）：
+E             libswresample   6.  3.100 /  6.  3.100
+E           Input #0, lavfi, from 'color=c=0x1E6B3A:s=1280x720:d=15:r=30':
+E             Duration: N/A, start: 0.000000, bitrate: N/A
+E             Stream #0:0: Video: wrapped_avframe, yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 30 tbn
+E           Input #1, lavfi, from 'sine=frequency=220:duration=15':
+E             Duration: N/A, start: 0.000000, bitrate: 705 kb/s
+E             Stream #1:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s
+E           Fontconfig error: Cannot load default config file: No such file: (null)
+
+ffmpeg_utils.py:45: RuntimeError
+________________________ test_apply_edit_bare_filename ________________________
+
+    def test_apply_edit_bare_filename():
+        source = "test_source.mp4"
+>       make_test_video.make(source)
+
+test_bare_output_filename.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+make_test_video.py:52: in make
+    run(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+cmd = ['ffmpeg', '-y', '-f', 'lavfi', '-i', 'color=c=0x1E6B3A:s=1280x720:d=15:r=30', ...]
+desc = '生成场景 HIKING'
+
+    def run(cmd, desc="ffmpeg 命令"):
+        """执行命令，失败时抛出带 stderr 尾部的异常。"""
+        proc = subprocess.run(cmd, capture_output=True, text=True)
+        if proc.returncode != 0:
+            tail = "\n".join(proc.stderr.strip().splitlines()[-8:])
+>           raise RuntimeError(f"{desc} 执行失败（exit={proc.returncode}）：\n{tail}")
+E           RuntimeError: 生成场景 HIKING 执行失败（exit=3221225477）：
+E             libswresample   6.  3.100 /  6.  3.100
+E           Input #0, lavfi, from 'color=c=0x1E6B3A:s=1280x720:d=15:r=30':
+E             Duration: N/A, start: 0.000000, bitrate: N/A
+E             Stream #0:0: Video: wrapped_avframe, yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 30 tbn
+E           Input #1, lavfi, from 'sine=frequency=220:duration=15':
+E             Duration: N/A, start: 0.000000, bitrate: 705 kb/s
+E             Stream #1:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s
+E           Fontconfig error: Cannot load default config file: No such file: (null)
+
+ffmpeg_utils.py:45: RuntimeError
+=========================== short test summary info ===========================
+FAILED test_bare_output_filename.py::test_make_test_video_bare_filename - Run...
+FAILED test_bare_output_filename.py::test_apply_edit_bare_filename - RuntimeE...
+2 failed, 16 passed in 18.23s

@@ -1,0 +1,21 @@
+{
+  "chapter": 8,
+  "name": "quotes",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter8/curly-quote-sft",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "tests/test_curly_pipeline.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.806,
+  "checked_at": "2026-10-25T00:19:12.341787+00:00",
+  "log": "quotes.txt"
+}

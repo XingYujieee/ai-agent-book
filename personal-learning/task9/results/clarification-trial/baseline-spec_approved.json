@@ -1,0 +1,46 @@
+{
+  "arm": "baseline",
+  "case": "spec_approved",
+  "expected": "execute",
+  "action": "confirm_spec",
+  "correct": false,
+  "seconds": 0.111,
+  "request": {
+    "model": "qwen3:0.6b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是编程助手。判断当前下一步，只输出 JSON：{\"action\":\"ask|confirm_spec|execute\",\"reason\":\"简短原因\"}。不要实际执行任何工具。"
+      },
+      {
+        "role": "user",
+        "content": "我已确认你刚给的 Spec，所有范围与验收条件都清楚。现在按 Spec 实现。"
+      }
+    ],
+    "stream": false,
+    "think": false,
+    "format": "json",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_predict": 256
+    }
+  },
+  "response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-10-25T00:25:37.1220697Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"action\":\"confirm_spec\",\"reason\":\"所有范围与验收条件已确认，按 Spec 实现\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 109981600,
+    "load_duration": 6064700,
+    "prompt_eval_count": 79,
+    "prompt_eval_cached_count": 43,
+    "prompt_eval_duration": 11510000,
+    "eval_count": 22,
+    "eval_duration": 83565000
+  }
+}

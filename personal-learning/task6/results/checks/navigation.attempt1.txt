@@ -1,0 +1,25 @@
+.F.                                                                      [100%]
+================================== FAILURES ===================================
+____________ EvidenceGateTests.test_local_gpu_evidence_is_accepted ____________
+
+self = <test_validator.EvidenceGateTests testMethod=test_local_gpu_evidence_is_accepted>
+
+    def test_local_gpu_evidence_is_accepted(self):
+        run = Path(__file__).parent / "validation" / "runs" / "local-gpu" / "evidence.json"
+        if not run.is_file():
+            self.skipTest("run the local GPU experiment first")
+        data = json.loads(run.read_text(encoding="utf-8"))
+>       self.assertEqual(validate(data, run.parent), [])
+E       AssertionError: Lists differ: ['artifact[0] hash mismatch', 'artifact[1] hash mismatch'] != []
+E       
+E       First list contains 2 additional elements.
+E       First extra element 0:
+E       'artifact[0] hash mismatch'
+E       
+E       - ['artifact[0] hash mismatch', 'artifact[1] hash mismatch']
+E       + []
+
+test_validator.py:14: AssertionError
+=========================== short test summary info ===========================
+FAILED test_validator.py::EvidenceGateTests::test_local_gpu_evidence_is_accepted
+1 failed, 2 passed in 0.20s

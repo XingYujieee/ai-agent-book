@@ -1,0 +1,326 @@
+{
+  "schema_version": 2,
+  "experiment": "10-6",
+  "generated_at": "2026-10-25T08:24:41+0800",
+  "execution_mode": "offline",
+  "acceptance_path": false,
+  "end_to_end_status": "not_run",
+  "players": 7,
+  "user_players": [],
+  "human_players": [],
+  "simulated_user_players": [],
+  "human_role_randomized_to": null,
+  "simulated_user_role_randomized_to": null,
+  "role_counts": {
+    "狼人": 2,
+    "预言家": 1,
+    "女巫": 1,
+    "村民": 3
+  },
+  "completed_day_night_vote_cycles": 2,
+  "winner": "狼人阵营",
+  "information_isolation_pass": true,
+  "strategy_audit": null,
+  "strategy_audit_pass": false,
+  "action_history": [
+    {
+      "round": 1,
+      "phase": "night",
+      "actor": "P1",
+      "role": "狼人",
+      "action": "kill_proposal",
+      "target": "P5"
+    },
+    {
+      "round": 1,
+      "phase": "night",
+      "actor": "P6",
+      "role": "狼人",
+      "action": "kill_proposal",
+      "target": "P5"
+    },
+    {
+      "round": 1,
+      "phase": "night",
+      "actor": "P4",
+      "role": "预言家",
+      "action": "inspect",
+      "target": "P7",
+      "result": "好人"
+    },
+    {
+      "round": 1,
+      "phase": "night",
+      "actor": "P2",
+      "role": "女巫",
+      "action": "heal",
+      "target": "P5"
+    },
+    {
+      "round": 1,
+      "phase": "day",
+      "actor": "P1",
+      "role": "狼人",
+      "action": "speech",
+      "text": "我是好人，从发言看 P7 有点可疑，建议重点关注他。"
+    },
+    {
+      "round": 1,
+      "phase": "day",
+      "actor": "P2",
+      "role": "女巫",
+      "action": "speech",
+      "text": "我暂时观望，觉得 P7 的发言站不住脚，先留意一下。"
+    },
+    {
+      "round": 1,
+      "phase": "day",
+      "actor": "P3",
+      "role": "村民",
+      "action": "speech",
+      "text": "我是村民，没有夜间信息，只能靠推理，感觉 P7 稍微可疑。"
+    },
+    {
+      "round": 1,
+      "phase": "day",
+      "actor": "P4",
+      "role": "预言家",
+      "action": "speech",
+      "text": "我还没有决定性的信息，先听大家发言，谨慎投票。"
+    },
+    {
+      "round": 1,
+      "phase": "day",
+      "actor": "P5",
+      "role": "村民",
+      "action": "speech",
+      "text": "我是村民，没有夜间信息，只能靠推理，感觉 P1 稍微可疑。"
+    },
+    {
+      "round": 1,
+      "phase": "day",
+      "actor": "P6",
+      "role": "狼人",
+      "action": "speech",
+      "text": "我是好人，从发言看 P1 有点可疑，建议重点关注他。"
+    },
+    {
+      "round": 1,
+      "phase": "day",
+      "actor": "P7",
+      "role": "村民",
+      "action": "speech",
+      "text": "我是村民，没有夜间信息，只能靠推理，感觉 P1 稍微可疑。"
+    },
+    {
+      "round": 1,
+      "phase": "vote",
+      "actor": "P1",
+      "role": "狼人",
+      "action": "vote",
+      "target": "P7"
+    },
+    {
+      "round": 1,
+      "phase": "vote",
+      "actor": "P2",
+      "role": "女巫",
+      "action": "vote",
+      "target": "P4"
+    },
+    {
+      "round": 1,
+      "phase": "vote",
+      "actor": "P3",
+      "role": "村民",
+      "action": "vote",
+      "target": "P2"
+    },
+    {
+      "round": 1,
+      "phase": "vote",
+      "actor": "P4",
+      "role": "预言家",
+      "action": "vote",
+      "target": "P2"
+    },
+    {
+      "round": 1,
+      "phase": "vote",
+      "actor": "P5",
+      "role": "村民",
+      "action": "vote",
+      "target": "P1"
+    },
+    {
+      "round": 1,
+      "phase": "vote",
+      "actor": "P6",
+      "role": "狼人",
+      "action": "vote",
+      "target": "P7"
+    },
+    {
+      "round": 1,
+      "phase": "vote",
+      "actor": "P7",
+      "role": "村民",
+      "action": "vote",
+      "target": "P2"
+    },
+    {
+      "round": 2,
+      "phase": "night",
+      "actor": "P1",
+      "role": "狼人",
+      "action": "kill_proposal",
+      "target": "P7"
+    },
+    {
+      "round": 2,
+      "phase": "night",
+      "actor": "P6",
+      "role": "狼人",
+      "action": "kill_proposal",
+      "target": "P7"
+    },
+    {
+      "round": 2,
+      "phase": "night",
+      "actor": "P4",
+      "role": "预言家",
+      "action": "inspect",
+      "target": "P5",
+      "result": "好人"
+    },
+    {
+      "round": 2,
+      "phase": "day",
+      "actor": "P1",
+      "role": "狼人",
+      "action": "speech",
+      "text": "我是好人，从发言看 P7 有点可疑，建议重点关注他。"
+    },
+    {
+      "round": 2,
+      "phase": "day",
+      "actor": "P3",
+      "role": "村民",
+      "action": "speech",
+      "text": "我是村民，没有夜间信息，只能靠推理，感觉 P2 稍微可疑。"
+    },
+    {
+      "round": 2,
+      "phase": "day",
+      "actor": "P4",
+      "role": "预言家",
+      "action": "speech",
+      "text": "我还没有决定性的信息，先听大家发言，谨慎投票。"
+    },
+    {
+      "round": 2,
+      "phase": "day",
+      "actor": "P5",
+      "role": "村民",
+      "action": "speech",
+      "text": "我是村民，没有夜间信息，只能靠推理，感觉 P4 稍微可疑。"
+    },
+    {
+      "round": 2,
+      "phase": "day",
+      "actor": "P6",
+      "role": "狼人",
+      "action": "speech",
+      "text": "我是好人，从发言看 P7 有点可疑，建议重点关注他。"
+    },
+    {
+      "round": 2,
+      "phase": "vote",
+      "actor": "P1",
+      "role": "狼人",
+      "action": "vote",
+      "target": "P4"
+    },
+    {
+      "round": 2,
+      "phase": "vote",
+      "actor": "P3",
+      "role": "村民",
+      "action": "vote",
+      "target": "P5"
+    },
+    {
+      "round": 2,
+      "phase": "vote",
+      "actor": "P4",
+      "role": "预言家",
+      "action": "vote",
+      "target": "P3"
+    },
+    {
+      "round": 2,
+      "phase": "vote",
+      "actor": "P5",
+      "role": "村民",
+      "action": "vote",
+      "target": "P3"
+    },
+    {
+      "round": 2,
+      "phase": "vote",
+      "actor": "P6",
+      "role": "狼人",
+      "action": "vote",
+      "target": "P5"
+    }
+  ],
+  "voice_events": [],
+  "voice_has_asr": false,
+  "voice_has_tts": false,
+  "simulator_llm_tool_calls": 0,
+  "simulator_audio_roundtrips": 0,
+  "barge_in_events": 0,
+  "gates": {
+    "exact_6_to_8_player_role_roster": {
+      "status": "pass"
+    },
+    "one_user_seat": {
+      "status": "not_run"
+    },
+    "one_authorized_human_participant": {
+      "status": "not_run"
+    },
+    "one_llm_user_simulator": {
+      "status": "not_run"
+    },
+    "real_user_input_asr": {
+      "status": "not_run"
+    },
+    "real_ai_and_judge_tts": {
+      "status": "not_run"
+    },
+    "llm_tool_to_audio_to_asr_boundary": {
+      "status": "not_run",
+      "tool_calls": 0,
+      "audio_roundtrips": 0,
+      "unique_provider_receipts": false,
+      "audio_token_receipt_required": false,
+      "nonzero_audio_token_receipts": true,
+      "transaction_integrity": false
+    },
+    "three_complete_cycles": {
+      "status": "supplemental_only",
+      "observed": 2
+    },
+    "information_isolation": {
+      "status": "pass"
+    },
+    "real_llm_strategy_acceptance": {
+      "status": "not_run"
+    },
+    "winner_determined_by_game_rule": {
+      "status": "pass"
+    }
+  },
+  "overall_status": "supplemental_only"
+}

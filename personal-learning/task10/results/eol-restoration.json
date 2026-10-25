@@ -1,0 +1,125 @@
+{
+  "reason": "Windows checkout CRLF conversion only",
+  "files": [
+    {
+      "path": "chapter10/autonomous-phone-registration/README.md",
+      "git_sha256": "7aecddf1d1223101ae10149d01d08dcc595b56b0ee7c87cbb9974dd452e2e851"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/browser.py",
+      "git_sha256": "66768575e96e76c745c9d470bbad24c98e47a8a321e9e908cc6ba67df795fd97"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/bus.py",
+      "git_sha256": "d5ae473831426b4cd5c9f746f8f9c24f7e1f08f3d61173430d5bb582f92af1de"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/decision.py",
+      "git_sha256": "64e68c5a7c77d9404fcb451fbd8325f29d0b4ab58fedcfb0c4700653ee53c913"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/demo.py",
+      "git_sha256": "d491b0a8f5de02fa7da44f382005a108d9f252b864b57fc189ff0b6608ddd826"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/models.py",
+      "git_sha256": "1f28ed0b6edfbcde68146ba68f183cc0a3a9ce6aa64a3220026453628eb97f1d"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/orchestration.py",
+      "git_sha256": "0e2e3eadcd5158e9ac4faea7bb5179f53f56ca84ed7956d31f023b397619e58e"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/requirements.txt",
+      "git_sha256": "e519d52eea1590cf1f639f7e0971e4d5cd8f9d7aeb516b1c7f429a716611ac7e"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/run_acceptance.py",
+      "git_sha256": "867b4b9b5f7ca6201517fbe4b2165d2946e322fe1cd8bbe0a2bd6a08cf22be0b"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/test_exp103_validation_evidence.py",
+      "git_sha256": "75771def83de579bf0ca0ba876ed9fb7583f7eb2cc38ae4f11903ea4e2639f84"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/test_orchestration.py",
+      "git_sha256": "eba412ceb2d82790d29577c9a8970da5b4027dcae52bbc5dc8494a4e118d0f0f"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/test_validate_acceptance.py",
+      "git_sha256": "add65c2e63e14fca3ea716f953e83752c812a01234396c75f14f4080396c5ece"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/test_webrtc_channel.py",
+      "git_sha256": "0f91a6684aad0afd32cd0cd45620182f7a27657ae9b476d27d54d5737897bd6f"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/twilio_channel.py",
+      "git_sha256": "a1af122a02016e345a29d8078ea01d1135ea430cdcffe5819616c4323917709c"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validate_acceptance.py",
+      "git_sha256": "4a89fc84407fd4813459872f973411fcc2beb871ba1fe7553e22d5e8ce2dc85f"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/message_timeline_2026-07-29.json",
+      "git_sha256": "740b0a50ea7ac69f8876a903069a545c69ede2a1c95bd99ebefa4c3915583c75"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/real_browser_llm_2026-07-29.json",
+      "git_sha256": "2c9e507d60dd47adf58f007790e2bab52d2f97c68adc25fc457489a321fc6db1"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/real_browser_llm_recheck_2026-07-29.json",
+      "git_sha256": "b646cfb8b3be3230af3cbce3d3dae67e561b58de120bcee8f6878430bc8ecf07"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/runs/exp10-3-webrtc-raw-20260731-v4/acceptance_report.json",
+      "git_sha256": "78adfb166ecf10736dcf69afdaacca52356f266d2b95e83a1a7c364106222b38"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/runs/exp10-3-webrtc-raw-20260731-v4/decision.json",
+      "git_sha256": "69ac3b412a0e5921f50b1b31c6e7678f71a77a7ed8275b0f773602fe8ab99baa"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/runs/exp10-3-webrtc-raw-20260731-v4/experiment_input.json",
+      "git_sha256": "49df4da2dcf86a24c31a8cb447e1c94b98bde908cdb95ce902a319ddc768b51d"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/runs/exp10-3-webrtc-raw-20260731-v4/form_submission_receipt.json",
+      "git_sha256": "d073943e7ebbe29f3945ac3597f5237a8e6258f842f872b0a926abe547d63f66"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/runs/exp10-3-webrtc-raw-20260731-v4/manifest.json",
+      "git_sha256": "496f212e2ddb8cfa68a8071f07832b9a8a2cbe9d9e0155d1d06c33c8f491a911"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/runs/exp10-3-webrtc-raw-20260731-v4/message_timeline.json",
+      "git_sha256": "3ad8d949458e1be0f8c632624c1fc7582621c624a45a2d72f4c2d1cc88852ca8"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/runs/exp10-3-webrtc-raw-20260731-v4/raw_decision_request.json",
+      "git_sha256": "893317a2f60dc41a0966af41355d4ccad1276f0c289aba7b5df1889582a76f23"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/runs/exp10-3-webrtc-raw-20260731-v4/raw_decision_response.json",
+      "git_sha256": "19d8efd662750b29129fe13dd69c6b64accd1ddf06d8a2ecdab50edb3d775e94"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/runs/exp10-3-webrtc-raw-20260731-v4/validation_report.json",
+      "git_sha256": "c9a02501d00f790f88c7d43ad699cdcc7a6aac72dd6dd5d1d695d4a092925724"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/validation/software_gates_2026-07-29.json",
+      "git_sha256": "3941d9a1885049dcc726494630416d6d01345117d162aa27abcdfbd8d0e361c2"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/voice.py",
+      "git_sha256": "5fb46942a38fa4a8aa338e8360dfb459a3b0b629ee07579f127cea6dd962d490"
+    },
+    {
+      "path": "chapter10/autonomous-phone-registration/webrtc_channel.py",
+      "git_sha256": "47835d12ba988f017647bf4e527696ef69ab867f7bd730f30904b5ed9369040f"
+    }
+  ]
+}

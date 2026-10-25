@@ -1,0 +1,13 @@
+{
+  "name": "rpa-replay",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "workflow_validation_demo.py"
+  ],
+  "cwd": "chapter9/browser-use-rpa",
+  "returncode": 0,
+  "seconds": 0.142,
+  "log": "rpa-replay.txt"
+}

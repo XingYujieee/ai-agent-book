@@ -1,0 +1,23 @@
+{
+  "chapter": 9,
+  "name": "evolution",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter9/self-evolution-eval",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_campaign_statistics.py",
+    "test_longitudinal.py",
+    "test_null_rubric_dimension.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.756,
+  "checked_at": "2026-10-25T00:19:15.480283+00:00",
+  "log": "evolution.txt"
+}

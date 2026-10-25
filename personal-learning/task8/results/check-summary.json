@@ -1,0 +1,167 @@
+{
+  "jobs": 6,
+  "passed_jobs": 6,
+  "pytest_counts": {
+    "passed": 66
+  },
+  "rows": [
+    {
+      "chapter": 8,
+      "name": "copy",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter8/exact-copy-sft",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "tests/test_copy_pipeline.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.795,
+      "checked_at": "2026-10-25T00:19:12.333145+00:00",
+      "log": "copy.txt",
+      "pytest_summary": "7 passed in 0.15s",
+      "counts": {
+        "passed": 7
+      }
+    },
+    {
+      "chapter": 8,
+      "name": "cot",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter8/cot-distillation",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_analyze_null_assistant_content.py",
+        "test_analyze_short_messages.py",
+        "test_empty_problems.py",
+        "test_load_verified_messages_colon.py",
+        "test_student_pipeline.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.917,
+      "checked_at": "2026-10-25T00:19:11.537263+00:00",
+      "log": "cot.txt",
+      "pytest_summary": "14 passed in 2.14s",
+      "counts": {
+        "passed": 14
+      }
+    },
+    {
+      "chapter": 8,
+      "name": "dpo",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter8/premature-completion-dpo",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_pipeline.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 1.251,
+      "checked_at": "2026-10-25T00:19:11.534045+00:00",
+      "log": "dpo.txt",
+      "pytest_summary": "21 passed in 0.47s",
+      "counts": {
+        "passed": 21
+      }
+    },
+    {
+      "chapter": 8,
+      "name": "prompt-distillation",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter8/prompt-distillation",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_compare_empty.py",
+        "test_create_data_empty.py",
+        "test_evaluate_empty_parse_rate.py",
+        "test_evaluate_none_pred_label.py",
+        "test_experiment_8_8.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.731,
+      "checked_at": "2026-10-25T00:19:08.618551+00:00",
+      "log": "prompt-distillation.txt",
+      "pytest_summary": "13 passed in 0.23s",
+      "counts": {
+        "passed": 13
+      }
+    },
+    {
+      "chapter": 8,
+      "name": "quotes",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter8/curly-quote-sft",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "tests/test_curly_pipeline.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.806,
+      "checked_at": "2026-10-25T00:19:12.341787+00:00",
+      "log": "quotes.txt",
+      "pytest_summary": "7 passed in 0.16s",
+      "counts": {
+        "passed": 7
+      }
+    },
+    {
+      "chapter": 8,
+      "name": "speech-sft",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter8/speech-sft-experiment",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_experiment.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.817,
+      "checked_at": "2026-10-25T00:39:05.273373+00:00",
+      "log": "speech-sft.txt",
+      "pytest_summary": "4 passed in 1.92s",
+      "counts": {
+        "passed": 4
+      }
+    }
+  ]
+}

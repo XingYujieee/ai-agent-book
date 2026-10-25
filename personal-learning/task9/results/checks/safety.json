@@ -1,0 +1,22 @@
+{
+  "chapter": 9,
+  "name": "safety",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter9/harness-safety-gate",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_evolution.py",
+    "test_safety_policy_gate.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.808,
+  "checked_at": "2026-10-25T00:22:08.183782+00:00",
+  "log": "safety.txt"
+}

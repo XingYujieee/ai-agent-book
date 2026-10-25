@@ -1,0 +1,16 @@
+
+=================================== ERRORS ====================================
+_____ ERROR collecting chapter8/speech-sft-experiment/test_experiment.py ______
+ImportError while importing test module 'C:\Users\21931\Documents\ChatGPT\AI Agent\ai-agent-book\chapter8\speech-sft-experiment\test_experiment.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\21931\anaconda3\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test_experiment.py:4: in <module>
+    import torch
+E   ModuleNotFoundError: No module named 'torch'
+=========================== short test summary info ===========================
+ERROR test_experiment.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.15s

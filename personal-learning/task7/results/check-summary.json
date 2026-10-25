@@ -1,0 +1,238 @@
+{
+  "jobs": 9,
+  "passed_jobs": 9,
+  "pytest_counts": {
+    "passed": 87
+  },
+  "rows": [
+    {
+      "chapter": 7,
+      "name": "action",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter7/model-action-threshold",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "tests/test_experiment.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 1.159,
+      "checked_at": "2026-10-25T00:19:06.417650+00:00",
+      "log": "action.txt",
+      "pytest_summary": "6 passed in 0.55s",
+      "counts": {
+        "passed": 6
+      }
+    },
+    {
+      "chapter": 7,
+      "name": "android",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter7/android-world",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_experiment.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.684,
+      "checked_at": "2026-10-25T00:19:07.884516+00:00",
+      "log": "android.txt",
+      "pytest_summary": "19 passed in 0.13s",
+      "counts": {
+        "passed": 19
+      }
+    },
+    {
+      "chapter": 7,
+      "name": "benchmark",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter7/model-benchmark",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_campaign.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 7.169,
+      "checked_at": "2026-10-25T00:19:12.225059+00:00",
+      "log": "benchmark.txt",
+      "pytest_summary": "15 passed in 6.17s",
+      "counts": {
+        "passed": 15
+      }
+    },
+    {
+      "chapter": 7,
+      "name": "cost",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter7/agent-cost-analysis",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "tests/test_chat_null_usage.py",
+        "tests/test_trace_offline.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.631,
+      "checked_at": "2026-10-25T00:19:05.054857+00:00",
+      "log": "cost.txt",
+      "pytest_summary": "8 passed in 0.12s",
+      "counts": {
+        "passed": 8
+      }
+    },
+    {
+      "chapter": 7,
+      "name": "elo",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter7/elo-leaderboard",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "tests/test_analyze_empty_history.py",
+        "tests/test_animation_empty_history.py",
+        "tests/test_animation_tie_wins.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.463,
+      "checked_at": "2026-10-25T00:34:56.176812+00:00",
+      "log": "elo.txt",
+      "pytest_summary": "6 passed in 1.81s",
+      "counts": {
+        "passed": 6
+      }
+    },
+    {
+      "chapter": 7,
+      "name": "policy",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter7/user-memory-policy-eval",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_runner.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.563,
+      "checked_at": "2026-10-25T00:22:08.584539+00:00",
+      "log": "policy.txt",
+      "pytest_summary": "4 passed in 1.74s",
+      "counts": {
+        "passed": 4
+      }
+    },
+    {
+      "chapter": 7,
+      "name": "robot-eval",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter7/openvla-robotwin2-eval",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_experiment.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.782,
+      "checked_at": "2026-10-25T00:22:07.364892+00:00",
+      "log": "robot-eval.txt",
+      "pytest_summary": "6 passed in 0.08s",
+      "counts": {
+        "passed": 6
+      }
+    },
+    {
+      "chapter": 7,
+      "name": "rubric",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter7/user-memory-system-evaluation",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_experiment.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 8.631,
+      "checked_at": "2026-10-25T00:19:10.281946+00:00",
+      "log": "rubric.txt",
+      "pytest_summary": "13 passed in 7.85s",
+      "counts": {
+        "passed": 13
+      }
+    },
+    {
+      "chapter": 7,
+      "name": "tts-judge",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter7/tts-quality-eval",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "tests/test_judge_robustness.py",
+        "tests/test_resolve_gemini_model_null.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.724,
+      "checked_at": "2026-10-25T00:34:56.438576+00:00",
+      "log": "tts-judge.txt",
+      "pytest_summary": "10 passed in 2.03s",
+      "counts": {
+        "passed": 10
+      }
+    }
+  ]
+}

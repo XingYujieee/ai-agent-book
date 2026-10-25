@@ -1,0 +1,21 @@
+{
+  "chapter": 7,
+  "name": "benchmark",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter7/model-benchmark",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_campaign.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 7.169,
+  "checked_at": "2026-10-25T00:19:12.225059+00:00",
+  "log": "benchmark.txt"
+}

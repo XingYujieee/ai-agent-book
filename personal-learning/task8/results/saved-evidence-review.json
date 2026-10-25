@@ -1,0 +1,765 @@
+{
+  "baseline_ref": "faa6db95",
+  "scope": "Historical Git blobs only; at most 40 declared artifacts per evidence file, no live API reproduction.",
+  "experiments": 19,
+  "evidence_files_present": 12,
+  "rows": [
+    {
+      "experiment": "8-1",
+      "title": "Q-learning 在寻宝游戏中的表现",
+      "ledger_row": "| 8-1 | 10,000-episode Q-learning curve and 100-episode greedy evaluation in the treasure environment | Cross-chapter [`learning-from-experience`](../chapter1/learning-from-experience/) evidence contains the deterministic Q-learning arm and completion gates. | **Complete** |",
+      "evidence": "chapter1/learning-from-experience/validation/20260730_011704/evidence.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "a7adde4ac54b77f951f3cec270a8b7b89b2de372e66d3a3a66c3ae6f4e29dcdc",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 11,
+      "sample_checks": [
+        {
+          "declared_path": "execution_manifest.json",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/execution_manifest.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "experiment.py",
+          "resolved_path": "chapter1/learning-from-experience/experiment.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "experiment_results.json",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/experiment_results.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "finalize_experiment_7_2.py",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/finalize_experiment_7_2.py",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "game_environment.py",
+          "resolved_path": "chapter1/learning-from-experience/game_environment.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "llm_agent.py",
+          "resolved_path": "chapter1/learning-from-experience/llm_agent.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "llm_experiences.json",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/llm_experiences.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "rl_agent.pkl",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/rl_agent.pkl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "rl_agent.py",
+          "resolved_path": "chapter1/learning-from-experience/rl_agent.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "run_experiment_7_2.py",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/run_experiment_7_2.py",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "run_experiment_7_2.py",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/run_experiment_7_2.py",
+          "in_git": false,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "8-2",
+      "title": "传统 RL 与 LLM Agent 的对比研究",
+      "ledger_row": "| 8-2 | Same environment comparison with Kimi K3, including the first successful trajectory and no fallback | [`validation/20260730_011704/evidence.json`](../chapter1/learning-from-experience/validation/20260730_011704/evidence.json) retains 17/17 raw API receipts and the first-game trajectory. | **Complete** |",
+      "evidence": "chapter1/learning-from-experience/validation/20260730_011704/evidence.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "a7adde4ac54b77f951f3cec270a8b7b89b2de372e66d3a3a66c3ae6f4e29dcdc",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 11,
+      "sample_checks": [
+        {
+          "declared_path": "execution_manifest.json",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/execution_manifest.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "experiment.py",
+          "resolved_path": "chapter1/learning-from-experience/experiment.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "experiment_results.json",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/experiment_results.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "finalize_experiment_7_2.py",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/finalize_experiment_7_2.py",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "game_environment.py",
+          "resolved_path": "chapter1/learning-from-experience/game_environment.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "llm_agent.py",
+          "resolved_path": "chapter1/learning-from-experience/llm_agent.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "llm_experiences.json",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/llm_experiences.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "rl_agent.pkl",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/rl_agent.pkl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "rl_agent.py",
+          "resolved_path": "chapter1/learning-from-experience/rl_agent.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "run_experiment_7_2.py",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/run_experiment_7_2.py",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "run_experiment_7_2.py",
+          "resolved_path": "chapter1/learning-from-experience/validation/20260730_011704/run_experiment_7_2.py",
+          "in_git": false,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "8-3",
+      "title": "从头训练 LLM——算法改进的威力",
+      "ledger_row": "| 8-3 | Train 100M MiniMind through pretrain, SFT, and preference optimization; compare QK Norm + Muon | [`exp8-3-training-report-20260731-v1`](MiniMind-pretrain/validation/runs/exp8-3-training-report-20260731-v1/manifest.json) hashes all 49 historical outputs across the six arm/stage cells and eight preregistered arm-blind ARK judgments with raw requests/responses, unique IDs, usage, and latency. The independent audit scored QK-Norm + Muon 3.6250 versus original 2.0417 overall (+1.5833; 7 wins, 1 tie). The report freezes the exact MiniMind source revision and relevant source-file hashes, a dataset revision with all three Git-LFS hashes/sizes, the book environment lock, and six future reproduction commands. Historical source/data/checkpoint identities and stepwise loss logs were not retained, so the 36-vs-12-step and 2.0-vs-1.7 loss observations remain explicitly qualified historical claims. Checkpoints are intentionally local and are not acceptance artifacts. | **Complete evidence-backed training report** |",
+      "evidence": "chapter8/MiniMind-pretrain/validation/runs/exp8-3-training-report-20260731-v1/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "2b99fb95727eba2d71cd1bf7e8a25585856efe0e61a7f02d3ff1bf07751fb9a3",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "passed"
+      },
+      "declared_hash_entries": 10,
+      "sample_checks": [
+        {
+          "declared_path": "chapter8/MiniMind-pretrain/README.md",
+          "resolved_path": "chapter8/MiniMind-pretrain/README.md",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter8/MiniMind-pretrain/validation/run_training_report_audit.py",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/run_training_report_audit.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter8/MiniMind-pretrain/validation/validate_evidence.py",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/validate_evidence.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "judge_receipts.json",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/runs/exp8-3-training-report-20260731-v1/judge_receipts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "pyproject.toml",
+          "resolved_path": "pyproject.toml",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "report.md",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/runs/exp8-3-training-report-20260731-v1/report.md",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reproduction_contract.json",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/runs/exp8-3-training-report-20260731-v1/reproduction_contract.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "retained_outputs.json",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/runs/exp8-3-training-report-20260731-v1/retained_outputs.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "summary.json",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/runs/exp8-3-training-report-20260731-v1/summary.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "uv.lock",
+          "resolved_path": "uv.lock",
+          "in_git": true,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "8-4",
+      "title": "自己训练 VLM",
+      "ledger_row": "| 8-4 | Train VLM projection alignment then SFT and evaluate vision-language outputs | [`exp8-4-training-report-20260731-v1`](MiniMind-pretrain/validation/runs/exp8-4-training-report-20260731-v1/manifest.json) hashes all 64 historical outputs from eight configurations × eight images, embeds the exact eight hash-pinned evaluation images in eight anonymous image-aware ARK judge requests, and retains raw responses, unique IDs, usage, latency, source/data/CLIP pins, future commands, and provenance limits. The judge ranked original/SFT highest at 1.9062; the matched SFT-base QK-Norm+Muon comparisons were lower by 0.1876 after projection training and 0.6250 after full VLM SFT, so the book's optimizer-advantage claim is not forced. Historical revisions/checkpoints were not retained; checkpoints intentionally remain local and are not acceptance artifacts. | **Complete evidence-backed training report** |",
+      "evidence": "chapter8/MiniMind-pretrain/validation/runs/exp8-4-training-report-20260731-v1/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "f984d549d8172528516d91800871df3dcd6b67f61729314b1371aa8022fabbf0",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "passed"
+      },
+      "declared_hash_entries": 11,
+      "sample_checks": [
+        {
+          "declared_path": "chapter8/MiniMind-pretrain/README.md",
+          "resolved_path": "chapter8/MiniMind-pretrain/README.md",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter8/MiniMind-pretrain/validation/run_vlm_training_report_audit.py",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/run_vlm_training_report_audit.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter8/MiniMind-pretrain/validation/test_vlm_training_report_audit.py",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/test_vlm_training_report_audit.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter8/MiniMind-pretrain/validation/validate_vlm_evidence.py",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/validate_vlm_evidence.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "judge_receipts.json",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/runs/exp8-4-training-report-20260731-v1/judge_receipts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "pyproject.toml",
+          "resolved_path": "pyproject.toml",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "report.md",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/runs/exp8-4-training-report-20260731-v1/report.md",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reproduction_contract.json",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/runs/exp8-4-training-report-20260731-v1/reproduction_contract.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "retained_outputs.json",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/runs/exp8-4-training-report-20260731-v1/retained_outputs.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "summary.json",
+          "resolved_path": "chapter8/MiniMind-pretrain/validation/runs/exp8-4-training-report-20260731-v1/summary.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "uv.lock",
+          "resolved_path": "uv.lock",
+          "in_git": true,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "8-5",
+      "title": "继续预训练学习新语言",
+      "ledger_row": "| 8-5 | Korean continued pretraining plus Korean instruction SFT, with Korean gain and English holdout comparison | [`exp8-5-training-report-20260731-v1`](continued-pretraining/validation/runs/exp8-5-training-report-20260731-v1/manifest.json) hashes the historical RTX-4090 report, current training/evaluation sources, all 15 retained outputs, five stage-blind ARK judgments with raw response IDs/usage/latency, and an immutable future reproduction contract. Final-minus-baseline Korean mean was +1.7777; English fell 0.8333 within the declared 1.0 tolerance; the materially false kimchi answer is explicit. Historical upstream revisions/seeds were not retained and current pins are not misrepresented as historical. Checkpoints are intentionally local and are not acceptance artifacts. | **Complete evidence-backed training report** |",
+      "evidence": "chapter8/continued-pretraining/validation/runs/exp8-5-training-report-20260731-v1/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "89d180e515fc664d3c52e057ad72f16fef82a455439e53a7ef9e3d16273e5819",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "passed"
+      },
+      "declared_hash_entries": 11,
+      "sample_checks": [
+        {
+          "declared_path": "chapter8/continued-pretraining/compare_models.py",
+          "resolved_path": "chapter8/continued-pretraining/compare_models.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter8/continued-pretraining/continued-pretrain.py",
+          "resolved_path": "chapter8/continued-pretraining/continued-pretrain.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter8/continued-pretraining/evaluate_model.py",
+          "resolved_path": "chapter8/continued-pretraining/evaluate_model.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter8/continued-pretraining/model_eval_results.md",
+          "resolved_path": "chapter8/continued-pretraining/model_eval_results.md",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter8/continued-pretraining/validation/run_report_audit.py",
+          "resolved_path": "chapter8/continued-pretraining/validation/run_report_audit.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter8/continued-pretraining/validation/validate_evidence.py",
+          "resolved_path": "chapter8/continued-pretraining/validation/validate_evidence.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "judge_receipts.json",
+          "resolved_path": "chapter8/continued-pretraining/validation/runs/exp8-5-training-report-20260731-v1/judge_receipts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "report.md",
+          "resolved_path": "chapter8/continued-pretraining/validation/runs/exp8-5-training-report-20260731-v1/report.md",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "reproduction_contract.json",
+          "resolved_path": "chapter8/continued-pretraining/validation/runs/exp8-5-training-report-20260731-v1/reproduction_contract.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "retained_outputs.json",
+          "resolved_path": "chapter8/continued-pretraining/validation/runs/exp8-5-training-report-20260731-v1/retained_outputs.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "summary.json",
+          "resolved_path": "chapter8/continued-pretraining/validation/runs/exp8-5-training-report-20260731-v1/summary.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "8-6",
+      "title": "语音 SFT——从 “声音复制” 到 “副语言建模” `[扩展实验]`",
+      "ledger_row": "| 8-6 | Train/evaluate Orpheus cross-sentence voice consistency and Sesame paralinguistic tags, including failure comparisons | Completed local RTX PRO 6000 campaign: both LoRAs received 60 optimizer updates on substantive real-speech subsets with held-out loss evaluation; 40 matched base/adapted WAVs, adapter hashes/identities, AudioSet/MFCC proxy comparisons, and negative cases are retained in [`speech-sft-experiment/validation/exp8-6-20260804-v1/`](speech-sft-experiment/validation/exp8-6-20260804-v1/). Full adapters: [Orpheus](https://huggingface.co/bojieli/exp7-6-orpheus-elise-lora) and [Sesame](https://huggingface.co/bojieli/exp7-6-sesame-elise-tags-lora). The report separates execution completion from quality hypotheses and makes no perceptual-quality claim. | **Complete—bounded GPU campaign** |",
+      "evidence": "chapter8/speech-sft-experiment/validation/exp8-6-20260804-v1/REPORT.md",
+      "evidence_in_git": true,
+      "baseline_sha256": "e25e73e32289bc8a798208869d2291ab0390de779f6c28d799f0ee0adec38b64",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "8-7",
+      "title": "多语言思考——让模型用任意语言思考 `[扩展实验]`",
+      "ledger_row": "| 8-7 | SFT gpt-oss-20b for selectable reasoning language and test zero-shot Chinese plus trained languages | `MultilingualReasoning/gpt_oss_20b_sft.py` implements training. No checkpoint or before/after multilingual benchmark. | **Incomplete—GPU training** |",
+      "evidence": null,
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "8-8",
+      "title": "Prompt 蒸馏——以更小开销复现可用能力",
+      "ledger_row": "| 8-8 | Generate teacher outputs, train prompt-distilled student, and compare teacher/student quality, latency, and cost | The campaign in `chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/` retains 160/160 training and 80/80 held-out real Kimi K3 receipts, a real CUDA-trained SmolLM2-135M-Instruct LoRA checkpoint, the training receipt, and the paired comparison. Held-out: teacher 100%, baseline 0%, trained 95%; ~197× latency speedup; ~75% input-token reduction; eight of eight evidence gates pass. | **Complete saved campaign** |",
+      "evidence": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "36569e6395506495cc57c9548cac9a32d71b4f15abdbf48dca44a5ca87f24cb0",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "complete"
+      },
+      "declared_hash_entries": 18,
+      "sample_checks": [
+        {
+          "declared_path": "benchmark_test_gold.jsonl",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/benchmark_test_gold.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "benchmark_train_gold.jsonl",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/benchmark_train_gold.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "comparison.json",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/comparison.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "dataset_provenance.json",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/dataset_provenance.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "student_adapter/README.md",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/student_adapter/README.md",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "student_adapter/adapter_config.json",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/student_adapter/adapter_config.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "student_adapter/adapter_model.safetensors",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/student_adapter/adapter_model.safetensors",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "student_adapter/chat_template.jinja",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/student_adapter/chat_template.jinja",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "student_adapter/tokenizer.json",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/student_adapter/tokenizer.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "student_adapter/tokenizer_config.json",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/student_adapter/tokenizer_config.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "student_baseline_heldout.jsonl",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/student_baseline_heldout.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "student_baseline_summary.json",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/student_baseline_summary.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "student_train.jsonl",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/student_train.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "student_trained_heldout.jsonl",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/student_trained_heldout.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "student_trained_summary.json",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/student_trained_summary.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "teacher_receipts.jsonl",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/teacher_receipts.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "teacher_summary.json",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/teacher_summary.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "training_receipt.json",
+          "resolved_path": "chapter8/prompt-distillation/validation/exp8-8-kimi3-smollm2-20260730/training_receipt.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "8-9",
+      "title": "思维链（Chain of Thought, CoT）蒸馏",
+      "ledger_row": "| 8-9 | Rejection-sample verified teacher CoT, SFT a student, compare baseline/student/teacher, and inspect reflection/backtracking/verification | All 24 real Kimi K3 AIME cases retain completed trajectories. The deterministic verifier accepted 23 for SFT and rejected `aime-2016-9-I`, whose native low-reasoning retry completed with the wrong answer. Real CUDA SFT produced checkpoint `exp8-9-qwen25-1.5b-kimi-k3-20260801-v1`; `experiment_8_9_complete_20260803_v2.json` retains the full three-arm comparison: baseline 1/24, student 2/24, teacher 23/24, paired p=1.0, about 4.5% teacher-capability recovery, and inspected reflection/backtracking/verification rates. | **Complete saved campaign; uplift not significant** |",
+      "evidence": "chapter8/cot-distillation/validation/experiment_8_9_complete_20260803_v2.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "9e52aef3414278c9a6c0f336253cc86307075d1312f0c904b27f8140e5b04578",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "complete"
+      },
+      "declared_hash_entries": 4,
+      "sample_checks": [
+        {
+          "declared_path": "/home/ubuntu/ai-agent-book/chapter8/cot-distillation/data/sft_cot_distill_aime_kimi_k3.jsonl",
+          "resolved_path": "chapter8/cot-distillation/data/sft_cot_distill_aime_kimi_k3.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "data/raw_trajectories_aime_kimi_k3.jsonl",
+          "resolved_path": "chapter8/cot-distillation/data/raw_trajectories_aime_kimi_k3.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "problems.jsonl",
+          "resolved_path": "chapter8/cot-distillation/problems.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "validation/experiment_8_9_gpu_20260801_v1.json",
+          "resolved_path": "chapter8/cot-distillation/validation/experiment_8_9_gpu_20260801_v1.json",
+          "in_git": true,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "8-10",
+      "title": "AdaptThink——学会 “何时不思考”",
+      "ledger_row": "| 8-10 | AdaptThink training and evaluation of Thinking/NoThinking routing | Checkpoint-free [training report](AdaptThink/TRAINING_REPORT.md) records public W&B runs `wubbn5tj` (main) and `dblyx7cm` (step-0 baseline), 411 history rows through step 410, the 8×H100/CUDA 12.6 environment, source revisions, and exact step-0→300 metrics. At step 300, response length fell 67.90%/53.44%/47.17% on MATH500/GSM8K/AIME; accuracy changed +0.80/+2.20/-0.42 pp, so no uniform gain is claimed. The run continued past the selected point and crashed at 410. Checkpoints, per-example outputs, and an independent successful checkpoint/MMLU evaluation receipt were not retained; the advertised evaluation path also requires manual correction. | **Complete checkpoint-free training report** |",
+      "evidence": "chapter8/AdaptThink/TRAINING_REPORT.md",
+      "evidence_in_git": true,
+      "baseline_sha256": "2b03b803f6f19504a91eaeb9aa701eb5967c73937f6fc4cc578d3dfeae8ae8bb",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "8-11",
+      "title": "GeneralPoints——单轮 RL 的 “记忆与泛化” 对照",
+      "ledger_row": "| 8-11 | GeneralPoints language/VL SFT-vs-PPO ID/OOD comparison under equal budget | Authoritative `bojieli/SFTvsRL` checkout matches `fef0a4a…`; exact GP train/eval scripts mapped, no checkpoint/run. | **External reproduction; not run** |",
+      "evidence": null,
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "8-12",
+      "title": "V-IRL-VL——多轮视觉导航",
+      "ledger_row": "| 8-12 | V-IRL-VL PPO navigation with ID/rule-OOD/visual-OOD evaluation | Same pinned SFTvsRL checkout is the real source; `SpatialReasoning/` is a guide, not a separate implementation. No training/evaluation run. | **External reproduction; not run** |",
+      "evidence": null,
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "8-13",
+      "title": "SimpleVLA-RL——结果奖励下的开放探索 `[扩展实验]`",
+      "ledger_row": "| 8-13 | SimpleVLA-RL LIBERO/RoboTwin training/evaluation, including result reward and emergent policy evidence | Pinned `PRIME-RL/SimpleVLA-RL` checkout at `7c51662…`. Checkpoint placeholders, simulator/assets, and full CUDA lock remain unresolved; no run. | **External reproduction; dependency contract incomplete** |",
+      "evidence": null,
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "8-14",
+      "title": "ReTool——代码解释器增强数学解题",
+      "ledger_row": "| 8-14 | ReTool SFT warmup + PPO with live SandboxFusion execution and AIME comparison | veRL checkout matches `1593fc3…`; README pins SandboxFusion `4a0d573…`, which is absent locally. No sandbox service, SFT checkpoint, PPO run, or evaluation. | **External reproduction; not run** |",
+      "evidence": null,
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "8-15",
+      "title": "AWorld-train——在沙盒中学习使用工具",
+      "ledger_row": "| 8-15 | Run AWorld MCP reset/episode loop and train Qwen3-4B until reward/tool-use improves | AWorld and veRL checkouts match the pinned SHAs and exact entrypoints are mapped. Historical upstream logs in the checkout do not establish a current run; no local reward curve/checkpoint. | **External reproduction; not run** |",
+      "evidence": null,
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "8-16",
+      "title": "RLVP——奖励结果、惩罚路径",
+      "ledger_row": "| 8-16 | RLVP GRPO baseline vs verified path signals on TerminalBench and miniF2F over required seeds | README pins `19PINE-AI/rlvp` at `1ad30bc…` and exact train/eval sequence; checkout and CUDA results are absent. | **External reproduction; not run** |",
+      "evidence": null,
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "8-17",
+      "title": "从“过早结束”问题案例到 DPO 修复",
+      "ledger_row": "| 8-17 | Build premature-completion DPO preference pairs from coding-agent bad cases, run 7B LoRA DPO training, and compare the unfinished-task set with the completed-task holdout | [`premature-completion-dpo/`](premature-completion-dpo/) contains 24 bad cases, a held-out evaluation set separated into 12 unfinished tasks and 8 completed-task holdouts, deterministic and teacher-model preference-pair builders, TRL DPO/GRPO training scripts, and a deterministic evaluator with a mock mode. On the local RTX PRO 6000, fixed-candidate decision comparison improved unfinished-task correctness from 3/12 (25.0%) to 11/12 (91.7%) while completed-task holdout correctness stayed 8/8 (100%). The report records the free-generation supplement and the rejected control-pair iteration. | **Complete—GPU run and evidence saved** |",
+      "evidence": "chapter8/premature-completion-dpo/validation/train_20260807T163349Z/training_receipt.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "7f4e7a71406de69c0523703d99658f4e72edf2e5337c50c25597d7750422c14d",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 1,
+      "sample_checks": [
+        {
+          "declared_path": "output/preference_pairs.jsonl",
+          "resolved_path": "chapter8/premature-completion-dpo/validation/train_20260807T163349Z/output/preference_pairs.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "8-18",
+      "title": "作用域敏感的中文弯引号 SFT",
+      "ledger_row": "| 8-18 | Convert the Chinese curved-quote bad case into a scope-sensitive Skill, synthesize protected-region examples, run open-weight LoRA SFT, and validate Chinese prose conversion without mutating English/code/JSON | [`curly-quote-sft/`](curly-quote-sft/) contains deterministic data blueprints, 16 scope kinds, 10 article types, 9 code languages, a manual audit record, and [manifest](curly-quote-sft/validation/manifest.json). RTX PRO 6000 run: 1024 train / 256 held-out / 256 boundary examples, 2 epochs and 256 updates; after explicit positive/negative scope rules, adapted exact is 96.9% / 97.7%, with 100% protected-region preservation. JSON remains 68.8%, so the campaign still requires a dedicated structured-data track. | **Complete—GPU run and evidence saved** |",
+      "evidence": "chapter8/curly-quote-sft/validation/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "ed364bc2d0019d0ffef2ec44d96852058e1e3854481faf9dbbc35bc8c091fa27",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 3,
+      "sample_checks": [
+        {
+          "declared_path": "boundary.jsonl",
+          "resolved_path": "chapter8/curly-quote-sft/validation/boundary.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "eval.jsonl",
+          "resolved_path": "chapter8/curly-quote-sft/validation/eval.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "train.jsonl",
+          "resolved_path": "chapter8/curly-quote-sft/validation/train.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "8-19",
+      "title": "特殊字符串的精确复制 SFT",
+      "ledger_row": "| 8-19 | Diagnose `old_string`/special-string failures, train exact-copy behavior on unseen random strings and tool JSON arguments, and measure byte-exact holdout/boundary retention | [`exact-copy-sft/`](exact-copy-sft/) contains deterministic random-string generation, 10 language contexts, decoy/tool-call tasks, Qwen3-8B bf16 LoRA training, and [manifest](exact-copy-sft/validation/manifest.json). RTX PRO 6000 run: 1024 train / 256 held-out / 256 boundary examples, 2 epochs; byte-exact held-out accuracy 37.5% → 78.9%, boundary 80.1% (mean first-diff byte 54.0 / 54.2). A separate 512-probe audit covers Qwen3, Qwen2.5 and Mistral tokenizers. | **Complete—GPU run and evidence saved** |",
+      "evidence": "chapter8/exact-copy-sft/validation/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "fb67e229dbd93d393d0371d82aecd6d0040800a437d6cb794a52a343cbbf4211",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 3,
+      "sample_checks": [
+        {
+          "declared_path": "boundary.jsonl",
+          "resolved_path": "chapter8/exact-copy-sft/validation/boundary.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "eval.jsonl",
+          "resolved_path": "chapter8/exact-copy-sft/validation/eval.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "train.jsonl",
+          "resolved_path": "chapter8/exact-copy-sft/validation/train.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        }
+      ]
+    }
+  ]
+}

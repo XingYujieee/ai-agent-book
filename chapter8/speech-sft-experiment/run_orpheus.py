@@ -20,12 +20,6 @@ from pathlib import Path
 import numpy as np
 import soundfile as sf
 import torch
-import torchaudio.functional as AF
-from datasets import load_dataset
-from huggingface_hub import HfApi
-from snac import SNAC
-from unsloth import FastLanguageModel
-from transformers import Trainer, TrainingArguments
 
 BASE_MODEL = "unsloth/orpheus-3b-0.1-ft"
 DATASET = "maxbsoft/mrdragonfox-elise"
@@ -72,6 +66,7 @@ class PadCollator:
 
 
 def encode_audio(snac, wave, sample_rate: int, seconds: float) -> list[int]:
+    import torchaudio.functional as AF
     wave = torch.as_tensor(np.asarray(wave), dtype=torch.float32)
     if sample_rate != 24000:
         wave = AF.resample(wave, sample_rate, 24000)
@@ -144,6 +139,7 @@ def decode(snac, ids):
 
 
 def generate_arm(model, tokenizer, snac, arm: str, out: Path, max_tokens: int):
+    from unsloth import FastLanguageModel
     arm_dir = out / "audio" / "orpheus" / arm
     arm_dir.mkdir(parents=True, exist_ok=True)
     rows = []
@@ -194,6 +190,12 @@ def main():
     p.add_argument("--generation-tokens", type=int, default=560)
     p.add_argument("--hf-repo", default="bojieli/exp8-6-orpheus-elise-lora")
     args = p.parse_args()
+    # Training extras are not required to inspect collators or CLI help.
+    from datasets import load_dataset
+    from huggingface_hub import HfApi
+    from snac import SNAC
+    from unsloth import FastLanguageModel
+    from transformers import Trainer, TrainingArguments
     args.output.mkdir(parents=True, exist_ok=True)
     started = time.time()
     random.seed(SEED)

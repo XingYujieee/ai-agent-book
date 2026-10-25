@@ -1,0 +1,46 @@
+{
+  "arm": "baseline",
+  "case": "exact_edit",
+  "expected": "execute",
+  "action": "confirm_spec",
+  "correct": false,
+  "seconds": 0.249,
+  "request": {
+    "model": "qwen3:0.6b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是编程助手。判断当前下一步，只输出 JSON：{\"action\":\"ask|confirm_spec|execute\",\"reason\":\"简短原因\"}。不要实际执行任何工具。"
+      },
+      {
+        "role": "user",
+        "content": "把首页 h1 的 CSS 字号由 24px 改为 28px，其他内容不变，直接修改。"
+      }
+    ],
+    "stream": false,
+    "think": false,
+    "format": "json",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_predict": 256
+    }
+  },
+  "response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-10-25T00:25:36.9268277Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"action\":\"confirm_spec\",\"reason\":\"确认修改首页 h1 的 CSS 字号为 28px\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 226425200,
+    "load_duration": 9078200,
+    "prompt_eval_count": 84,
+    "prompt_eval_cached_count": 43,
+    "prompt_eval_duration": 28958000,
+    "eval_count": 24,
+    "eval_duration": 184907000
+  }
+}

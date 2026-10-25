@@ -1,0 +1,61 @@
+
+========================================================================
+实验 10-2 · 离线预演（--dry-run，不调用 API，模型=gpt-5.6-luna）
+========================================================================
+待翻译书籍：C:\Users\21931\Documents\ChatGPT\AI Agent\ai-agent-book\chapter10\book-translation\sample_book（4 章）  翻译方向：英文 → 中文
+启用 Agent：Manager + Glossary + Translation + Proofreading
+
+========================================================================
+四 Agent 协作图（数据经文件系统流转，Manager 只持有路径）
+========================================================================
+
+        ┌─────────────────────── Manager Agent ───────────────────────┐
+        │  只存：任务 / 计划 / 调用记录 / 文件索引（绝不存完整译文）      │
+        └──┬───────────────┬────────────────────┬────────────────┬─────┘
+           │ ①调度          │ ②逐章调度           │ ③调度           │ ④按报告决策
+           ▼               ▼                    ▼                ▼
+     Glossary Agent   Translation Agent×N   Proofreading Agent  (发回修订)
+     读全书→术语表     只读本章+术语表→译文    读全部译文+术语表     命中章节重译
+           │               │                    │
+           ▼ glossary.json  ▼ chapterN_zh.md      ▼ proofreading_report.json
+        ══════════════════ 共享文件系统（out-dir）══════════════════
+
+========================================================================
+Manager 执行计划（4 步）
+========================================================================
+  1. 调用 Glossary Agent 生成术语表并落盘
+  2. 逐章调用 Translation Agent（各自独立上下文，共享术语表文件）
+  3. 调用 Proofreading Agent 做一致性审校并落盘报告
+  4. 依据报告决定是否发回个别章节修订
+
+========================================================================
+编辑部指定术语（house style，强制写入共享术语表，全书统一）
+========================================================================
+  token        → 词元
+  prompt       → 提示词
+  latency      → 时延
+  embedding    → 嵌入向量
+
+========================================================================
+token 预算预估（tiktoken 离线统计，非真实 API usage）
+========================================================================
+  Glossary Agent   读全书           ≈ 1136 tok
+  Translation Agent 读《Chapter 1: Foundations of LLM Inference》(独立) ≈ 293 tok
+  Translation Agent 读《Chapter 2: The Transformer and Attention》(独立) ≈ 254 tok
+  Translation Agent 读《Chapter 3: Optimizing Inference Latency》(独立) ≈ 263 tok
+  Translation Agent 读《Chapter 4: Fine-tuning and Deployment》(独立) ≈ 281 tok
+  Proofreading Agent 读全部译文       ≈ 1091 tok（量级同全书）
+
+  Manager 上下文（任务/计划/调用记录/文件索引，无正文）≈ 563 tok
+  对照：单 Agent 累积上下文 ≥ 全书 1136 tok（逐章线性增长，书越长越大）
+
+  关键点：Manager 上下文只随‘章节数’加几行记录，与每章正文长度无关；
+         单 Agent 把全部原文与译文都留在一条对话里，上下文随书长线性膨胀。
+
+========================================================================
+术语一致性 / 遵从率将统计的术语（见 consistency.py）
+========================================================================
+  受追踪术语：token、embedding、prompt、inference、latency、attention、transformer、throughput、fine-tuning
+  指定术语（遵从率）：token→词元、prompt→提示词、latency→时延、embedding→嵌入向量
+
+离线预演结束。去掉 --dry-run 并设置 OPENAI_API_KEY 即可真正运行四 Agent 协作。

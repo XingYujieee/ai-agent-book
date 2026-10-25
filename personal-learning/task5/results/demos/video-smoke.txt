@@ -1,0 +1,19 @@
+
+==========================================================================
+  冒烟自检 | 剪辑链路 + bpy 脚本生成，不调用任何 API
+==========================================================================
+[1/3] 生成测试视频 OK：C:\Users\21931\Documents\ChatGPT\AI Agent\ai-agent-book\chapter5\video-edit\output\source.mp4（场景真值={'hiking': (0, 15), 'surfing': (15, 30), 'skiing': (30, 42), 'cycling': (42, 54)}）
+[2/3] 抽帧 OK：C:\Users\21931\Documents\ChatGPT\AI Agent\ai-agent-book\chapter5\video-edit\output\frames\smoke.png
+[3/3] 剪辑+字幕 OK（后端=ffmpeg（未装 Blender，回退））：
+  文件: smoke_cut.mp4
+  时长: 5.03s
+  容器: mov,mp4,m4a,3gp,3g2,mj2
+  大小: 117.2 KB
+  视频流: h264 1280x720 @ 30/1 fps
+  音频流: aac 44100Hz 1ch
+
+已生成 Proposer 的 Blender 脚本：C:\Users\21931\Documents\ChatGPT\AI Agent\ai-agent-book\chapter5\video-edit\output\edit.py
+（这正是书中'生成 Blender Python API 代码'的产物；装好 Blender 后可直接
+ `blender --background --python C:\Users\21931\Documents\ChatGPT\AI Agent\ai-agent-book\chapter5\video-edit\output\edit.py` 无头渲染。）
+
+✓ 冒烟自检通过：剪辑链路正常 + bpy 脚本已生成（未调用 OpenAI）。

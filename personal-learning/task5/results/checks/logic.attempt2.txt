@@ -1,0 +1,25 @@
+.....F..                                                                 [100%]
+================================== FAILURES ===================================
+___________________ test_csp_solver_handles_silent_resident ___________________
+
+    def test_csp_solver_handles_silent_resident():
+        """Verify solve handles residents in names that make no statements.
+    
+        Contract: In Knights and Knaves puzzles, residents listed in `names` may be
+        silent (spoken about by others without making statements themselves).
+        `solve` must skip adding speaker-statement constraints for silent residents
+        rather than raising KeyError.
+        """
+        names = ["A", "B"]
+        # A speaks about B ("B is a knave"), but B makes no statement.
+        structs = {"A": ["is", "B", "knave"]}
+    
+        solutions = solve(names, structs)
+>       assert len(solutions) == 2
+E       assert 1 == 2
+E        +  where 1 = len([{}])
+
+test_silent_resident.py:23: AssertionError
+=========================== short test summary info ===========================
+FAILED test_silent_resident.py::test_csp_solver_handles_silent_resident - ass...
+1 failed, 7 passed in 0.13s

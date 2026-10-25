@@ -1,0 +1,26 @@
+{
+  "protocol_sha256": "416e83321172005520bb2613d1ebe6ed92aa409b6ce77d947ac0b44ce8b3a9c4",
+  "kind": "real_local_model_supplement",
+  "official_complete": false,
+  "cases_per_arm": 6,
+  "arms": {
+    "baseline": {
+      "correct": 3,
+      "errors": 0,
+      "prompt_tokens": 451,
+      "output_tokens": 104
+    },
+    "append_feedback": {
+      "correct": 2,
+      "errors": 0,
+      "prompt_tokens": 547,
+      "output_tokens": 106
+    },
+    "scoped_skill": {
+      "correct": 4,
+      "errors": 0,
+      "prompt_tokens": 853,
+      "output_tokens": 93
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.FF                                                                      [100%]
+================================== FAILURES ===================================
+____________ EvidenceGateTests.test_local_gpu_evidence_is_accepted ____________
+
+self = <test_validator.EvidenceGateTests testMethod=test_local_gpu_evidence_is_accepted>
+
+    def test_local_gpu_evidence_is_accepted(self):
+        run = Path(__file__).parent / "validation" / "runs" / "local-gpu" / "evidence.json"
+        if not run.is_file():
+            self.skipTest("run the local GPU experiment first")
+        data = json.loads(run.read_text(encoding="utf-8"))
+>       self.assertEqual(validate(data, run.parent), [])
+E       AssertionError: Lists differ: ['artifact hash mismatch: metrics.json', 'artifact hash mismatch: cells.json'] != []
+E       
+E       First list contains 2 additional elements.
+E       First extra element 0:
+E       'artifact hash mismatch: metrics.json'
+E       
+E       - ['artifact hash mismatch: metrics.json', 'artifact hash mismatch: cells.json']
+E       + []
+
+test_validator.py:16: AssertionError
+________ EvidenceGateTests.test_runner_requires_accelerator_by_default ________
+
+self = <test_validator.EvidenceGateTests testMethod=test_runner_requires_accelerator_by_default>
+
+    def test_runner_requires_accelerator_by_default(self):
+        runner = Path(__file__).with_name("teleop.py")
+        result = subprocess.run([sys.executable, str(runner), "--help"], capture_output=True, text=True, check=False)
+>       self.assertEqual(result.returncode, 0)
+E       AssertionError: 1 != 0
+
+test_validator.py:33: AssertionError
+=========================== short test summary info ===========================
+FAILED test_validator.py::EvidenceGateTests::test_local_gpu_evidence_is_accepted
+FAILED test_validator.py::EvidenceGateTests::test_runner_requires_accelerator_by_default
+2 failed, 1 passed in 0.39s

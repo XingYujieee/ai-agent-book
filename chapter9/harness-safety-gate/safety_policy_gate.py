@@ -9,6 +9,8 @@ rollbacks on safety violations.
 import hashlib
 import hmac
 import os
+import ntpath
+import posixpath
 import re
 import secrets
 import time
@@ -224,7 +226,7 @@ class SafetyPolicyGate:
                 # Check sensitive-directory patterns on the path itself (if absolute
                 # or home-relative) and on its realpath resolution (catches relative
                 # paths that resolve into sensitive directories).
-                if os.path.isabs(cand) or cand.startswith("~"):
+                if ntpath.isabs(cand) or posixpath.isabs(cand) or cand.startswith("~"):
                     for pattern in self.SENSITIVE_DIR_PATTERNS:
                         if pattern.search(cand):
                             return f"Path traversal attack detected in parameter value: '{s}'"

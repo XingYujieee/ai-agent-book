@@ -13,8 +13,6 @@ import librosa
 import numpy as np
 import soundfile as sf
 import torch
-from huggingface_hub import hf_hub_download
-from transformers import AutoFeatureExtractor, AutoModelForAudioClassification
 
 AST_MODEL = "MIT/ast-finetuned-audioset-10-10-0.4593"
 
@@ -93,6 +91,7 @@ def find_label(model, needle):
 
 
 def sesame_analysis(root: Path, manifest):
+    from transformers import AutoFeatureExtractor, AutoModelForAudioClassification
     extractor = AutoFeatureExtractor.from_pretrained(AST_MODEL)
     model = AutoModelForAudioClassification.from_pretrained(AST_MODEL).cuda().eval()
     label_ids = {}
@@ -157,6 +156,7 @@ def sesame_analysis(root: Path, manifest):
 
 
 def verify_remote_adapter(manifest):
+    from huggingface_hub import hf_hub_download
     expected = next(
         x for x in manifest["adapter_local_files"] if x["path"].endswith("adapter_model.safetensors")
     )

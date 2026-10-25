@@ -1,0 +1,29 @@
+{
+  "reason": "Windows checkout CRLF conversion only",
+  "files": [
+    {
+      "path": "chapter7/user-memory-policy-eval/README.md",
+      "git_sha256": "6772ef321dfeb86ddb5671f3a78fff4f2bb4e06a6f777ceae5e3b961ed8e2e87"
+    },
+    {
+      "path": "chapter7/user-memory-policy-eval/cases.json",
+      "git_sha256": "b77f45653719f788601b0d73e9a8e1cc9b75eb9c7963fe8cb630144193a48f1a"
+    },
+    {
+      "path": "chapter7/user-memory-policy-eval/results/manifest.json",
+      "git_sha256": "cdfecbf56b6207404b0fe8c194b57bfb5b7f0bdc380dfc876424368c8ef674ff"
+    },
+    {
+      "path": "chapter7/user-memory-policy-eval/results/policy_prefix_live.json",
+      "git_sha256": "f4a45672b4e062a3235a7df67d3450c41174cc492bdd8b54c5eb2b30598e8b1d"
+    },
+    {
+      "path": "chapter7/user-memory-policy-eval/runner.py",
+      "git_sha256": "a0c36ac571e5c564172e0282a0a8ea383ebb215fe9d2da9cf73a47b85618d698"
+    },
+    {
+      "path": "chapter7/user-memory-policy-eval/test_runner.py",
+      "git_sha256": "2c0ab56ff90ca8ffd898fe8aa6c68cecd80cd3ba46d7ae1f1a9f1065e3fc8fa8"
+    }
+  ]
+}

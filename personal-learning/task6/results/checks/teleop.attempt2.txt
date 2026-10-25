@@ -1,0 +1,16 @@
+..F                                                                      [100%]
+================================== FAILURES ===================================
+________ EvidenceGateTests.test_runner_requires_accelerator_by_default ________
+
+self = <test_validator.EvidenceGateTests testMethod=test_runner_requires_accelerator_by_default>
+
+    def test_runner_requires_accelerator_by_default(self):
+        runner = Path(__file__).with_name("teleop.py")
+        result = subprocess.run([sys.executable, str(runner), "--help"], capture_output=True, text=True, check=False)
+>       self.assertEqual(result.returncode, 0)
+E       AssertionError: 1 != 0
+
+test_validator.py:33: AssertionError
+=========================== short test summary info ===========================
+FAILED test_validator.py::EvidenceGateTests::test_runner_requires_accelerator_by_default
+1 failed, 2 passed in 0.45s

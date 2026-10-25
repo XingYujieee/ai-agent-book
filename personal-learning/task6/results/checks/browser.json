@@ -1,0 +1,22 @@
+{
+  "chapter": 6,
+  "name": "browser",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter6/computer-use-open-model",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "tests/test_config.py",
+    "tests/test_evidence.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.838,
+  "checked_at": "2026-10-25T00:18:59.850844+00:00",
+  "log": "browser.txt"
+}

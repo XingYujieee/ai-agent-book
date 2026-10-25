@@ -1,0 +1,23 @@
+{
+  "chapter": 5,
+  "name": "video",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter5/paper-to-video",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_campaign.py",
+    "test_ffprobe_duration.py",
+    "test_null_bullet_item.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 2.604,
+  "checked_at": "2026-10-25T00:18:48.021748+00:00",
+  "log": "video.txt"
+}

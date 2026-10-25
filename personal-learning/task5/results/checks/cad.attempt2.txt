@@ -1,0 +1,170 @@
+EEF...                                                                   [100%]
+=================================== ERRORS ====================================
+_____________ ERROR at setup of test_fixture_dimensions_accurate ______________
+
+    @pytest.fixture(scope="module")
+    def flange_measurement():
+        mesh = measure.load_mesh(str(FIXTURE))
+>       return measure.measure_flange(mesh, SPEC_M5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_offline.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+measure.py:94: in measure_flange
+    holes = _detect_holes(mesh, center_xy, z_mid)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+measure.py:58: in _detect_holes
+    if not path2d.polygons_full:
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\caching.py:133: in get_cached
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\path\path.py:1237: in polygons_full
+    full = [None] * len(self.root)
+                        ^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\caching.py:133: in get_cached
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\path\path.py:1553: in root
+    populate = self.enclosure_directed  # NOQA
+               ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\caching.py:133: in get_cached
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\path\path.py:1581: in enclosure_directed
+    root, enclosure = polygons.enclosure_tree(self.polygons_closed)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <trimesh.exceptions.ExceptionWrapper object at 0x0000023E7F6345A0>
+args = ('enclosure_tree',), kwargs = {}
+
+    def __getattribute__(self, *args, **kwargs):
+        # will raise when this object is accessed like an object
+        # if it's asking for our class type return None
+        # this allows isinstance() checks to not re-raise
+        if args[0] == "__class__":
+            return None.__class__
+    
+        # re-create our original exception from the type and arguments
+        exc_type, exc_args = super().__getattribute__("exception")
+>       raise exc_type(*exc_args)
+E       ModuleNotFoundError: No module named 'shapely'
+
+..\..\.venv\Lib\site-packages\trimesh\exceptions.py:35: ModuleNotFoundError
+__________________ ERROR at setup of test_fixture_flat_face ___________________
+
+    @pytest.fixture(scope="module")
+    def flange_measurement():
+        mesh = measure.load_mesh(str(FIXTURE))
+>       return measure.measure_flange(mesh, SPEC_M5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_offline.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+measure.py:94: in measure_flange
+    holes = _detect_holes(mesh, center_xy, z_mid)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+measure.py:58: in _detect_holes
+    if not path2d.polygons_full:
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\caching.py:133: in get_cached
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\path\path.py:1237: in polygons_full
+    full = [None] * len(self.root)
+                        ^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\caching.py:133: in get_cached
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\path\path.py:1553: in root
+    populate = self.enclosure_directed  # NOQA
+               ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\caching.py:133: in get_cached
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\path\path.py:1581: in enclosure_directed
+    root, enclosure = polygons.enclosure_tree(self.polygons_closed)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <trimesh.exceptions.ExceptionWrapper object at 0x0000023E7F6345A0>
+args = ('enclosure_tree',), kwargs = {}
+
+    def __getattribute__(self, *args, **kwargs):
+        # will raise when this object is accessed like an object
+        # if it's asking for our class type return None
+        # this allows isinstance() checks to not re-raise
+        if args[0] == "__class__":
+            return None.__class__
+    
+        # re-create our original exception from the type and arguments
+        exc_type, exc_args = super().__getattribute__("exception")
+>       raise exc_type(*exc_args)
+E       ModuleNotFoundError: No module named 'shapely'
+
+..\..\.venv\Lib\site-packages\trimesh\exceptions.py:35: ModuleNotFoundError
+================================== FAILURES ===================================
+_________________________ test_box_mesh_has_no_holes __________________________
+
+    def test_box_mesh_has_no_holes():
+        box = trimesh.creation.box(extents=[80, 80, 10])
+>       m = measure.measure_flange(box, SPEC_M5)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_offline.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+measure.py:94: in measure_flange
+    holes = _detect_holes(mesh, center_xy, z_mid)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+measure.py:58: in _detect_holes
+    if not path2d.polygons_full:
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\caching.py:133: in get_cached
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\path\path.py:1237: in polygons_full
+    full = [None] * len(self.root)
+                        ^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\caching.py:133: in get_cached
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\path\path.py:1553: in root
+    populate = self.enclosure_directed  # NOQA
+               ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\caching.py:133: in get_cached
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\.venv\Lib\site-packages\trimesh\path\path.py:1581: in enclosure_directed
+    root, enclosure = polygons.enclosure_tree(self.polygons_closed)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <trimesh.exceptions.ExceptionWrapper object at 0x0000023E7F6345A0>
+args = ('enclosure_tree',), kwargs = {}
+
+    def __getattribute__(self, *args, **kwargs):
+        # will raise when this object is accessed like an object
+        # if it's asking for our class type return None
+        # this allows isinstance() checks to not re-raise
+        if args[0] == "__class__":
+            return None.__class__
+    
+        # re-create our original exception from the type and arguments
+        exc_type, exc_args = super().__getattribute__("exception")
+>       raise exc_type(*exc_args)
+E       ModuleNotFoundError: No module named 'shapely'
+
+..\..\.venv\Lib\site-packages\trimesh\exceptions.py:35: ModuleNotFoundError
+============================== warnings summary ===============================
+chapter5/cad-vs-diffusion/test_offline.py::test_fixture_dimensions_accurate
+chapter5/cad-vs-diffusion/test_offline.py::test_box_mesh_has_no_holes
+  C:\Users\21931\Documents\ChatGPT\AI Agent\ai-agent-book\chapter5\cad-vs-diffusion\measure.py:55: DeprecationWarning: DEPRECATED: replace `path.to_planar`->`path.to_2D), removal 1/1/2026
+    path2d, to_2d = section.to_planar()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test_offline.py::test_box_mesh_has_no_holes - ModuleNotFoundError: No ...
+ERROR test_offline.py::test_fixture_dimensions_accurate - ModuleNotFoundError...
+ERROR test_offline.py::test_fixture_flat_face - ModuleNotFoundError: No modul...
+1 failed, 3 passed, 2 warnings, 2 errors in 10.40s

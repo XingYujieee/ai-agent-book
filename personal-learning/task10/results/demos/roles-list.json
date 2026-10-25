@@ -1,0 +1,14 @@
+{
+  "name": "roles-list",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "demo.py",
+    "--list-roles"
+  ],
+  "cwd": "chapter10/multi-role-transfer",
+  "returncode": 0,
+  "seconds": 1.802,
+  "log": "roles-list.txt"
+}

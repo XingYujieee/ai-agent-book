@@ -1,0 +1,22 @@
+{
+  "chapter": 10,
+  "name": "registration",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter10/autonomous-phone-registration",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_orchestration.py",
+    "test_validate_acceptance.py"
+  ],
+  "status": "failed",
+  "returncode": 1,
+  "duration_seconds": 1.32,
+  "checked_at": "2026-10-25T00:19:16.801454+00:00",
+  "log": "registration.txt"
+}

@@ -1,0 +1,46 @@
+{
+  "arm": "append_feedback",
+  "case": "missing_scope",
+  "expected": "ask",
+  "action": "ask",
+  "correct": true,
+  "seconds": 0.101,
+  "request": {
+    "model": "qwen3:0.6b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是编程助手。判断当前下一步，只输出 JSON：{\"action\":\"ask|confirm_spec|execute\",\"reason\":\"简短原因\"}。不要实际执行任何工具。\n以往反馈：别没问清楚就改，也别不停地重复问。"
+      },
+      {
+        "role": "user",
+        "content": "帮我把网站优化一下。"
+      }
+    ],
+    "stream": false,
+    "think": false,
+    "format": "json",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_predict": 256
+    }
+  },
+  "response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-10-25T00:25:37.4053871Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"action\":\"ask\",\"reason\":\"别没问清楚就改，也别不停地重复问。\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 99155300,
+    "load_duration": 6034800,
+    "prompt_eval_count": 78,
+    "prompt_eval_cached_count": 37,
+    "prompt_eval_duration": 11432000,
+    "eval_count": 22,
+    "eval_duration": 73103000
+  }
+}

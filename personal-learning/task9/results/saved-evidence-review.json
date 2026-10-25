@@ -1,0 +1,213 @@
+{
+  "baseline_ref": "faa6db95",
+  "scope": "Historical Git blobs only; at most 40 declared artifacts per evidence file, no live API reproduction.",
+  "experiments": 9,
+  "evidence_files_present": 8,
+  "rows": [
+    {
+      "experiment": "9-1",
+      "title": "为客服 Agent 构建轨迹验证器",
+      "ledger_row": "| 9-1 | [trajectory-verifier](trajectory-verifier/) | ✅ | 实验 9-1：28 条真实客服调用、8 次 Judge 调用与 8 条专家标注样本已通过验收；[证据](trajectory-verifier/validation/real_20260729T165247Z/evidence.json)同时记录关键违规稳定性主张未复现 |",
+      "evidence": "chapter9/trajectory-verifier/validation/real_20260729T165247Z/evidence.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "4365122d36f543e967026fe123c2de17e9ebd99ac9ddd696b4ac06f99c56068c",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 0,
+      "sample_checks": []
+    },
+    {
+      "experiment": "9-2",
+      "title": "从 τ²-bench 失败轨迹提炼转接与工具使用规则",
+      "ledger_row": "| 9-2 | [tau2-escalation-experience](tau2-escalation-experience/) | ✅ | 实验 9-2：τ²-bench telecom 上由模型从 19 条失败轨迹提炼转接与工具使用规则；迁移集 114 条通过率 12.3% → 19.3%，零回归；[证据](tau2-escalation-experience/validation/evidence.json)保留提炼回执、三臂策略哈希与行为指标 |",
+      "evidence": "chapter9/tau2-escalation-experience/validation/evidence.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "f1a490f35e6d83994b56de8db01618a2b77cd3bfdf503b590675f4c9e13025e1",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 0,
+      "sample_checks": []
+    },
+    {
+      "experiment": "9-3",
+      "title": "基于失败轨迹优化航空客服的系统 Prompt",
+      "ledger_row": "| 9-3 | [prompt-auto-optimization](prompt-auto-optimization/) | ✅ | 实验 9-3：真实任务 Agent、LLM Judge 与 Coding Agent 跑完初始/自动/人工三组完整保留集和边界集；原始回执与发布门槛已保存 |",
+      "evidence": "chapter9/prompt-auto-optimization/validation/latest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "cbcf05add7228f02442155583c77cb1adce8f5a91926d10c3690d6d00332646a",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 0,
+      "sample_checks": []
+    },
+    {
+      "experiment": "9-4",
+      "title": "从用户反馈中进化需求澄清与 Spec 确认 Skill",
+      "ledger_row": "| 9-4 | 正文对照实验 | 🚧 | 从用户反馈中进化“需求澄清 + Spec 确认”Skill；正文给出三臂 A/B 设计、指标和发布门槛，配套实现待补充 |",
+      "evidence": null,
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "9-5",
+      "title": "从浏览器轨迹生成可验证工作流",
+      "ledger_row": "| 9-5 | [browser-use-rpa](browser-use-rpa/) | ✅ | 实验 9-5：真实 ARK Agent + Chromium 在可重置本地消息站完成探索、独立验证、参数化回放、假成功对照与页面变化失效 |",
+      "evidence": "chapter9/browser-use-rpa/validation/latest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "5465dc76f12e53da24f8655d3a53c290d50db723511af25f5ca945a16f9ce0fb",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "accepted": true
+      },
+      "declared_hash_entries": 0,
+      "sample_checks": []
+    },
+    {
+      "experiment": "9-6",
+      "title": "由失败轨迹触发 Agent 自我修改",
+      "ledger_row": "| 9-6 | [self-modifying-agent](self-modifying-agent/) | ✅ | 实验 9-6：真实 Coding Agent 从重复故障生成补丁，并与确定性提案、故意过宽的反例通过同一回归/灰度/回滚发布门；[证据](self-modifying-agent/validation/latest.json)保留接受与拒绝历史 |",
+      "evidence": "chapter9/self-modifying-agent/validation/latest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "ed1ca773ff7313a5c61e4a098a99a153940d7c08757e210391d918c4ec399eae",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "accepted": true
+      },
+      "declared_hash_entries": 4,
+      "sample_checks": [
+        {
+          "declared_path": "Dockerfile.sandbox",
+          "resolved_path": "chapter9/self-modifying-agent/Dockerfile.sandbox",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "candidate_sandbox.py",
+          "resolved_path": "chapter9/self-modifying-agent/candidate_sandbox.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "evolution.py",
+          "resolved_path": "chapter9/self-modifying-agent/evolution.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "sandbox_runner.py",
+          "resolved_path": "chapter9/self-modifying-agent/sandbox_runner.py",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "9-7",
+      "title": "由用户反馈触发高风险操作确认门禁",
+      "ledger_row": "| 9-7 | [harness-safety-gate](harness-safety-gate/) | ✅ | 实验 9-7：用户纠正/点踩/事后审计触发“高风险调用确认门禁”提案，经 AST 静态检查、未完成任务回放和正常操作回放；确定性提案通过，真实 `gpt-4o-mini` 提案因检查失败被安全拒绝，整体验收通过 |",
+      "evidence": "chapter9/harness-safety-gate/validation/latest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "f7cf31dc5072b0e185b1f267d9cf8600b07dc5301a28eec3f01ff572076c3027",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "accepted": true
+      },
+      "declared_hash_entries": 0,
+      "sample_checks": []
+    },
+    {
+      "experiment": "9-8",
+      "title": "把这本书交给 Hermes：它能升级自己吗？",
+      "ledger_row": "| 9-8 | [hermes-self-evolution](hermes-self-evolution/) | 📖 | 实验 9-8：把整本书和源码交给 Hermes；它读完后选择一项改进，亲手修改自己，并把每次 Reviewer 的退回变成下一轮学习，直到通过 |",
+      "evidence": "chapter9/hermes-self-evolution/validation/exp9-8-hermes-gpt56luna-autonomous-20260802-v2/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "1bcdff99e3346dcab78613b24c9c499e8146420d4ad93cfc11cede427b801c77",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 8,
+      "sample_checks": [
+        {
+          "declared_path": "hermes-acceptance-review-1.txt",
+          "resolved_path": "chapter9/hermes-self-evolution/validation/exp9-8-hermes-gpt56luna-autonomous-20260802-v2/hermes-acceptance-review-1.txt",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "hermes-acceptance-review-2.txt",
+          "resolved_path": "chapter9/hermes-self-evolution/validation/exp9-8-hermes-gpt56luna-autonomous-20260802-v2/hermes-acceptance-review-2.txt",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "hermes-acceptance-review-3.txt",
+          "resolved_path": "chapter9/hermes-self-evolution/validation/exp9-8-hermes-gpt56luna-autonomous-20260802-v2/hermes-acceptance-review-3.txt",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "hermes-acceptance-review-4.txt",
+          "resolved_path": "chapter9/hermes-self-evolution/validation/exp9-8-hermes-gpt56luna-autonomous-20260802-v2/hermes-acceptance-review-4.txt",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "hermes-review-autonomous-1.txt",
+          "resolved_path": "chapter9/hermes-self-evolution/validation/exp9-8-hermes-gpt56luna-autonomous-20260802-v2/hermes-review-autonomous-1.txt",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "hermes-review-autonomous-2.txt",
+          "resolved_path": "chapter9/hermes-self-evolution/validation/exp9-8-hermes-gpt56luna-autonomous-20260802-v2/hermes-review-autonomous-2.txt",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "hermes-review-autonomous-3.txt",
+          "resolved_path": "chapter9/hermes-self-evolution/validation/exp9-8-hermes-gpt56luna-autonomous-20260802-v2/hermes-review-autonomous-3.txt",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "hermes-transcript.txt",
+          "resolved_path": "chapter9/hermes-self-evolution/validation/exp9-8-hermes-gpt56luna-autonomous-20260802-v2/hermes-transcript.txt",
+          "in_git": false,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "9-9",
+      "title": "评估 Agent 是否在持续进化",
+      "ledger_row": "| 9-9 | [self-evolution-eval](self-evolution-eval/) | ✅ | 实验 9-9：static、append-only、evolving 三臂 × 3 seeds × 14 任务共 126 次真实调用；[证据](self-evolution-eval/validation/latest.json)保留迁移、规则替换、保持与配对统计 |",
+      "evidence": "chapter9/self-evolution-eval/validation/latest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "1d24ee2ded4e2e189e7fc15b9a902c13370e3316205009f4fae8593169b6c105",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "accepted": true
+      },
+      "declared_hash_entries": 0,
+      "sample_checks": []
+    }
+  ]
+}

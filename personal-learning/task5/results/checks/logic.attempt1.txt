@@ -1,0 +1,35 @@
+
+=================================== ERRORS ====================================
+_________ ERROR collecting chapter5/code-for-logic/test_hf_dataset.py _________
+ImportError while importing test module 'C:\Users\21931\Documents\ChatGPT\AI Agent\ai-agent-book\chapter5\code-for-logic\test_hf_dataset.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\21931\anaconda3\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test_hf_dataset.py:1: in <module>
+    from build_hf_puzzles import convert_expression, convert_row
+build_hf_puzzles.py:22: in <module>
+    from csp_solver import solve_labeled
+csp_solver.py:24: in <module>
+    from constraint import Problem
+E   ModuleNotFoundError: No module named 'constraint'
+____ ERROR collecting chapter5/code-for-logic/test_parse_answer_boolean.py ____
+ImportError while importing test module 'C:\Users\21931\Documents\ChatGPT\AI Agent\ai-agent-book\chapter5\code-for-logic\test_parse_answer_boolean.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\21931\anaconda3\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test_parse_answer_boolean.py:7: in <module>
+    from demo import parse_answer
+demo.py:40: in <module>
+    from csp_solver import solve_labeled
+csp_solver.py:24: in <module>
+    from constraint import Problem
+E   ModuleNotFoundError: No module named 'constraint'
+=========================== short test summary info ===========================
+ERROR test_hf_dataset.py
+ERROR test_parse_answer_boolean.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!
+2 errors in 0.29s

@@ -1,0 +1,21 @@
+{
+  "chapter": 5,
+  "name": "rules",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter5/small-model-codified-rules",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_campaign.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 2.275,
+  "checked_at": "2026-10-25T00:18:45.416708+00:00",
+  "log": "rules.txt"
+}

@@ -1,0 +1,23 @@
+...F                                                                     [100%]
+================================== FAILURES ===================================
+_________ test_saved_campaign_manifest_binds_report_cases_and_runner __________
+
+    def test_saved_campaign_manifest_binds_report_cases_and_runner() -> None:
+        manifest_path = HERE / "results" / "manifest.json"
+        report_path = HERE / "results" / "policy_prefix_live.json"
+        if not manifest_path.exists() or not report_path.exists():
+            return
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        assert manifest["experiment"] == report["experiment"] == "7-5"
+        assert manifest["report"] == "results/policy_prefix_live.json"
+>       assert manifest["report_sha256"] == sha256(report_path)
+E       AssertionError: assert 'f4a45672b4e0...b2b30598e8b1d' == '148e8ac966dc...215875fc9b9a3'
+E         
+E         - 148e8ac966dc7f429a517156e110dc47d3ac131035faf3618d9215875fc9b9a3
+E         + f4a45672b4e062a3235a7df67d3450c41174cc492bdd8b54c5eb2b30598e8b1d
+
+test_runner.py:55: AssertionError
+=========================== short test summary info ===========================
+FAILED test_runner.py::test_saved_campaign_manifest_binds_report_cases_and_runner
+1 failed, 3 passed in 1.67s

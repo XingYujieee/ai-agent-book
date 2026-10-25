@@ -1,0 +1,286 @@
+{
+  "id": "parallel_progress_threshold_cancellation",
+  "first_completed": "T1",
+  "query_receipts": [
+    {
+      "task_id": "T2",
+      "status": "running",
+      "progress": 70.0,
+      "queried_at": 5.386
+    },
+    {
+      "task_id": "T3",
+      "status": "running",
+      "progress": 35.0,
+      "queried_at": 5.386
+    }
+  ],
+  "cancelled_ids": [
+    "T3"
+  ],
+  "completed_results": {
+    "T1": {
+      "async_mentions": 10,
+      "bytes": 72112,
+      "error_keyword_count": 19,
+      "experiment_mentions": 18,
+      "heading_count": 20,
+      "input_path": "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\book\\chapter4.md",
+      "input_sha256": "bdcd76b249d93e1691ec313997be357ab0a86e7906549e04df179b70542d1981",
+      "job": "fast",
+      "lines": 448
+    },
+    "T2": {
+      "async_mentions": 10,
+      "bytes": 72112,
+      "error_keyword_count": 19,
+      "experiment_mentions": 18,
+      "heading_count": 20,
+      "input_path": "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\book\\chapter4.md",
+      "input_sha256": "bdcd76b249d93e1691ec313997be357ab0a86e7906549e04df179b70542d1981",
+      "job": "mid",
+      "lines": 448
+    }
+  },
+  "events": [
+    {
+      "elapsed_seconds": 0.001,
+      "source": "TASK",
+      "text": "启动真实子进程任务 T1: `python analyze_fast.py` (速度 3%/逻辑秒)"
+    },
+    {
+      "elapsed_seconds": 0.003,
+      "source": "TASK",
+      "text": "启动真实子进程任务 T2: `python analyze_mid.py` (速度 2%/逻辑秒)"
+    },
+    {
+      "elapsed_seconds": 0.004,
+      "source": "TASK",
+      "text": "启动真实子进程任务 T3: `python analyze_slow.py` (速度 1%/逻辑秒)"
+    },
+    {
+      "elapsed_seconds": 1.307,
+      "source": "TASK",
+      "text": "T1 `python analyze_fast.py` 进度 21% (pid=30724)"
+    },
+    {
+      "elapsed_seconds": 1.617,
+      "source": "TASK",
+      "text": "T2 `python analyze_mid.py` 进度 20% (pid=34064)"
+    },
+    {
+      "elapsed_seconds": 2.36,
+      "source": "TASK",
+      "text": "T1 `python analyze_fast.py` 进度 42% (pid=30724)"
+    },
+    {
+      "elapsed_seconds": 3.12,
+      "source": "TASK",
+      "text": "T3 `python analyze_slow.py` 进度 20% (pid=39596)"
+    },
+    {
+      "elapsed_seconds": 3.12,
+      "source": "TASK",
+      "text": "T2 `python analyze_mid.py` 进度 40% (pid=34064)"
+    },
+    {
+      "elapsed_seconds": 3.262,
+      "source": "TASK",
+      "text": "T1 `python analyze_fast.py` 进度 60% (pid=30724)"
+    },
+    {
+      "elapsed_seconds": 4.316,
+      "source": "TASK",
+      "text": "T1 `python analyze_fast.py` 进度 81% (pid=30724)"
+    },
+    {
+      "elapsed_seconds": 4.626,
+      "source": "TASK",
+      "text": "T2 `python analyze_mid.py` 进度 60% (pid=34064)"
+    },
+    {
+      "elapsed_seconds": 5.37,
+      "source": "TASK",
+      "text": "T1 `python analyze_fast.py` 进度 100% (pid=30724)"
+    },
+    {
+      "elapsed_seconds": 5.386,
+      "source": "TASK",
+      "text": "T1 完成 ✅ (pid=30724, returncode=0)"
+    },
+    {
+      "elapsed_seconds": 5.386,
+      "source": "SYSTEM",
+      "event": "async_result_injected",
+      "task_id": "T1"
+    },
+    {
+      "elapsed_seconds": 5.386,
+      "source": "TOOL",
+      "event": "query_task",
+      "task_id": "T2",
+      "progress": 70.0
+    },
+    {
+      "elapsed_seconds": 5.386,
+      "source": "TOOL",
+      "event": "query_task",
+      "task_id": "T3",
+      "progress": 35.0
+    },
+    {
+      "elapsed_seconds": 5.386,
+      "source": "TOOL",
+      "event": "cancel_task",
+      "task_id": "T3",
+      "progress": 35.0
+    },
+    {
+      "elapsed_seconds": 5.388,
+      "source": "TASK",
+      "text": "T3 子进程已终止 🛑 (pid=39596, 进度 35%)"
+    },
+    {
+      "elapsed_seconds": 6.131,
+      "source": "TASK",
+      "text": "T2 `python analyze_mid.py` 进度 80% (pid=34064)"
+    },
+    {
+      "elapsed_seconds": 7.635,
+      "source": "TASK",
+      "text": "T2 `python analyze_mid.py` 进度 100% (pid=34064)"
+    },
+    {
+      "elapsed_seconds": 7.645,
+      "source": "TASK",
+      "text": "T2 完成 ✅ (pid=34064, returncode=0)"
+    },
+    {
+      "elapsed_seconds": 7.645,
+      "source": "SYSTEM",
+      "event": "async_result_injected",
+      "task_id": "T2"
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "T1",
+      "command": "python analyze_fast.py",
+      "status": "completed",
+      "progress": 100.0,
+      "pid": 30724,
+      "returncode": 0,
+      "started_at": 1792888333.2543275,
+      "completed_at": 1792888338.636718,
+      "elapsed_seconds": 5.382,
+      "stdout_sha256": "6c56ea58b0a617b937a5a3991795ae2eb4337e5b8d3235b7ae34395814ade909",
+      "stderr_tail": "",
+      "result": {
+        "async_mentions": 10,
+        "bytes": 72112,
+        "error_keyword_count": 19,
+        "experiment_mentions": 18,
+        "heading_count": 20,
+        "input_path": "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\book\\chapter4.md",
+        "input_sha256": "bdcd76b249d93e1691ec313997be357ab0a86e7906549e04df179b70542d1981",
+        "job": "fast",
+        "lines": 448
+      },
+      "executable": {
+        "mode": "real_subprocess",
+        "shell": false,
+        "worker": "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\chapter6\\async-agent\\analysis_worker.py",
+        "worker_sha256": "b6976be7e77ec4a9adbf107a61beb4776f3d34d2b70df9a7d14629932b74f445",
+        "input": "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\book\\chapter4.md",
+        "input_sha256": "bdcd76b249d93e1691ec313997be357ab0a86e7906549e04df179b70542d1981",
+        "job": "fast",
+        "rate_percent_per_logical_second": 3.0,
+        "tick_real_seconds": 0.15,
+        "argv_sha256": "47c9290da552a96f7b187d77c2e97db50f00affb9d5a3f94c44a3d03ee42e300",
+        "pid": 30724,
+        "returncode": 0,
+        "stdout_sha256": "6c56ea58b0a617b937a5a3991795ae2eb4337e5b8d3235b7ae34395814ade909",
+        "stdout_lines": 35,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "elapsed_seconds": 5.382
+      }
+    },
+    {
+      "task_id": "T2",
+      "command": "python analyze_mid.py",
+      "status": "completed",
+      "progress": 100.0,
+      "pid": 34064,
+      "returncode": 0,
+      "started_at": 1792888333.260294,
+      "completed_at": 1792888340.8957458,
+      "elapsed_seconds": 7.635,
+      "stdout_sha256": "6093d86b65a2c54eeb078196227f0946578c87a2457d08a1ae88180a3ab3b51f",
+      "stderr_tail": "",
+      "result": {
+        "async_mentions": 10,
+        "bytes": 72112,
+        "error_keyword_count": 19,
+        "experiment_mentions": 18,
+        "heading_count": 20,
+        "input_path": "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\book\\chapter4.md",
+        "input_sha256": "bdcd76b249d93e1691ec313997be357ab0a86e7906549e04df179b70542d1981",
+        "job": "mid",
+        "lines": 448
+      },
+      "executable": {
+        "mode": "real_subprocess",
+        "shell": false,
+        "worker": "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\chapter6\\async-agent\\analysis_worker.py",
+        "worker_sha256": "b6976be7e77ec4a9adbf107a61beb4776f3d34d2b70df9a7d14629932b74f445",
+        "input": "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\book\\chapter4.md",
+        "input_sha256": "bdcd76b249d93e1691ec313997be357ab0a86e7906549e04df179b70542d1981",
+        "job": "mid",
+        "rate_percent_per_logical_second": 2.0,
+        "tick_real_seconds": 0.15,
+        "argv_sha256": "4ff93b6188eb8c73d380798e54d25a4f5efa67e24a1982be54f3a0f6177fd0ff",
+        "pid": 34064,
+        "returncode": 0,
+        "stdout_sha256": "6093d86b65a2c54eeb078196227f0946578c87a2457d08a1ae88180a3ab3b51f",
+        "stdout_lines": 51,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "elapsed_seconds": 7.635
+      }
+    },
+    {
+      "task_id": "T3",
+      "command": "python analyze_slow.py",
+      "status": "cancelled",
+      "progress": 35.0,
+      "pid": 39596,
+      "returncode": 1,
+      "started_at": 1792888333.2651763,
+      "completed_at": 1792888338.6379695,
+      "elapsed_seconds": 5.373,
+      "stdout_sha256": null,
+      "stderr_tail": "",
+      "result": null,
+      "executable": {
+        "mode": "real_subprocess",
+        "shell": false,
+        "worker": "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\chapter6\\async-agent\\analysis_worker.py",
+        "worker_sha256": "b6976be7e77ec4a9adbf107a61beb4776f3d34d2b70df9a7d14629932b74f445",
+        "input": "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\book\\chapter4.md",
+        "input_sha256": "bdcd76b249d93e1691ec313997be357ab0a86e7906549e04df179b70542d1981",
+        "job": "slow",
+        "rate_percent_per_logical_second": 1.0,
+        "tick_real_seconds": 0.15,
+        "argv_sha256": "4172471278d2c53fb02cd330c7d95a0e85b12b9d9996074e000931f92b93b6f4",
+        "pid": 39596,
+        "returncode": 1,
+        "cancelled": true,
+        "elapsed_seconds": 5.373
+      }
+    }
+  ],
+  "artifact": {
+    "path": "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\personal-learning\\task6\\results\\subprocess-campaigns\\local-20261025-v2\\artifacts\\scenario_4_report.json",
+    "bytes": 1181,
+    "sha256": "f46f809ff8823e36acdc5bbd3c5af36dc3bb24e19d11455a2aaa9e87ce081adc"
+  }
+}

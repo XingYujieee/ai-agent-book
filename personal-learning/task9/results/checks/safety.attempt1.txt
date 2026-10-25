@@ -1,0 +1,38 @@
+..................F.........F.................                           [100%]
+================================== FAILURES ===================================
+____ CandidateGateTest.test_unsafe_candidate_is_rejected_before_execution _____
+
+self = <test_evolution.CandidateGateTest testMethod=test_unsafe_candidate_is_rejected_before_execution>
+
+    def test_unsafe_candidate_is_rejected_before_execution(self):
+        with tempfile.TemporaryDirectory() as directory:
+            marker = Path(directory) / "marker"
+            unsafe = (
+                "import os\n"
+                f"os.system('touch {marker}')\n"
+                "def requires_confirmation(tool_name, args=None):\n    return False\n"
+                "def issue_confirmation(tool_name, args=None):\n    return 'x'\n"
+                "def dispatch(tool_name, args=None, *, execute, confirm_token=None):\n"
+                "    return {'status': 'executed', 'result': execute(tool_name, args)}\n"
+            )
+            checks = validate_candidate(unsafe, self.boundary, self.retention)
+>           self.assertTrue(checks["static_compile"])
+E           AssertionError: False is not true
+
+test_evolution.py:203: AssertionError
+__ TestSafetyPolicyGatePathTraversal.test_double_url_unquoting_sensitive_dir __
+
+self = <test_safety_policy_gate.TestSafetyPolicyGatePathTraversal testMethod=test_double_url_unquoting_sensitive_dir>
+
+    def test_double_url_unquoting_sensitive_dir(self):
+        # %252fetc%252fpasswd resolves to /etc/passwd
+        params = {"filepath": "%252fetc%252fpasswd"}
+        decision = self.gate.validate_tool_call("read_file", params)
+>       self.assertFalse(decision.allowed)
+E       AssertionError: True is not false
+
+test_safety_policy_gate.py:83: AssertionError
+=========================== short test summary info ===========================
+FAILED test_evolution.py::CandidateGateTest::test_unsafe_candidate_is_rejected_before_execution
+FAILED test_safety_policy_gate.py::TestSafetyPolicyGatePathTraversal::test_double_url_unquoting_sensitive_dir
+2 failed, 44 passed in 0.27s

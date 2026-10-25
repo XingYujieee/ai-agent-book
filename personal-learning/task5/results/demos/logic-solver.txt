@@ -1,0 +1,39 @@
+离线约束求解基线    题目数：12
+
+== 约束求解(solver，离线) ==
+  [solver] kk01 (2人) ✓  解数=1  预测={'A': 'knight', 'B': 'knave'}
+  [solver] kk02 (2人) ✓  解数=1  预测={'A': 'knave', 'B': 'knight'}
+  [solver] kk03 (2人) ✓  解数=1  预测={'A': 'knight', 'B': 'knave'}
+  [solver] kk04 (3人) ✓  解数=1  预测={'A': 'knave', 'B': 'knight', 'C': 'knave'}
+  [solver] kk05 (3人) ✓  解数=1  预测={'A': 'knave', 'B': 'knave', 'C': 'knight'}
+  [solver] kk06 (3人) ✓  解数=1  预测={'A': 'knight', 'B': 'knave', 'C': 'knave'}
+  [solver] kk07 (3人) ✓  解数=1  预测={'A': 'knight', 'B': 'knight', 'C': 'knave'}
+  [solver] kk08 (4人) ✓  解数=1  预测={'A': 'knave', 'B': 'knave', 'C': 'knight', 'D': 'knight'}
+  [solver] kk09 (4人) ✓  解数=1  预测={'A': 'knight', 'B': 'knight', 'C': 'knave', 'D': 'knave'}
+  [solver] kk10 (4人) ✓  解数=1  预测={'A': 'knave', 'B': 'knight', 'C': 'knight', 'D': 'knave'}
+  [solver] kk11 (5人) ✓  解数=1  预测={'A': 'knight', 'B': 'knight', 'C': 'knave', 'D': 'knave', 'E': 'knight'}
+  [solver] kk12 (5人) ✓  解数=1  预测={'A': 'knave', 'B': 'knave', 'C': 'knight', 'D': 'knave', 'E': 'knave'}
+
+============================================================
+准确率对比表
+============================================================
+题号      人数    约束求解      
+------------------------------------------------------------
+kk01    2     ✓         
+kk02    2     ✓         
+kk03    2     ✓         
+kk04    3     ✓         
+kk05    3     ✓         
+kk06    3     ✓         
+kk07    3     ✓         
+kk08    4     ✓         
+kk09    4     ✓         
+kk10    4     ✓         
+kk11    5     ✓         
+kk12    5     ✓         
+------------------------------------------------------------
+准确率            100.0%   
+============================================================
+约束求解   准确率: 100.0%  (12/12)
+
+完整逐题记录已保存到 C:\Users\21931\Documents\ChatGPT\AI Agent\ai-agent-book\personal-learning\task5\results\logic-solver.json

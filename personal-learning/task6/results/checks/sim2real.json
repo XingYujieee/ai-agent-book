@@ -1,0 +1,21 @@
+{
+  "chapter": 6,
+  "name": "sim2real",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter6/rgb-sim2real-grasping",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_validator.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.758,
+  "checked_at": "2026-10-25T00:22:06.570892+00:00",
+  "log": "sim2real.txt"
+}

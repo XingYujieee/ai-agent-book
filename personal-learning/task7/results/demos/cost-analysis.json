@@ -1,0 +1,18 @@
+{
+  "name": "cost-analysis",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "demo.py",
+    "--offline",
+    "--scenario",
+    "all",
+    "--output",
+    "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\personal-learning\\task7\\results\\cost-analysis.json"
+  ],
+  "cwd": "chapter7/agent-cost-analysis",
+  "returncode": 0,
+  "seconds": 0.21,
+  "log": "cost-analysis.txt"
+}

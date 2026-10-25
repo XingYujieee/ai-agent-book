@@ -1,0 +1,22 @@
+{
+  "chapter": 7,
+  "name": "tts-judge",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter7/tts-quality-eval",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "tests/test_judge_robustness.py",
+    "tests/test_resolve_gemini_model_null.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 2.724,
+  "checked_at": "2026-10-25T00:34:56.438576+00:00",
+  "log": "tts-judge.txt"
+}

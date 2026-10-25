@@ -1,0 +1,23 @@
+{
+  "chapter": 6,
+  "name": "speech",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter6/end-to-end-speech",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "tests/test_demo.py",
+    "tests/test_speech_model.py",
+    "tests/test_validate_evidence.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.736,
+  "checked_at": "2026-10-25T00:18:59.012021+00:00",
+  "log": "speech.txt"
+}

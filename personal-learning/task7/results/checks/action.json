@@ -1,0 +1,21 @@
+{
+  "chapter": 7,
+  "name": "action",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter7/model-action-threshold",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "tests/test_experiment.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 1.159,
+  "checked_at": "2026-10-25T00:19:06.417650+00:00",
+  "log": "action.txt"
+}

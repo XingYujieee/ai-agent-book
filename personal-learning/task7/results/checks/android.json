@@ -1,0 +1,21 @@
+{
+  "chapter": 7,
+  "name": "android",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter7/android-world",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_experiment.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.684,
+  "checked_at": "2026-10-25T00:19:07.884516+00:00",
+  "log": "android.txt"
+}

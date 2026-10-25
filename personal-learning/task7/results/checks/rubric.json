@@ -1,0 +1,21 @@
+{
+  "chapter": 7,
+  "name": "rubric",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter7/user-memory-system-evaluation",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_experiment.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 8.631,
+  "checked_at": "2026-10-25T00:19:10.281946+00:00",
+  "log": "rubric.txt"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "translation-plan",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "demo.py",
+    "--dry-run",
+    "--out-dir",
+    "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\personal-learning\\task10\\results\\translation-plan"
+  ],
+  "cwd": "chapter10/book-translation",
+  "returncode": 0,
+  "seconds": 2.075,
+  "log": "translation-plan.txt"
+}

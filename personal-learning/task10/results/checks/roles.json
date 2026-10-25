@@ -1,0 +1,21 @@
+{
+  "chapter": 10,
+  "name": "roles",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter10/multi-role-transfer",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "tests"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 3.923,
+  "checked_at": "2026-10-25T00:19:18.707329+00:00",
+  "log": "roles.txt"
+}

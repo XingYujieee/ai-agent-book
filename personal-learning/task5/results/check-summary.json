@@ -1,0 +1,375 @@
+{
+  "jobs": 14,
+  "passed_jobs": 14,
+  "pytest_counts": {
+    "passed": 130
+  },
+  "rows": [
+    {
+      "chapter": 5,
+      "name": "cad",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/cad-vs-diffusion",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_offline.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.287,
+      "checked_at": "2026-10-25T00:25:49.523593+00:00",
+      "log": "cad.txt",
+      "pytest_summary": "6 passed, 2 warnings in 1.53s",
+      "counts": {
+        "passed": 6
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "creator",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/agent-creator",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_creator.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 4.906,
+      "checked_at": "2026-10-25T00:18:58.275810+00:00",
+      "log": "creator.txt",
+      "pytest_summary": "17 passed in 4.24s",
+      "counts": {
+        "passed": 17
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "diagnosis",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/log-diagnosis",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_campaign_orchestrator.py",
+        "test_github_mcp_bare_output.py",
+        "test_replay_latency.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 3.861,
+      "checked_at": "2026-10-25T00:18:51.125710+00:00",
+      "log": "diagnosis.txt",
+      "pytest_summary": "6 passed in 3.09s",
+      "counts": {
+        "passed": 6
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "editing",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/video-edit",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_agents_llm_json.py",
+        "test_bare_output_filename.py",
+        "test_extract_json_adjacent.py",
+        "test_slowmo_factor_zero.py",
+        "test_slowmo_null_factor.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 11.101,
+      "checked_at": "2026-10-25T00:22:06.000719+00:00",
+      "log": "editing.txt",
+      "pytest_summary": "18 passed in 10.11s",
+      "counts": {
+        "passed": 18
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "erp",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/erp-agent",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_parse_only.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.243,
+      "checked_at": "2026-10-25T00:18:53.368997+00:00",
+      "log": "erp.txt",
+      "pytest_summary": "4 passed in 1.58s",
+      "counts": {
+        "passed": 4
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "form",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/dynamic-form",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_round_trip_destination.py",
+        "test_summarize_numeric_zero_baggage.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 3.243,
+      "checked_at": "2026-10-25T00:18:51.266260+00:00",
+      "log": "form.txt",
+      "pytest_summary": "13 passed in 2.62s",
+      "counts": {
+        "passed": 13
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "handoff",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/provider-failover",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "tests/test_offline.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 1.321,
+      "checked_at": "2026-10-25T00:18:43.140989+00:00",
+      "log": "handoff.txt",
+      "pytest_summary": "23 passed in 0.34s",
+      "counts": {
+        "passed": 23
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "logic-random",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/code-for-logic",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_random_stmt_one_person.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.663,
+      "checked_at": "2026-10-25T00:25:47.889765+00:00",
+      "log": "logic-random.txt",
+      "pytest_summary": "1 passed in 0.03s",
+      "counts": {
+        "passed": 1
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "logic",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/code-for-logic",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_hf_dataset.py",
+        "test_parse_answer_boolean.py",
+        "test_silent_resident.py",
+        "test_statistics.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.716,
+      "checked_at": "2026-10-25T00:25:47.952354+00:00",
+      "log": "logic.txt",
+      "pytest_summary": "7 passed in 0.07s",
+      "counts": {
+        "passed": 7
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "math",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/code-for-math",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_campaign.py",
+        "test_empty_problems.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 1.316,
+      "checked_at": "2026-10-25T00:21:55.447293+00:00",
+      "log": "math.txt",
+      "pytest_summary": "6 passed in 0.64s",
+      "counts": {
+        "passed": 6
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "rules",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/small-model-codified-rules",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_campaign.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.275,
+      "checked_at": "2026-10-25T00:18:45.416708+00:00",
+      "log": "rules.txt",
+      "pytest_summary": "4 passed in 1.58s",
+      "counts": {
+        "passed": 4
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "slides",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/paper-to-ppt",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_null_issues.py",
+        "test_page_contract.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 5.686,
+      "checked_at": "2026-10-25T00:21:59.815443+00:00",
+      "log": "slides.txt",
+      "pytest_summary": "8 passed, 1 warning in 4.66s",
+      "counts": {
+        "passed": 8
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "ui",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/conversational-ui",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_customize_malformed_args.py",
+        "test_customize_malformed_json.py",
+        "test_customize_non_dict_file_item.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.274,
+      "checked_at": "2026-10-25T00:18:53.540638+00:00",
+      "log": "ui.txt",
+      "pytest_summary": "8 passed in 1.64s",
+      "counts": {
+        "passed": 8
+      }
+    },
+    {
+      "chapter": 5,
+      "name": "video",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter5/paper-to-video",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_campaign.py",
+        "test_ffprobe_duration.py",
+        "test_null_bullet_item.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.604,
+      "checked_at": "2026-10-25T00:18:48.021748+00:00",
+      "log": "video.txt",
+      "pytest_summary": "9 passed in 1.85s",
+      "counts": {
+        "passed": 9
+      }
+    }
+  ]
+}

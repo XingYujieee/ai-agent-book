@@ -1,0 +1,21 @@
+{
+  "chapter": 6,
+  "name": "tts",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter6/controllable-tts",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_fish_s1.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 2.988,
+  "checked_at": "2026-10-25T00:19:01.343020+00:00",
+  "log": "tts.txt"
+}

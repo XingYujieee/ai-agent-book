@@ -1,0 +1,594 @@
+{
+  "baseline_ref": "faa6db95",
+  "scope": "Historical Git blobs only; at most 40 declared artifacts per evidence file, no live API reproduction.",
+  "experiments": 14,
+  "evidence_files_present": 11,
+  "rows": [
+    {
+      "experiment": "7-1",
+      "title": "运行 τ²-bench 并对比 τ-bench 的演进",
+      "ledger_row": "| 7-1 | Run τ²-bench, inspect multi-turn failures, and compare the dual-control telecom design with historical τ-bench | [`exp7-1-openrouter-gpt41mini-telecom-20260802-v1`](tau2-bench-eval/validation/runs/exp7-1-openrouter-gpt41mini-telecom-20260802-v1/manifest.json) retains the raw five-task telecom trajectory from pinned upstream `8d005b0…`, 4/5 Pass@1, exact costs, and a wrong-line failure analysis. Upstream format and trial-count checks pass; full-task coverage fails as expected because the manuscript command deliberately samples five tasks rather than a complete leaderboard submission. Historical τ-bench remains pinned at `59a200c…` for the design comparison. | **Complete saved bounded campaign** |",
+      "evidence": "chapter7/tau2-bench-eval/validation/runs/exp7-1-openrouter-gpt41mini-telecom-20260802-v1/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "ba93a26d81929149ab8086f868e5e42d887f1b7a0430288bea21a31850f7e0d6",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "complete_bounded_campaign"
+      },
+      "declared_hash_entries": 2,
+      "sample_checks": [
+        {
+          "declared_path": "chapter7/tau2-bench-eval/validation/runs/exp7-1-openrouter-gpt41mini-telecom-20260802-v1/evidence.json",
+          "resolved_path": "chapter7/tau2-bench-eval/validation/runs/exp7-1-openrouter-gpt41mini-telecom-20260802-v1/evidence.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter7/tau2-bench-eval/validation/runs/exp7-1-openrouter-gpt41mini-telecom-20260802-v1/trajectories.json",
+          "resolved_path": "chapter7/tau2-bench-eval/validation/runs/exp7-1-openrouter-gpt41mini-telecom-20260802-v1/trajectories.json",
+          "in_git": true,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "7-2",
+      "title": "人肉执行基准测试任务",
+      "ledger_row": "| 7-2 | Personally complete simple/medium/hard tasks from GAIA, AndroidWorld, SWE-bench Verified, τ²-bench, Terminal-Bench, and OSWorld-Verified, retaining trajectories and official verification | [`experiment-7-2-human-benchmark/results.json`](experiment-7-2-human-benchmark/results.json) binds the preregistered 18/18 Codex-as-human cases to their per-benchmark trajectories and first official results: 13 passed, 5 failed, 0 unscored. The [report](experiment-7-2-human-benchmark/README.md) explains every task, operator trajectory, score, failure, and AndroidWorld/τ² compatibility boundary. | **Complete saved bounded campaign** |",
+      "evidence": "chapter7/experiment-7-2-human-benchmark/results.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "6376f499d767c80cddc3b150a06546540d975a93cc57b2a1bd588a49af07be2c",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 0,
+      "sample_checks": []
+    },
+    {
+      "experiment": "7-3",
+      "title": "构建基于 Rubric 的用户记忆评估系统",
+      "ledger_row": "| 7-3 | Four-grade precision/recall/reasoning/proactivity rubric, examples/boundaries, hallucination veto | [`user-memory-system-evaluation/results/full_7_3_structured_rubric_evidence.json`](user-memory-system-evaluation/results/full_7_3_structured_rubric_evidence.json): 60 cases, 180/180 structured judgments, full scope, complete. | **Complete** |",
+      "evidence": "chapter7/user-memory-system-evaluation/results/full_7_3_structured_rubric_evidence.json",
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "7-4",
+      "title": "Advanced JSON Cards 与 RAG 的对比评估",
+      "ledger_row": "| 7-4 | Run Advanced JSON Cards, RAG, and hybrid over the same 60 cases; compare quality, steps, tools, latency, cost, and failure boundaries | [`user-memory-system-evaluation/results/full_7_4_60_cases_costed.json`](user-memory-system-evaluation/results/full_7_4_60_cases_costed.json): 180/180 real trajectories, zero errors, complete pricing coverage and failure analysis. | **Complete** |",
+      "evidence": "chapter7/user-memory-system-evaluation/results/full_7_4_60_cases_costed.json",
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "7-5",
+      "title": "构建全自动 TTS 质量评估流水线",
+      "ledger_row": "| 7-5 | Multiple TTS providers/configurations × diverse corpus; direct-audio judge scores accuracy, naturalness, emotion, and voice consistency against reference audio | [`mistral_multimodal_20260730`](tts-quality-eval/validation/mistral_multimodal_20260730/manifest.json) retains 8/8 content-hashed OpenAI/Fish MP3 cells over four challenge categories, the fixed reference hash, exact four-dimension Voxtral judgments, and a recomputed complete gate. Earlier Google/OpenRouter/account failures remain as historical negative evidence. | **Complete saved campaign** |",
+      "evidence": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "9acf5a561568eb241b6d297744973d85e157ecbd528b35b98c50d2c21bab8e4a",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "complete"
+      },
+      "declared_hash_entries": 14,
+      "sample_checks": [
+        {
+          "declared_path": "chapter7/tts-quality-eval/config.py",
+          "resolved_path": "chapter7/tts-quality-eval/config.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter7/tts-quality-eval/demo.py",
+          "resolved_path": "chapter7/tts-quality-eval/demo.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter7/tts-quality-eval/pipeline.py",
+          "resolved_path": "chapter7/tts-quality-eval/pipeline.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/fishaudio-s1-clone__emotion.mp3",
+          "resolved_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/fishaudio-s1-clone__emotion.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/fishaudio-s1-clone__long.mp3",
+          "resolved_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/fishaudio-s1-clone__long.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/fishaudio-s1-clone__num.mp3",
+          "resolved_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/fishaudio-s1-clone__num.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/fishaudio-s1-clone__polyphone.mp3",
+          "resolved_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/fishaudio-s1-clone__polyphone.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/results.json",
+          "resolved_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/results.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/synthesis_source_results.json",
+          "resolved_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/synthesis_source_results.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/tts1-alloy-1.0__emotion.mp3",
+          "resolved_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/tts1-alloy-1.0__emotion.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/tts1-alloy-1.0__long.mp3",
+          "resolved_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/tts1-alloy-1.0__long.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/tts1-alloy-1.0__num.mp3",
+          "resolved_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/tts1-alloy-1.0__num.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/tts1-alloy-1.0__polyphone.mp3",
+          "resolved_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/tts1-alloy-1.0__polyphone.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter9/controllable-tts/reference_audio/neutral_normal_formal.mp3",
+          "resolved_path": "chapter7/tts-quality-eval/validation/mistral_multimodal_20260730/chapter9/controllable-tts/reference_audio/neutral_normal_formal.mp3",
+          "in_git": false,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "7-6",
+      "title": "对 AndroidWorld 失败轨迹做失败归因",
+      "ledger_row": "| 7-6 | Attribute the first error in retained AndroidWorld T3A failure traces, classify it, assign the responsible party, and convert assistant-message first errors into trajectory-prefix regression tasks | [`android-world/failure-attribution/manifest.json`](android-world/failure-attribution/manifest.json) binds an offline annotation pass over the retained T3A log. Population, recomputed from the raw log: 53 task blocks, of which 1 was skipped by the benchmark's own `initialize_task` crash and 52 are real failures; 24/52 ended with the Agent declaring completion; 9 failures have goals requiring the current date and only 2 ever obtain it (incidentally, from a form default showing `Sun, Oct 15`); the self-reported \"no visible effect\" family occurs 55 times across 18/52 episodes. Ten episodes are annotated with step-level citations verified at build time — 9 silent failures, 7 of 10 first errors on an assistant message, 5 high / 4 medium / 1 low confidence. This is the **third pass**: the second moved 7 of 10 first-error steps earlier, and the third corrected two population statistics and one record's description; every change is retained with its rationale. Includes 3 trajectory-prefix regression tasks and 3 corrections to `t3a_failed_analysis.md`. | **Complete saved annotation pass; no new benchmark campaign** |",
+      "evidence": "chapter7/android-world/failure-attribution/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "da9d3b250e610a2753fac24906916f876a7fd6c1336bda8515979066b9b2be3e",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 5,
+      "sample_checks": [
+        {
+          "declared_path": "README.md",
+          "resolved_path": "chapter7/android-world/failure-attribution/README.md",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "attribution_records.json",
+          "resolved_path": "chapter7/android-world/failure-attribution/attribution_records.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "extract_trajectories.py",
+          "resolved_path": "chapter7/android-world/failure-attribution/extract_trajectories.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "regression_prefixes.json",
+          "resolved_path": "chapter7/android-world/failure-attribution/regression_prefixes.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "trajectories.json",
+          "resolved_path": "chapter7/android-world/failure-attribution/trajectories.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "7-7",
+      "title": "轨迹前缀边界评估：同一上下文的多种表示",
+      "ledger_row": "| 7-7 | Supply known user memories and trajectory prefixes; evaluate scoped use, current-instruction override, safe clarification, and forbidden next actions across JSON/Markdown/Python-like encodings | [`user-memory-policy-eval/results/manifest.json`](user-memory-policy-eval/results/manifest.json) binds 33/33 real OpenRouter cells (11 bad cases × 3 encodings), zero API errors, and the content-hashed report [`policy_prefix_live.json`](user-memory-policy-eval/results/policy_prefix_live.json): 6/11 passed for each encoding. | **Complete saved campaign** |",
+      "evidence": "chapter7/user-memory-policy-eval/results/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "cdfecbf56b6207404b0fe8c194b57bfb5b7f0bdc380dfc876424368c8ef674ff",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 3,
+      "sample_checks": [
+        {
+          "declared_path": "cases.json",
+          "resolved_path": "chapter7/user-memory-policy-eval/cases.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "results/policy_prefix_live.json",
+          "resolved_path": "chapter7/user-memory-policy-eval/results/policy_prefix_live.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "runner.py",
+          "resolved_path": "chapter7/user-memory-policy-eval/runner.py",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "7-8",
+      "title": "从配对比较数据构建模型排行榜",
+      "ledger_row": "| 7-8 | Online Elo from real Arena votes, Bradley-Terry comparison, win matrix, official-ranking comparison, and historical animation | [`exp7-7-arena-20260731-v1`](elo-leaderboard/validation/runs/exp7-7-arena-20260731-v1/manifest.json) binds the 2.0 GB public snapshot by SHA-256 and processes all 1,799,991 source rows (1,670,250 accepted blind votes, 129 models). Chronological K=4 Elo and deterministic-bootstrap Bradley-Terry rankings have Spearman 0.787 / Kendall 0.606 agreement and 12/20 top-model overlap; empirical/predicted matrices, 17 monthly snapshots, three plots, and the D3 animation are content-hashed and independently revalidated. | **Complete saved campaign** |",
+      "evidence": "chapter7/elo-leaderboard/validation/runs/exp7-7-arena-20260731-v1/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "e7593c1c833b98009d4289872a2793c63d6da6475a9208314f0782bf2d061a2d",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "passed",
+        "official_complete": true
+      },
+      "declared_hash_entries": 14,
+      "sample_checks": [
+        {
+          "declared_path": "animation.py",
+          "resolved_path": "chapter7/elo-leaderboard/animation.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "bradley_terry.json",
+          "resolved_path": "chapter7/elo-leaderboard/validation/runs/exp7-7-arena-20260731-v1/bradley_terry.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "bradley_terry.py",
+          "resolved_path": "chapter7/elo-leaderboard/bradley_terry.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "leaderboard.png",
+          "resolved_path": "chapter7/elo-leaderboard/validation/runs/exp7-7-arena-20260731-v1/leaderboard.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "leaderboard_animation.html",
+          "resolved_path": "chapter7/elo-leaderboard/validation/runs/exp7-7-arena-20260731-v1/leaderboard_animation.html",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "online_elo.json",
+          "resolved_path": "chapter7/elo-leaderboard/validation/runs/exp7-7-arena-20260731-v1/online_elo.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "optimized_elo.py",
+          "resolved_path": "chapter7/elo-leaderboard/optimized_elo.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "rating_history.json",
+          "resolved_path": "chapter7/elo-leaderboard/validation/runs/exp7-7-arena-20260731-v1/rating_history.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "rating_history.png",
+          "resolved_path": "chapter7/elo-leaderboard/validation/runs/exp7-7-arena-20260731-v1/rating_history.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "summary.json",
+          "resolved_path": "chapter7/elo-leaderboard/validation/runs/exp7-7-arena-20260731-v1/summary.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "validation/run_experiment.py",
+          "resolved_path": "chapter7/elo-leaderboard/validation/run_experiment.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "validation/validate_evidence.py",
+          "resolved_path": "chapter7/elo-leaderboard/validation/validate_evidence.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "win_rate_matrix.json",
+          "resolved_path": "chapter7/elo-leaderboard/validation/runs/exp7-7-arena-20260731-v1/win_rate_matrix.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "win_rate_matrix.png",
+          "resolved_path": "chapter7/elo-leaderboard/validation/runs/exp7-7-arena-20260731-v1/win_rate_matrix.png",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "7-9",
+      "title": "在固定 Coding Harness 中测量模型的行动阈值",
+      "ledger_row": "| 7-9 | Hold a neutral coding harness fixed while swapping GPT/Claude models; repeat localized, cross-cutting, and contract-sensitive tasks; measure pre-edit exploration, first-patch acceptance, rework, final tests, latency, files, and tokens | [`model-action-threshold/results/exp7-8-action-threshold-20260731-v1/manifest.json`](model-action-threshold/results/exp7-8-action-threshold-20260731-v1/manifest.json) binds 18/18 real OpenRouter cells (2 models × 3 tasks × 3 trials), zero API errors, full trajectories, and independently passing artifact hashes. Both models pass all final tests; GPT-5.6-sol averages 6.89 pre-edit tool calls / 4.67 files versus Claude Sonnet 5 at 4.56 / 3.56. | **Complete saved campaign** |",
+      "evidence": "chapter7/model-action-threshold/results/exp7-8-action-threshold-20260731-v1/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "294c70dbe36c3a4b6048eb7a35db4489681c74d8de910ac73b8dbf0c243dd4d5",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "complete"
+      },
+      "declared_hash_entries": 3,
+      "sample_checks": [
+        {
+          "declared_path": "config.json",
+          "resolved_path": "chapter7/model-action-threshold/results/exp7-8-action-threshold-20260731-v1/config.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "observations.jsonl",
+          "resolved_path": "chapter7/model-action-threshold/results/exp7-8-action-threshold-20260731-v1/observations.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "summary.json",
+          "resolved_path": "chapter7/model-action-threshold/results/exp7-8-action-threshold-20260731-v1/summary.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "7-10",
+      "title": "Agent 任务的端到端成本分析",
+      "ledger_row": "| 7-10 | End-to-end multi-turn cost decomposition and measured KV-cache/context-compression A/B | `agent-cost-analysis/sample_trace.json` retains the real four-arm, eight-turn token/cache/latency observations; README reports per-step, percentile, component, and 2×2 results. | **Complete saved campaign** |",
+      "evidence": "chapter7/agent-cost-analysis/sample_trace.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "3bb66868a5a0b3557f1087ef603161295320a5c1f9ad31bbc3bd960497407e92",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 0,
+      "sample_checks": []
+    },
+    {
+      "experiment": "7-11",
+      "title": "多维度模型性能基准测试",
+      "ledger_row": "| 7-11 | Multi-provider 8K/32K/128K × 512/2048 workload at N≥100, p50/p95/p99, thinking, pricing, same-model provider pair, rate ramp, Agent trace, and 168-hour hourly availability | Campaign and strict analyzer implemented. [`model-benchmark/results/manifest.json`](model-benchmark/results/manifest.json) reports only 29 smoke/readiness observations, no standard N=100 cells, no rate ramp/Agent-cost phase, and no 168-hour campaign. | **Incomplete—long-running/costly campaign** |",
+      "evidence": "chapter7/model-benchmark/results/manifest.json",
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "7-12",
+      "title": "用户记忆系统的端到端选型评估",
+      "ledger_row": "| 7-12 | Full 4 embeddings × 3 rerankers × 2 main models × 60 cases with retrieval/task metrics and interaction analysis | [`user-memory-system-evaluation/results/full_7_11_60_case_matrix.json`](user-memory-system-evaluation/results/full_7_11_60_case_matrix.json): 60 cases × 24 cells = 1,440/1,440 real trajectories, zero error records, zero unpriced usage, complete retrieval/task metrics and factorial interaction analysis, top-level and completion status `complete`; independently rechecked by `user-memory-system-evaluation/validation/verify_full_matrix_20260731.py` (ALL CHECKS PASSED). Executed under documented backend substitutions (BGE-M3 and OpenAI embeddings via OpenRouter as identical models, Qwen3-Embedding-8B substituting the endpoint-gated Doubao embedding, Doubao-LLM reranker substituting the unreachable BGE cross-encoder); see [`user-memory-system-evaluation/results/full_matrix_backend_readiness_20260731.json`](user-memory-system-evaluation/results/full_matrix_backend_readiness_20260731.json) and `candidate_backend_probes_20260731.json`. | **Complete saved campaign** |",
+      "evidence": "chapter7/user-memory-system-evaluation/results/full_7_11_60_case_matrix.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "b33d0e14ce70a7042868767a98956de2624cd70e33d061900b4a2f647b2269e8",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "complete"
+      },
+      "declared_hash_entries": 0,
+      "sample_checks": []
+    },
+    {
+      "experiment": "7-13",
+      "title": "AndroidWorld 的评估和改进",
+      "ledger_row": "| 7-13 | Diagnose AndroidWorld, test layered hypotheses, make cost-benefit decision, rerun full suite, and iterate | [`android-world/validation/candidate_h5c_api33_local_qwen_20260804/evidence.json`](android-world/validation/candidate_h5c_api33_local_qwen_20260804/evidence.json) retains all 580/580 unique episodes (116 tasks × five trials), including evaluator failures, with zero runtime errors. Strict T3A success is 26/580 (4.4828%); mean evaluator reward is 0.133621, comprising 77 full-reward states plus one `0.5` partial reward. The five-shard run used the completed official setup and all 24/24 required apps on Pixel 6/API-33, with local Qwen2.5-7B revision `a09a35458c702b33eeacc393d103063234e8bc28` via vLLM 0.19.0 on an RTX PRO 6000 Blackwell 96 GB. Execution and evidence are complete, but deployment is not approved; because the candidate Qwen model differs from the paired-source Doubao model, this evidence supports neither a same-model uplift nor a noninferiority claim. | **Complete saved campaign—deployment not approved** |",
+      "evidence": "chapter7/android-world/validation/candidate_h5c_api33_local_qwen_20260804/evidence.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "39a5de8fa7007e353084792f2e830ff5baa3d3f677f4bebe3c29c08a88a38a4e",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 5,
+      "sample_checks": [
+        {
+          "declared_path": "/home/ubuntu/ai-agent-book-exp7-12/chapter7/android-world/validation/candidate_h5c_api33_local_shard1/evidence.json",
+          "resolved_path": "chapter7/android-world/validation/candidate_h5c_api33_local_qwen_20260804/home/ubuntu/ai-agent-book-exp7-12/chapter7/android-world/validation/candidate_h5c_api33_local_shard1/evidence.json",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "/home/ubuntu/ai-agent-book-exp7-12/chapter7/android-world/validation/candidate_h5c_api33_local_shard2/evidence.json",
+          "resolved_path": "chapter7/android-world/validation/candidate_h5c_api33_local_qwen_20260804/home/ubuntu/ai-agent-book-exp7-12/chapter7/android-world/validation/candidate_h5c_api33_local_shard2/evidence.json",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "/home/ubuntu/ai-agent-book-exp7-12/chapter7/android-world/validation/candidate_h5c_api33_local_shard3/evidence.json",
+          "resolved_path": "chapter7/android-world/validation/candidate_h5c_api33_local_qwen_20260804/home/ubuntu/ai-agent-book-exp7-12/chapter7/android-world/validation/candidate_h5c_api33_local_shard3/evidence.json",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "/home/ubuntu/ai-agent-book-exp7-12/chapter7/android-world/validation/candidate_h5c_api33_local_shard4/evidence.json",
+          "resolved_path": "chapter7/android-world/validation/candidate_h5c_api33_local_qwen_20260804/home/ubuntu/ai-agent-book-exp7-12/chapter7/android-world/validation/candidate_h5c_api33_local_shard4/evidence.json",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "/home/ubuntu/ai-agent-book-exp7-12/chapter7/android-world/validation/candidate_h5c_api33_local_shard5/evidence.json",
+          "resolved_path": "chapter7/android-world/validation/candidate_h5c_api33_local_qwen_20260804/home/ubuntu/ai-agent-book-exp7-12/chapter7/android-world/validation/candidate_h5c_api33_local_shard5/evidence.json",
+          "in_git": false,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "7-14",
+      "title": "配置 OpenVLA 与 RoboTwin2 的具身智能环境",
+      "ledger_row": "| 7-14 | Real OpenVLA + RoboTwin2 `move_can_pot` evaluation with three RGB views, 14-D proprio/action, IID/OOD seeds, timing, failures, and action-chunk ablation | [`exp7-13-localgpu-20260803-v1`](openvla-robotwin2-eval/validation/runs/exp7-13-localgpu-20260803-v1/manifest.json) binds two real single-GPU `val_only` arms of 128 IID + 128 OOD episodes each, 512 rollout-video hashes, all process/config/checkpoint/source identities, and 486 evidence-backed timeout classifications. Chunk 1 scored 0/256; chunk 25 scored 26/256 (13/128 in both IID and OOD), a paired +10.15625 pp result. The strict analyzer and retained-package verifier both pass. | **Complete saved campaign; low absolute success retained** |",
+      "evidence": "chapter7/openvla-robotwin2-eval/validation/runs/exp7-13-localgpu-20260803-v1/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "f8c53d38c0f8b8fd91206f7f41f7c06925691b4aeb5d95f9675b241e0ca58f2c",
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "complete"
+      },
+      "declared_hash_entries": 17,
+      "sample_checks": [
+        {
+          "declared_path": "chapter7/openvla-robotwin2-eval/README.md",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/README.md",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter7/openvla-robotwin2-eval/annotate_timeouts.py",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/annotate_timeouts.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter7/openvla-robotwin2-eval/config.json",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/config.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter7/openvla-robotwin2-eval/experiment.py",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/experiment.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter7/openvla-robotwin2-eval/finalize_evidence.py",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/finalize_evidence.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter7/openvla-robotwin2-eval/instrument_upstream.py",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/instrument_upstream.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chapter7/openvla-robotwin2-eval/task_config_exp7_13_three_view.yml",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/task_config_exp7_13_three_view.yml",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "chapter7/openvla-robotwin2-eval/test_experiment.py",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/test_experiment.py",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chunk_1/episodes.jsonl",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/validation/runs/exp7-13-localgpu-20260803-v1/chunk_1/episodes.jsonl",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chunk_1/process.json",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/validation/runs/exp7-13-localgpu-20260803-v1/chunk_1/process.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chunk_25/episodes.jsonl",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/validation/runs/exp7-13-localgpu-20260803-v1/chunk_25/episodes.jsonl",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "chunk_25/process.json",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/validation/runs/exp7-13-localgpu-20260803-v1/chunk_25/process.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "failure_annotations.json",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/validation/runs/exp7-13-localgpu-20260803-v1/failure_annotations.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "launch_manifest.json",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/validation/runs/exp7-13-localgpu-20260803-v1/launch_manifest.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "preflight.json",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/validation/runs/exp7-13-localgpu-20260803-v1/preflight.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "report.json",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/validation/runs/exp7-13-localgpu-20260803-v1/report.json",
+          "in_git": true,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "report.md",
+          "resolved_path": "chapter7/openvla-robotwin2-eval/validation/runs/exp7-13-localgpu-20260803-v1/report.md",
+          "in_git": true,
+          "sha256_matches": false
+        }
+      ]
+    }
+  ]
+}

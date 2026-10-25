@@ -1,0 +1,25 @@
+{
+  "chapter": 8,
+  "name": "prompt-distillation",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter8/prompt-distillation",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_compare_empty.py",
+    "test_create_data_empty.py",
+    "test_evaluate_empty_parse_rate.py",
+    "test_evaluate_none_pred_label.py",
+    "test_experiment_8_8.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.731,
+  "checked_at": "2026-10-25T00:19:08.618551+00:00",
+  "log": "prompt-distillation.txt"
+}

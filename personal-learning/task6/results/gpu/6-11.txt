@@ -1,0 +1,249 @@
+{
+  "schema_version": "3.0",
+  "experiment_id": "6-10",
+  "status": "complete",
+  "kind": "local_gpu_expert_upper_bound",
+  "seed": 20260808,
+  "run": {
+    "accelerator_required": true
+  },
+  "metrics": {
+    "device": {
+      "device": "cuda",
+      "torch": "2.11.0+cu128",
+      "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "capability": [
+        8,
+        6
+      ]
+    },
+    "protocol": {
+      "seeds": [
+        20260808,
+        20260809,
+        20260810
+      ],
+      "object_counts": [
+        1,
+        2,
+        3
+      ],
+      "episodes_per_cell": 256,
+      "total_episodes": 2304
+    },
+    "cells": [
+      {
+        "seed": 20260808,
+        "episodes": 256,
+        "objects_per_episode": 1,
+        "max_steps": 900,
+        "control_hz": 20,
+        "successes": 256,
+        "success_rate": 1.0,
+        "mean_steps": 13.296875,
+        "p95_steps": 20.0,
+        "mean_path_length_m": 0.23626473546028137,
+        "device": {
+          "device": "cuda",
+          "torch": "2.11.0+cu128",
+          "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+          "capability": [
+            8,
+            6
+          ]
+        }
+      },
+      {
+        "seed": 20260808,
+        "episodes": 256,
+        "objects_per_episode": 2,
+        "max_steps": 900,
+        "control_hz": 20,
+        "successes": 256,
+        "success_rate": 1.0,
+        "mean_steps": 30.625,
+        "p95_steps": 48.5,
+        "mean_path_length_m": 0.5448520183563232,
+        "device": {
+          "device": "cuda",
+          "torch": "2.11.0+cu128",
+          "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+          "capability": [
+            8,
+            6
+          ]
+        }
+      },
+      {
+        "seed": 20260808,
+        "episodes": 256,
+        "objects_per_episode": 3,
+        "max_steps": 900,
+        "control_hz": 20,
+        "successes": 256,
+        "success_rate": 1.0,
+        "mean_steps": 48.80078125,
+        "p95_steps": 71.0,
+        "mean_path_length_m": 0.8686565160751343,
+        "device": {
+          "device": "cuda",
+          "torch": "2.11.0+cu128",
+          "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+          "capability": [
+            8,
+            6
+          ]
+        }
+      },
+      {
+        "seed": 20260809,
+        "episodes": 256,
+        "objects_per_episode": 1,
+        "max_steps": 900,
+        "control_hz": 20,
+        "successes": 256,
+        "success_rate": 1.0,
+        "mean_steps": 12.921875,
+        "p95_steps": 20.0,
+        "mean_path_length_m": 0.22912266850471497,
+        "device": {
+          "device": "cuda",
+          "torch": "2.11.0+cu128",
+          "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+          "capability": [
+            8,
+            6
+          ]
+        }
+      },
+      {
+        "seed": 20260809,
+        "episodes": 256,
+        "objects_per_episode": 2,
+        "max_steps": 900,
+        "control_hz": 20,
+        "successes": 256,
+        "success_rate": 1.0,
+        "mean_steps": 29.734375,
+        "p95_steps": 48.0,
+        "mean_path_length_m": 0.5285569429397583,
+        "device": {
+          "device": "cuda",
+          "torch": "2.11.0+cu128",
+          "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+          "capability": [
+            8,
+            6
+          ]
+        }
+      },
+      {
+        "seed": 20260809,
+        "episodes": 256,
+        "objects_per_episode": 3,
+        "max_steps": 900,
+        "control_hz": 20,
+        "successes": 256,
+        "success_rate": 1.0,
+        "mean_steps": 47.5234375,
+        "p95_steps": 69.25,
+        "mean_path_length_m": 0.844653844833374,
+        "device": {
+          "device": "cuda",
+          "torch": "2.11.0+cu128",
+          "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+          "capability": [
+            8,
+            6
+          ]
+        }
+      },
+      {
+        "seed": 20260810,
+        "episodes": 256,
+        "objects_per_episode": 1,
+        "max_steps": 900,
+        "control_hz": 20,
+        "successes": 256,
+        "success_rate": 1.0,
+        "mean_steps": 12.43359375,
+        "p95_steps": 19.0,
+        "mean_path_length_m": 0.2207442820072174,
+        "device": {
+          "device": "cuda",
+          "torch": "2.11.0+cu128",
+          "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+          "capability": [
+            8,
+            6
+          ]
+        }
+      },
+      {
+        "seed": 20260810,
+        "episodes": 256,
+        "objects_per_episode": 2,
+        "max_steps": 900,
+        "control_hz": 20,
+        "successes": 256,
+        "success_rate": 1.0,
+        "mean_steps": 29.3984375,
+        "p95_steps": 47.25,
+        "mean_path_length_m": 0.5226116180419922,
+        "device": {
+          "device": "cuda",
+          "torch": "2.11.0+cu128",
+          "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+          "capability": [
+            8,
+            6
+          ]
+        }
+      },
+      {
+        "seed": 20260810,
+        "episodes": 256,
+        "objects_per_episode": 3,
+        "max_steps": 900,
+        "control_hz": 20,
+        "successes": 256,
+        "success_rate": 1.0,
+        "mean_steps": 47.12890625,
+        "p95_steps": 72.25,
+        "mean_path_length_m": 0.8386477828025818,
+        "device": {
+          "device": "cuda",
+          "torch": "2.11.0+cu128",
+          "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+          "capability": [
+            8,
+            6
+          ]
+        }
+      }
+    ],
+    "aggregate_success_rate": 1.0,
+    "worst_cell_success_rate": 1.0,
+    "max_p95_steps": 72.25,
+    "deterministic_replay": true,
+    "wall_time_ms": 832.578
+  },
+  "artifacts": [
+    {
+      "kind": "metrics",
+      "path": "metrics.json",
+      "sha256": "4f57692bd315bfaec61a062204554edf6ed2c9c18794e7a32773b7c3cede9648"
+    },
+    {
+      "kind": "cells",
+      "path": "cells.json",
+      "sha256": "23d948dbc65ee280787c12a6bcb8a078565803c0dc82e34b797d2f1ad7bf53be"
+    }
+  ],
+  "hardware_extension": {
+    "status": "gated",
+    "actuation_attempted": false,
+    "upstream": "Vector-Wangel/XLeRobot"
+  },
+  "blockers": []
+}

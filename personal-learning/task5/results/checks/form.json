@@ -1,0 +1,22 @@
+{
+  "chapter": 5,
+  "name": "form",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter5/dynamic-form",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_round_trip_destination.py",
+    "test_summarize_numeric_zero_baggage.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 3.243,
+  "checked_at": "2026-10-25T00:18:51.266260+00:00",
+  "log": "form.txt"
+}

@@ -1,0 +1,23 @@
+{
+  "chapter": 7,
+  "name": "elo",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter7/elo-leaderboard",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "tests/test_analyze_empty_history.py",
+    "tests/test_animation_empty_history.py",
+    "tests/test_animation_tie_wins.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 2.463,
+  "checked_at": "2026-10-25T00:34:56.176812+00:00",
+  "log": "elo.txt"
+}

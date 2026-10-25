@@ -1,0 +1,21 @@
+{
+  "mode": "quick_offline",
+  "accepted": true,
+  "decisions": {
+    "deterministic": "release_to_canary",
+    "rejected_control": "reject_candidate"
+  },
+  "gates": {
+    "cross_trajectory_support_met": true,
+    "root_cause_targets_dispatch_layer": true,
+    "signals_include_user_feedback_and_audit": true,
+    "all_candidates_isolated": true,
+    "trusted_surfaces_unchanged": true,
+    "same_release_gate_for_all_candidates": true,
+    "deterministic_candidate_release_to_canary": true,
+    "known_bad_candidate_rejected_and_retained": true,
+    "canary_only_not_production": true,
+    "rollback_hash_pinned_to_stable": true,
+    "release_manifest_fields_complete": true
+  }
+}

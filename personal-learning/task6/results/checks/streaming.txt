@@ -1,0 +1,46 @@
+F......                                                                  [100%]
+================================== FAILURES ===================================
+_ test_official_manifest_binds_artifacts_sources_audio_and_local_checkpoints __
+
+    def test_official_manifest_binds_artifacts_sources_audio_and_local_checkpoints():
+        manifest = json.loads((RUN / "manifest.json").read_text(encoding="utf-8"))
+        assert manifest["acceptance"] == {
+            "execution_status": "pass",
+            "passed_gates": 8,
+            "total_gates": 8,
+            "manuscript_results_reproduced": False,
+        }
+        for name, expected in manifest["artifact_sha256"].items():
+            assert sha256_file(RUN / name) == expected
+        for name, expected in manifest["runtime_source_sha256"].items():
+            assert sha256_file(ROOT / name) == expected
+        for name, expected in manifest["audio_sha256"].items():
+>           assert sha256_file(ROOT / name) == expected
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_official_experiment.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_official_experiment.py:13: in sha256_file
+    with path.open("rb") as handle:
+         ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/21931/Documents/ChatGPT/AI Agent/ai-agent-book/chapter6/streaming-speech/audio/sentence.wav')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\chapter6\\streaming-speech\\audio\\sentence.wav'
+
+C:\Users\21931\anaconda3\Lib\pathlib\_local.py:537: FileNotFoundError
+=========================== short test summary info ===========================
+FAILED test_official_experiment.py::test_official_manifest_binds_artifacts_sources_audio_and_local_checkpoints
+1 failed, 6 passed in 0.40s

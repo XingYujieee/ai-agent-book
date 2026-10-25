@@ -1,0 +1,314 @@
+{
+  "artifacts": [
+    {
+      "kind": "checkpoint",
+      "path": "randomized_policy.pt",
+      "sha256": "d46d9dd03cadb6cb8c7b7f9fe7ac7cb2393f7f817768e320c15ddd7bb395e364"
+    },
+    {
+      "kind": "metrics",
+      "path": "metrics.json",
+      "sha256": "eed21b77c8e7a1401a476b5c690e006d898fb4363fc44c65349fe11cc020976e"
+    },
+    {
+      "kind": "matrix",
+      "path": "matrix.json",
+      "sha256": "85b21bc16ebf154e25281b5522919f2ed6ba26d1fc08c1c8e7d3b683b36aac1e"
+    },
+    {
+      "kind": "source_preview",
+      "path": "source_preview.png",
+      "sha256": "32f3050d77e4ac68926b205c15f54a612c54a3b7163d99fa87a954a5aa337495"
+    },
+    {
+      "kind": "target_preview",
+      "path": "target_preview.png",
+      "sha256": "cbafb6c3c180bf59337392238845f1e851c79092b720fa13808c460bd2d80fab"
+    }
+  ],
+  "blockers": [],
+  "experiment_id": "6-13",
+  "hardware_extension": {
+    "actuation_attempted": false,
+    "status": "gated",
+    "upstream": "StoneT2000/lerobot-sim2real"
+  },
+  "kind": "local_gpu_rgb_domain_transfer",
+  "metrics": {
+    "dataset_replay_match": true,
+    "device": {
+      "capability": [
+        8,
+        6
+      ],
+      "device": "cuda",
+      "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "torch": "2.11.0+cu128"
+    },
+    "protocol": {
+      "epochs": 10,
+      "seeds": [
+        20260808,
+        20260809,
+        20260810
+      ],
+      "target_domains": [
+        "target_realistic",
+        "target_bright"
+      ],
+      "test_size_per_domain": 1024,
+      "total_training_examples": 49152,
+      "train_size_per_variant": 4096,
+      "variants": [
+        "source_clean",
+        "source_background",
+        "source_appearance",
+        "source_full"
+      ]
+    },
+    "rows": [
+      {
+        "final_loss": 0.1734857470728457,
+        "seed": 20260808,
+        "source_accuracy": 0.9267578125,
+        "target_accuracy": {
+          "target_bright": 0.8095703125,
+          "target_realistic": 0.80859375
+        },
+        "variant": "source_clean"
+      },
+      {
+        "final_loss": 0.23038135142996907,
+        "seed": 20260808,
+        "source_accuracy": 0.9091796875,
+        "target_accuracy": {
+          "target_bright": 0.5537109375,
+          "target_realistic": 0.4892578125
+        },
+        "variant": "source_background"
+      },
+      {
+        "final_loss": 0.20112667325884104,
+        "seed": 20260808,
+        "source_accuracy": 0.9091796875,
+        "target_accuracy": {
+          "target_bright": 0.86328125,
+          "target_realistic": 0.783203125
+        },
+        "variant": "source_appearance"
+      },
+      {
+        "final_loss": 0.4015250150114298,
+        "seed": 20260808,
+        "source_accuracy": 0.8974609375,
+        "target_accuracy": {
+          "target_bright": 0.7392578125,
+          "target_realistic": 0.724609375
+        },
+        "variant": "source_full"
+      },
+      {
+        "final_loss": 0.1365313781425357,
+        "seed": 20260809,
+        "source_accuracy": 0.9267578125,
+        "target_accuracy": {
+          "target_bright": 0.330078125,
+          "target_realistic": 0.2451171875
+        },
+        "variant": "source_clean"
+      },
+      {
+        "final_loss": 0.22227784362621605,
+        "seed": 20260809,
+        "source_accuracy": 0.9267578125,
+        "target_accuracy": {
+          "target_bright": 0.41796875,
+          "target_realistic": 0.28125
+        },
+        "variant": "source_background"
+      },
+      {
+        "final_loss": 0.22837264742702246,
+        "seed": 20260809,
+        "source_accuracy": 0.890625,
+        "target_accuracy": {
+          "target_bright": 0.703125,
+          "target_realistic": 0.765625
+        },
+        "variant": "source_appearance"
+      },
+      {
+        "final_loss": 0.42812738846987486,
+        "seed": 20260809,
+        "source_accuracy": 0.900390625,
+        "target_accuracy": {
+          "target_bright": 0.8271484375,
+          "target_realistic": 0.8056640625
+        },
+        "variant": "source_full"
+      },
+      {
+        "final_loss": 0.13975377148017287,
+        "seed": 20260810,
+        "source_accuracy": 0.9287109375,
+        "target_accuracy": {
+          "target_bright": 0.6376953125,
+          "target_realistic": 0.634765625
+        },
+        "variant": "source_clean"
+      },
+      {
+        "final_loss": 0.2668546144850552,
+        "seed": 20260810,
+        "source_accuracy": 0.904296875,
+        "target_accuracy": {
+          "target_bright": 0.662109375,
+          "target_realistic": 0.4111328125
+        },
+        "variant": "source_background"
+      },
+      {
+        "final_loss": 0.21266301441937685,
+        "seed": 20260810,
+        "source_accuracy": 0.9111328125,
+        "target_accuracy": {
+          "target_bright": 0.7880859375,
+          "target_realistic": 0.7177734375
+        },
+        "variant": "source_appearance"
+      },
+      {
+        "final_loss": 0.38590680062770844,
+        "seed": 20260810,
+        "source_accuracy": 0.84375,
+        "target_accuracy": {
+          "target_bright": 0.8076171875,
+          "target_realistic": 0.7333984375
+        },
+        "variant": "source_full"
+      }
+    ],
+    "summary": {
+      "source_appearance": {
+        "source": {
+          "mean": 0.9036458333333334,
+          "std": 0.009241581749074473,
+          "values": [
+            0.9091796875,
+            0.890625,
+            0.9111328125
+          ]
+        },
+        "target_bright": {
+          "mean": 0.7848307291666666,
+          "std": 0.06542401898123591,
+          "values": [
+            0.86328125,
+            0.703125,
+            0.7880859375
+          ]
+        },
+        "target_realistic": {
+          "mean": 0.7555338541666666,
+          "std": 0.0276481996973777,
+          "values": [
+            0.783203125,
+            0.765625,
+            0.7177734375
+          ]
+        }
+      },
+      "source_background": {
+        "source": {
+          "mean": 0.9134114583333334,
+          "std": 0.009645528899758499,
+          "values": [
+            0.9091796875,
+            0.9267578125,
+            0.904296875
+          ]
+        },
+        "target_bright": {
+          "mean": 0.5445963541666666,
+          "std": 0.09987815215168552,
+          "values": [
+            0.5537109375,
+            0.41796875,
+            0.662109375
+          ]
+        },
+        "target_realistic": {
+          "mean": 0.3938802083333333,
+          "std": 0.08579064353862664,
+          "values": [
+            0.4892578125,
+            0.28125,
+            0.4111328125
+          ]
+        }
+      },
+      "source_clean": {
+        "source": {
+          "mean": 0.9274088541666666,
+          "std": 0.0009207119546699837,
+          "values": [
+            0.9267578125,
+            0.9267578125,
+            0.9287109375
+          ]
+        },
+        "target_bright": {
+          "mean": 0.5924479166666666,
+          "std": 0.1983493291991977,
+          "values": [
+            0.8095703125,
+            0.330078125,
+            0.6376953125
+          ]
+        },
+        "target_realistic": {
+          "mean": 0.5628255208333334,
+          "std": 0.23559568906969588,
+          "values": [
+            0.80859375,
+            0.2451171875,
+            0.634765625
+          ]
+        }
+      },
+      "source_full": {
+        "source": {
+          "mean": 0.8805338541666666,
+          "std": 0.02603759733830888,
+          "values": [
+            0.8974609375,
+            0.900390625,
+            0.84375
+          ]
+        },
+        "target_bright": {
+          "mean": 0.7913411458333334,
+          "std": 0.03768176075127026,
+          "values": [
+            0.7392578125,
+            0.8271484375,
+            0.8076171875
+          ]
+        },
+        "target_realistic": {
+          "mean": 0.7545572916666666,
+          "std": 0.036315638721863476,
+          "values": [
+            0.724609375,
+            0.8056640625,
+            0.7333984375
+          ]
+        }
+      }
+    },
+    "wall_time_ms": 20327.101
+  },
+  "schema_version": "3.0",
+  "seed": 20260808,
+  "status": "complete"
+}

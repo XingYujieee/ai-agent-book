@@ -1,0 +1,21 @@
+{
+  "chapter": 8,
+  "name": "speech-sft",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter8/speech-sft-experiment",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_experiment.py"
+  ],
+  "status": "failed",
+  "returncode": 1,
+  "duration_seconds": 3.43,
+  "checked_at": "2026-10-25T00:34:01.448222+00:00",
+  "log": "speech-sft.txt"
+}

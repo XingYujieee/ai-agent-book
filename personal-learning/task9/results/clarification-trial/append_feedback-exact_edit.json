@@ -1,0 +1,46 @@
+{
+  "arm": "append_feedback",
+  "case": "exact_edit",
+  "expected": "execute",
+  "action": "confirm_spec",
+  "correct": false,
+  "seconds": 0.103,
+  "request": {
+    "model": "qwen3:0.6b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是编程助手。判断当前下一步，只输出 JSON：{\"action\":\"ask|confirm_spec|execute\",\"reason\":\"简短原因\"}。不要实际执行任何工具。\n以往反馈：别没问清楚就改，也别不停地重复问。"
+      },
+      {
+        "role": "user",
+        "content": "把首页 h1 的 CSS 字号由 24px 改为 28px，其他内容不变，直接修改。"
+      }
+    ],
+    "stream": false,
+    "think": false,
+    "format": "json",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_predict": 256
+    }
+  },
+  "response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-10-25T00:25:37.5089811Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"action\":\"confirm_spec\",\"reason\":\"别没问清楚就改，也别不停地重复问。\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 101277800,
+    "load_duration": 7414000,
+    "prompt_eval_count": 100,
+    "prompt_eval_cached_count": 59,
+    "prompt_eval_duration": 11379000,
+    "eval_count": 23,
+    "eval_duration": 78917000
+  }
+}

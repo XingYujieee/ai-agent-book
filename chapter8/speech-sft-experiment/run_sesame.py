@@ -17,10 +17,6 @@ from pathlib import Path
 import numpy as np
 import soundfile as sf
 import torch
-from datasets import Audio, load_dataset
-from huggingface_hub import HfApi, snapshot_download
-from peft import LoraConfig, get_peft_model
-from transformers import AutoProcessor, CsmForConditionalGeneration, Trainer, TrainingArguments
 
 BASE_MODEL = "unsloth/csm-1b"
 DATASET = "maxbsoft/mrdragonfox-elise"
@@ -70,6 +66,7 @@ def patched_model_snapshot() -> Path:
     token 128004 as padding.  A temporary snapshot fixes only that metadata;
     weights stay symlinked to the immutable Hugging Face cache.
     """
+    from huggingface_hub import snapshot_download
     source = Path(snapshot_download(BASE_MODEL))
     target = Path(tempfile.mkdtemp(prefix="exp8-6-csm-"))
     copied = {"tokenizer_config.json", "special_tokens_map.json"}
@@ -185,6 +182,10 @@ def main():
     p.add_argument("--generation-tokens", type=int, default=75)
     p.add_argument("--hf-repo", default="bojieli/exp8-6-sesame-elise-tags-lora")
     args = p.parse_args()
+    from datasets import Audio, load_dataset
+    from huggingface_hub import HfApi
+    from peft import LoraConfig, get_peft_model
+    from transformers import AutoProcessor, CsmForConditionalGeneration, Trainer, TrainingArguments
     args.output.mkdir(parents=True, exist_ok=True)
     started = time.time()
     random.seed(SEED)

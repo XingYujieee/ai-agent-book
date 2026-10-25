@@ -1,0 +1,21 @@
+{
+  "chapter": 6,
+  "name": "teleop",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter6/xlerobot-teleoperation",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_validator.py"
+  ],
+  "status": "failed",
+  "returncode": 1,
+  "duration_seconds": 0.963,
+  "checked_at": "2026-10-25T00:19:00.814858+00:00",
+  "log": "teleop.txt"
+}

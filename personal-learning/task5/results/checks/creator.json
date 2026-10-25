@@ -1,0 +1,21 @@
+{
+  "chapter": 5,
+  "name": "creator",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter5/agent-creator",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_creator.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 4.906,
+  "checked_at": "2026-10-25T00:18:58.275810+00:00",
+  "log": "creator.txt"
+}

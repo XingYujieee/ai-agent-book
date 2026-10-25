@@ -1,0 +1,16 @@
+{
+  "name": "video-smoke",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "demo.py",
+    "--smoke",
+    "--output",
+    "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\personal-learning\\task5\\results\\edit-smoke.mp4"
+  ],
+  "cwd": "chapter5/video-edit",
+  "returncode": 0,
+  "seconds": 4.202,
+  "log": "video-smoke.txt"
+}

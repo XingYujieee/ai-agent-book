@@ -1,0 +1,109 @@
+{
+  "reason": "Windows checkout CRLF conversion only",
+  "files": [
+    {
+      "path": "chapter6/gemini-xlerobot-navigation/validation/runs/local-gpu/evidence.json",
+      "git_sha256": "4f6134fc0ef687830a0aee23c20e6670b2377456f7760ce983d76553c480e071"
+    },
+    {
+      "path": "chapter6/gemini-xlerobot-navigation/validation/runs/local-gpu/metrics.json",
+      "git_sha256": "e77f6a79ddf199c92eca1642883921cbd0fb8a2988763a2b1ef604a7e4dc0a91"
+    },
+    {
+      "path": "chapter6/gemini-xlerobot-navigation/validation/runs/local-gpu/predictive_episode_events.json",
+      "git_sha256": "9fcb00648c516a3766e13e535fce41522f5d49881221c551e1675a22c7225421"
+    },
+    {
+      "path": "chapter6/rgb-sim2real-grasping/validation/runs/local-gpu/evidence.json",
+      "git_sha256": "fc03af6fda9dc9e348e8b1bf6d606465316df51fe67554c477444108027dbe3c"
+    },
+    {
+      "path": "chapter6/rgb-sim2real-grasping/validation/runs/local-gpu/matrix.json",
+      "git_sha256": "07a58e4626c974182a505bba798130395bb2cc068e2faba2d588e1e3bd853d0f"
+    },
+    {
+      "path": "chapter6/rgb-sim2real-grasping/validation/runs/local-gpu/metrics.json",
+      "git_sha256": "01f2f89fe8f5d963881d0ecef8fdb19b5b3e8c065caa922feb270a139b888096"
+    },
+    {
+      "path": "chapter6/xlerobot-teleoperation/validation/runs/local-gpu/cells.json",
+      "git_sha256": "ee306b9b2d7dc2e3f559e73d88660bbecbbb11c6e697759a5be974a82e1a3a72"
+    },
+    {
+      "path": "chapter6/xlerobot-teleoperation/validation/runs/local-gpu/evidence.json",
+      "git_sha256": "a71cb8d83a7890a02be6295952a1a452dcb618ecddfd036b80a7738ee797acbd"
+    },
+    {
+      "path": "chapter6/xlerobot-teleoperation/validation/runs/local-gpu/metrics.json",
+      "git_sha256": "97690371d6876141e335ee4864888d261050a86096d5ca53f112004c8bcf5ea9"
+    },
+    {
+      "path": "chapter6/streaming-speech/README.md",
+      "git_sha256": "14c14e31fea5b4290fd8bda03712aed09e0e8f06ac6e8500011500133a4abd2e"
+    },
+    {
+      "path": "chapter6/streaming-speech/demo.py",
+      "git_sha256": "b5f8169870d55627410975f601b8ac60afa25cd47dcf7e01376923c4dd503379"
+    },
+    {
+      "path": "chapter6/streaming-speech/interruption_manager.py",
+      "git_sha256": "1272149cf7736f2016977cf0f3f7d70a15f44cbd21c13964991e34d38f05c2ec"
+    },
+    {
+      "path": "chapter6/streaming-speech/prepare_scenarios.py",
+      "git_sha256": "a0b01392d19a4c0463d33c7b56af323131cf7a42213410537109a6698f1e15b0"
+    },
+    {
+      "path": "chapter6/streaming-speech/qwen2_streaming.py",
+      "git_sha256": "cac5aad7b578c7033a1becc3abb91cfe094623d5a99a9ccc4362cc2b094b7ead"
+    },
+    {
+      "path": "chapter6/streaming-speech/requirements.txt",
+      "git_sha256": "f6f2b9fab3cc0a9b4028d4b3eded6647b1c9d300dd4bca16a5c0876ad805df62"
+    },
+    {
+      "path": "chapter6/streaming-speech/run_official_experiment.py",
+      "git_sha256": "caef17357a38fb3d5215c9d3108a933da8f219751936c6a9bb70411655037a22"
+    },
+    {
+      "path": "chapter6/streaming-speech/test_official_experiment.py",
+      "git_sha256": "5072caad897e3438f28c49f185db7568c7467f6a20a438379d6b9643eb39eaca"
+    },
+    {
+      "path": "chapter6/streaming-speech/test_streaming.py",
+      "git_sha256": "da5c2cd2c38688a09caa70f5ae1a3a17c6c6e55153ca5c88126bb617b7803e2a"
+    },
+    {
+      "path": "chapter6/streaming-speech/test_whisper_baseline.py",
+      "git_sha256": "f4fc5adb3161c88c676e6dc463b9b4df173aa7c624652b08ca30d21e50825c44"
+    },
+    {
+      "path": "chapter6/streaming-speech/validation/latest.json",
+      "git_sha256": "4bfa912361448b2dd96e1841cbe987b0f3dc6d6b95451acbc95dbb751c360928"
+    },
+    {
+      "path": "chapter6/streaming-speech/validation/latest_official.json",
+      "git_sha256": "ec32afe82bf0bd341960999d4bca615acd1aac99bb68e46fca32208f68f96341"
+    },
+    {
+      "path": "chapter6/streaming-speech/validation/latest_v2.json",
+      "git_sha256": "00424e5c42fa28da1fab201f795f1b85595f4f0479da6bd7612d8e1145ef54df"
+    },
+    {
+      "path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/acceptance.json",
+      "git_sha256": "ef593df76bb751ca311f4fdc50471210309e45b58aa4b1a5d52412823c40eefb"
+    },
+    {
+      "path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/evidence.json",
+      "git_sha256": "17d5fa7cffbab6d2ae196008a4584e3f37d41cb6af541d0ffbcf184c3711c057"
+    },
+    {
+      "path": "chapter6/streaming-speech/validation/runs/exp6-4-qwen2audio-whisper-provenance-20260730-v3/manifest.json",
+      "git_sha256": "3d02bce7ac422449bf29bdf61576377b44b9d7b8b046e2cd4f6a7e065f1da67b"
+    },
+    {
+      "path": "chapter6/streaming-speech/whisper_baseline.py",
+      "git_sha256": "4547b92fe78001e0b093e43d0f51669a197fb0411bfea06a2e5a9f82e84bc245"
+    }
+  ]
+}

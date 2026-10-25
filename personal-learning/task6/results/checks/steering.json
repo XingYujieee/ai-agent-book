@@ -1,0 +1,21 @@
+{
+  "chapter": 6,
+  "name": "steering",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter6/astra-async-steering",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_judging.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.765,
+  "checked_at": "2026-10-25T00:18:56.787596+00:00",
+  "log": "steering.txt"
+}

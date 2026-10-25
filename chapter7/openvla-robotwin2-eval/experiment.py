@@ -67,7 +67,7 @@ def run_capture(argv: list[str], cwd: Path | None = None) -> tuple[int, str]:
             stderr=subprocess.STDOUT,
         )
         return proc.returncode, proc.stdout.strip()
-    except FileNotFoundError as exc:
+    except OSError as exc:
         return 127, f"{type(exc).__name__}: {exc}"
 
 

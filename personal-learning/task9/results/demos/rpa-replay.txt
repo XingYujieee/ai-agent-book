@@ -1,0 +1,5 @@
+first-run artifact: candidate
+reset-and-replay: success=True, status=validated
+after page change: success=False, status=invalid
+fallback to full Agent: True
+reason: step 1 precondition: send button is visible; expected=True, actual=False

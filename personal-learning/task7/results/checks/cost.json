@@ -1,0 +1,22 @@
+{
+  "chapter": 7,
+  "name": "cost",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter7/agent-cost-analysis",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "tests/test_chat_null_usage.py",
+    "tests/test_trace_offline.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.631,
+  "checked_at": "2026-10-25T00:19:05.054857+00:00",
+  "log": "cost.txt"
+}

@@ -1,0 +1,253 @@
+{
+  "schema_version": "2.0",
+  "experiment": "5-2",
+  "generated_at_utc": "2026-10-25T00:24:34.429554+00:00",
+  "provider": "unknown",
+  "model": "gpt-4o-mini",
+  "mode": "solver",
+  "tasks": 12,
+  "dataset_manifest": null,
+  "dataset_manifest_sha256": null,
+  "solver": [
+    {
+      "id": "kk01",
+      "num": 2,
+      "pred": {
+        "A": "knight",
+        "B": "knave"
+      },
+      "gold": {
+        "A": "knight",
+        "B": "knave"
+      },
+      "correct": true,
+      "codes": [],
+      "text": "",
+      "num_solutions": 1
+    },
+    {
+      "id": "kk02",
+      "num": 2,
+      "pred": {
+        "A": "knave",
+        "B": "knight"
+      },
+      "gold": {
+        "A": "knave",
+        "B": "knight"
+      },
+      "correct": true,
+      "codes": [],
+      "text": "",
+      "num_solutions": 1
+    },
+    {
+      "id": "kk03",
+      "num": 2,
+      "pred": {
+        "A": "knight",
+        "B": "knave"
+      },
+      "gold": {
+        "A": "knight",
+        "B": "knave"
+      },
+      "correct": true,
+      "codes": [],
+      "text": "",
+      "num_solutions": 1
+    },
+    {
+      "id": "kk04",
+      "num": 3,
+      "pred": {
+        "A": "knave",
+        "B": "knight",
+        "C": "knave"
+      },
+      "gold": {
+        "A": "knave",
+        "B": "knight",
+        "C": "knave"
+      },
+      "correct": true,
+      "codes": [],
+      "text": "",
+      "num_solutions": 1
+    },
+    {
+      "id": "kk05",
+      "num": 3,
+      "pred": {
+        "A": "knave",
+        "B": "knave",
+        "C": "knight"
+      },
+      "gold": {
+        "A": "knave",
+        "B": "knave",
+        "C": "knight"
+      },
+      "correct": true,
+      "codes": [],
+      "text": "",
+      "num_solutions": 1
+    },
+    {
+      "id": "kk06",
+      "num": 3,
+      "pred": {
+        "A": "knight",
+        "B": "knave",
+        "C": "knave"
+      },
+      "gold": {
+        "A": "knight",
+        "B": "knave",
+        "C": "knave"
+      },
+      "correct": true,
+      "codes": [],
+      "text": "",
+      "num_solutions": 1
+    },
+    {
+      "id": "kk07",
+      "num": 3,
+      "pred": {
+        "A": "knight",
+        "B": "knight",
+        "C": "knave"
+      },
+      "gold": {
+        "A": "knight",
+        "B": "knight",
+        "C": "knave"
+      },
+      "correct": true,
+      "codes": [],
+      "text": "",
+      "num_solutions": 1
+    },
+    {
+      "id": "kk08",
+      "num": 4,
+      "pred": {
+        "A": "knave",
+        "B": "knave",
+        "C": "knight",
+        "D": "knight"
+      },
+      "gold": {
+        "A": "knave",
+        "B": "knave",
+        "C": "knight",
+        "D": "knight"
+      },
+      "correct": true,
+      "codes": [],
+      "text": "",
+      "num_solutions": 1
+    },
+    {
+      "id": "kk09",
+      "num": 4,
+      "pred": {
+        "A": "knight",
+        "B": "knight",
+        "C": "knave",
+        "D": "knave"
+      },
+      "gold": {
+        "A": "knight",
+        "B": "knight",
+        "C": "knave",
+        "D": "knave"
+      },
+      "correct": true,
+      "codes": [],
+      "text": "",
+      "num_solutions": 1
+    },
+    {
+      "id": "kk10",
+      "num": 4,
+      "pred": {
+        "A": "knave",
+        "B": "knight",
+        "C": "knight",
+        "D": "knave"
+      },
+      "gold": {
+        "A": "knave",
+        "B": "knight",
+        "C": "knight",
+        "D": "knave"
+      },
+      "correct": true,
+      "codes": [],
+      "text": "",
+      "num_solutions": 1
+    },
+    {
+      "id": "kk11",
+      "num": 5,
+      "pred": {
+        "A": "knight",
+        "B": "knight",
+        "C": "knave",
+        "D": "knave",
+        "E": "knight"
+      },
+      "gold": {
+        "A": "knight",
+        "B": "knight",
+        "C": "knave",
+        "D": "knave",
+        "E": "knight"
+      },
+      "correct": true,
+      "codes": [],
+      "text": "",
+      "num_solutions": 1
+    },
+    {
+      "id": "kk12",
+      "num": 5,
+      "pred": {
+        "A": "knave",
+        "B": "knave",
+        "C": "knight",
+        "D": "knave",
+        "E": "knave"
+      },
+      "gold": {
+        "A": "knave",
+        "B": "knave",
+        "C": "knight",
+        "D": "knave",
+        "E": "knave"
+      },
+      "correct": true,
+      "codes": [],
+      "text": "",
+      "num_solutions": 1
+    }
+  ],
+  "solver_acc": 1.0,
+  "completion": {
+    "status": "incomplete",
+    "checks": {
+      "mode_is_full_paired_campaign": false,
+      "exact_pinned_stratified_dataset_manifest": false,
+      "all_84_unique_tasks_present": false,
+      "all_pure_trajectories_complete": false,
+      "all_code_trajectories_complete": false,
+      "zero_provider_errors": true,
+      "every_code_trajectory_used_python_constraint": false
+    },
+    "provider_errors": [],
+    "expected_tasks_per_arm": 84
+  },
+  "official_complete": false
+}

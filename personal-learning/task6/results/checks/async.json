@@ -1,0 +1,23 @@
+{
+  "chapter": 6,
+  "name": "async",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter6/async-agent",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_checkpoint_robustness.py",
+    "test_real_experiment.py",
+    "test_real_tasks.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 1.906,
+  "checked_at": "2026-10-25T00:22:01.736305+00:00",
+  "log": "async.txt"
+}

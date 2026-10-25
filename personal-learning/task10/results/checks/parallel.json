@@ -1,0 +1,23 @@
+{
+  "chapter": 10,
+  "name": "parallel",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter10/parallel-web-research",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_coordination.py",
+    "test_worker_terminate_before_task.py",
+    "test_completed_worker_ack_regression.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.892,
+  "checked_at": "2026-10-25T00:19:17.694288+00:00",
+  "log": "parallel.txt"
+}

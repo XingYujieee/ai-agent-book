@@ -1,0 +1,24 @@
+{
+  "chapter": 10,
+  "name": "social",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter10/generative-agents",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "tests/test_campaign_storage.py",
+    "tests/test_judge_plausibility.py",
+    "tests/test_provider_adapter.py",
+    "tests/test_runner_helpers.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.975,
+  "checked_at": "2026-10-25T00:19:18.670131+00:00",
+  "log": "social.txt"
+}

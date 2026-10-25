@@ -1,0 +1,166 @@
+{
+  "jobs": 6,
+  "passed_jobs": 6,
+  "pytest_counts": {
+    "passed": 72
+  },
+  "rows": [
+    {
+      "chapter": 10,
+      "name": "parallel",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter10/parallel-web-research",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_coordination.py",
+        "test_worker_terminate_before_task.py",
+        "test_completed_worker_ack_regression.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.892,
+      "checked_at": "2026-10-25T00:19:17.694288+00:00",
+      "log": "parallel.txt",
+      "pytest_summary": "8 passed in 0.24s",
+      "counts": {
+        "passed": 8
+      }
+    },
+    {
+      "chapter": 10,
+      "name": "registration",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter10/autonomous-phone-registration",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_orchestration.py",
+        "test_validate_acceptance.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 1.43,
+      "checked_at": "2026-10-25T00:22:09.098322+00:00",
+      "log": "registration.txt",
+      "pytest_summary": "14 passed in 0.79s",
+      "counts": {
+        "passed": 14
+      }
+    },
+    {
+      "chapter": 10,
+      "name": "roles",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter10/multi-role-transfer",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "tests"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 3.923,
+      "checked_at": "2026-10-25T00:19:18.707329+00:00",
+      "log": "roles.txt",
+      "pytest_summary": "14 passed in 1.38s",
+      "counts": {
+        "passed": 14
+      }
+    },
+    {
+      "chapter": 10,
+      "name": "social",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter10/generative-agents",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "tests/test_campaign_storage.py",
+        "tests/test_judge_plausibility.py",
+        "tests/test_provider_adapter.py",
+        "tests/test_runner_helpers.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.975,
+      "checked_at": "2026-10-25T00:19:18.670131+00:00",
+      "log": "social.txt",
+      "pytest_summary": "20 passed in 0.37s",
+      "counts": {
+        "passed": 20
+      }
+    },
+    {
+      "chapter": 10,
+      "name": "translation",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter10/book-translation",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "tests"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.926,
+      "checked_at": "2026-10-25T00:19:17.757600+00:00",
+      "log": "translation.txt",
+      "pytest_summary": "14 passed in 0.46s",
+      "counts": {
+        "passed": 14
+      }
+    },
+    {
+      "chapter": 10,
+      "name": "werewolf",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter10/voice-werewolf",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_simultaneous_deaths_consensus.py",
+        "test_witch_killed_no_poison.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.741,
+      "checked_at": "2026-10-25T00:19:18.499716+00:00",
+      "log": "werewolf.txt",
+      "pytest_summary": "2 passed in 0.16s",
+      "counts": {
+        "passed": 2
+      }
+    }
+  ]
+}

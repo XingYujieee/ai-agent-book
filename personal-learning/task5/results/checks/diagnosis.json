@@ -1,0 +1,23 @@
+{
+  "chapter": 5,
+  "name": "diagnosis",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter5/log-diagnosis",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_campaign_orchestrator.py",
+    "test_github_mcp_bare_output.py",
+    "test_replay_latency.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 3.861,
+  "checked_at": "2026-10-25T00:18:51.125710+00:00",
+  "log": "diagnosis.txt"
+}

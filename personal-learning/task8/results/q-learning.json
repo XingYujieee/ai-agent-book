@@ -1,0 +1,148 @@
+{
+  "experiment": "8-1",
+  "mode": "actual_local_tabular_training",
+  "seed": 42,
+  "training_episodes": 10000,
+  "greedy_evaluation_episodes": 100,
+  "environment": "deterministic TreasureHuntGame",
+  "seconds": 4.513,
+  "training": {
+    "total_episodes": 10000,
+    "total_victories": 4510,
+    "victory_rate": 0.451,
+    "final_epsilon": 0.1,
+    "q_table_size": 142,
+    "learning_curve": [
+      {
+        "episode": 500,
+        "victory_rate": 0.004,
+        "q_table_size": 116,
+        "epsilon": 0.7787520933134615
+      },
+      {
+        "episode": 1000,
+        "victory_rate": 0.002,
+        "q_table_size": 123,
+        "epsilon": 0.606454822840097
+      },
+      {
+        "episode": 1500,
+        "victory_rate": 0.0,
+        "q_table_size": 123,
+        "epsilon": 0.4722779627867691
+      },
+      {
+        "episode": 2000,
+        "victory_rate": 0.0,
+        "q_table_size": 123,
+        "epsilon": 0.3677874521460121
+      },
+      {
+        "episode": 2500,
+        "victory_rate": 0.002,
+        "q_table_size": 124,
+        "epsilon": 0.28641524825313086
+      },
+      {
+        "episode": 3000,
+        "victory_rate": 0.0,
+        "q_table_size": 126,
+        "epsilon": 0.22304647413401948
+      },
+      {
+        "episode": 3500,
+        "victory_rate": 0.002,
+        "q_table_size": 127,
+        "epsilon": 0.17369790863805412
+      },
+      {
+        "episode": 4000,
+        "victory_rate": 0.0,
+        "q_table_size": 127,
+        "epsilon": 0.13526760995605422
+      },
+      {
+        "episode": 4500,
+        "victory_rate": 0.002,
+        "q_table_size": 128,
+        "epsilon": 0.10533993441078586
+      },
+      {
+        "episode": 5000,
+        "victory_rate": 0.0,
+        "q_table_size": 128,
+        "epsilon": 0.1
+      },
+      {
+        "episode": 5500,
+        "victory_rate": 0.144,
+        "q_table_size": 135,
+        "epsilon": 0.1
+      },
+      {
+        "episode": 6000,
+        "victory_rate": 0.974,
+        "q_table_size": 137,
+        "epsilon": 0.1
+      },
+      {
+        "episode": 6500,
+        "victory_rate": 0.968,
+        "q_table_size": 137,
+        "epsilon": 0.1
+      },
+      {
+        "episode": 7000,
+        "victory_rate": 0.972,
+        "q_table_size": 138,
+        "epsilon": 0.1
+      },
+      {
+        "episode": 7500,
+        "victory_rate": 0.994,
+        "q_table_size": 138,
+        "epsilon": 0.1
+      },
+      {
+        "episode": 8000,
+        "victory_rate": 0.998,
+        "q_table_size": 138,
+        "epsilon": 0.1
+      },
+      {
+        "episode": 8500,
+        "victory_rate": 0.996,
+        "q_table_size": 139,
+        "epsilon": 0.1
+      },
+      {
+        "episode": 9000,
+        "victory_rate": 1.0,
+        "q_table_size": 139,
+        "epsilon": 0.1
+      },
+      {
+        "episode": 9500,
+        "victory_rate": 0.996,
+        "q_table_size": 142,
+        "epsilon": 0.1
+      },
+      {
+        "episode": 10000,
+        "victory_rate": 0.966,
+        "q_table_size": 142,
+        "epsilon": 0.1
+      }
+    ]
+  },
+  "evaluation": {
+    "num_episodes": 100,
+    "victories": 100,
+    "victory_rate": 1.0,
+    "avg_reward": 243.0,
+    "std_reward": 0.0,
+    "avg_length": 12.0,
+    "std_length": 0.0
+  },
+  "scope": "Q-learning arm only; no Kimi or other LLM comparison was run."
+}

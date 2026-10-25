@@ -1,0 +1,18 @@
+{
+  "name": "werewolf-offline",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "demo.py",
+    "--offline",
+    "--seed",
+    "42",
+    "--report",
+    "C:\\Users\\21931\\Documents\\ChatGPT\\AI Agent\\ai-agent-book\\personal-learning\\task10\\results\\werewolf-offline.json"
+  ],
+  "cwd": "chapter10/voice-werewolf",
+  "returncode": 0,
+  "seconds": 0.161,
+  "log": "werewolf-offline.txt"
+}

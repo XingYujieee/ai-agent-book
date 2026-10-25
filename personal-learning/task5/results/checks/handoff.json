@@ -1,0 +1,21 @@
+{
+  "chapter": 5,
+  "name": "handoff",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter5/provider-failover",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "tests/test_offline.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 1.321,
+  "checked_at": "2026-10-25T00:18:43.140989+00:00",
+  "log": "handoff.txt"
+}

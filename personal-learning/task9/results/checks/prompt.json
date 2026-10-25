@@ -1,0 +1,22 @@
+{
+  "chapter": 9,
+  "name": "prompt",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter9/prompt-auto-optimization",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_non_dict_edit.py",
+    "test_release_gate_non_dict_edit.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 2.438,
+  "checked_at": "2026-10-25T00:19:14.781571+00:00",
+  "log": "prompt.txt"
+}

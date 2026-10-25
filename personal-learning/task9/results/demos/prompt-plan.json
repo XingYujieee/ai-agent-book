@@ -1,0 +1,14 @@
+{
+  "name": "prompt-plan",
+  "mode": "offline_mechanism_or_saved_data_reanalysis",
+  "formal_experiment_completed": false,
+  "command": [
+    "python",
+    "demo.py",
+    "--dry-run"
+  ],
+  "cwd": "chapter9/prompt-auto-optimization",
+  "returncode": 0,
+  "seconds": 2.237,
+  "log": "prompt-plan.txt"
+}

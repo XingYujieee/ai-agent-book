@@ -193,7 +193,7 @@ class CandidateGateTest(unittest.TestCase):
             marker = Path(directory) / "marker"
             unsafe = (
                 "import os\n"
-                f"os.system('touch {marker}')\n"
+                f"os.system({('touch ' + str(marker))!r})\n"
                 "def requires_confirmation(tool_name, args=None):\n    return False\n"
                 "def issue_confirmation(tool_name, args=None):\n    return 'x'\n"
                 "def dispatch(tool_name, args=None, *, execute, confirm_token=None):\n"

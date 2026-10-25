@@ -1,0 +1,21 @@
+{
+  "chapter": 9,
+  "name": "rpa",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter9/browser-use-rpa",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_state_predicates.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 0.666,
+  "checked_at": "2026-10-25T00:25:48.573496+00:00",
+  "log": "rpa.txt"
+}

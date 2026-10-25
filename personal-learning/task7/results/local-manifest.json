@@ -1,0 +1,146 @@
+{
+  "review_date": "2026-10-25",
+  "meaning": "Receipt identity only; experiment scope and failures are documented separately.",
+  "files": [
+    {
+      "path": "check-summary.json",
+      "bytes": 5916,
+      "sha256": "a41676f0ef6c781f7b140e48962b94e6b5b1cb1345adf668189f89a125bf79e3"
+    },
+    {
+      "path": "checks/action.json",
+      "bytes": 446,
+      "sha256": "7a21eb50630a0fcccbff5e20ece979074fcb0ba0541f97aff325426b24992153"
+    },
+    {
+      "path": "checks/action.txt",
+      "bytes": 100,
+      "sha256": "1937581a11b4667dc651db49df2edac6258761a015f4d3724c85c5da99c207e9"
+    },
+    {
+      "path": "checks/android.json",
+      "bytes": 433,
+      "sha256": "02147e8854554d723afaf29853c765b4114bff650598547f2e40dfb83d0bdd03"
+    },
+    {
+      "path": "checks/android.txt",
+      "bytes": 101,
+      "sha256": "e29015c1e6cf570873f8a7dafda4ab08e978b91e8723df8927d584fe6a8928bb"
+    },
+    {
+      "path": "checks/benchmark.json",
+      "bytes": 437,
+      "sha256": "98940a0a0818a86e3a8cebb5b997d55a013b0da090970e169cf6f803f5b34bbc"
+    },
+    {
+      "path": "checks/benchmark.txt",
+      "bytes": 101,
+      "sha256": "3bf72dd8232106d55971116a66c35a3319b157c7990255625eae8eff58b617ca"
+    },
+    {
+      "path": "checks/cost.json",
+      "bytes": 480,
+      "sha256": "9d2dc0c18a63da54f555b1be6712bb281509b48a204b802e6e5ed942ca442ec9"
+    },
+    {
+      "path": "checks/cost.txt",
+      "bytes": 100,
+      "sha256": "42e31525be23647a51b5e5acb59e35112bc5c985ed9f45bbc358249b6fa5c5f5"
+    },
+    {
+      "path": "checks/elo.json",
+      "bytes": 531,
+      "sha256": "72d7aa266f914392b8c69abb44eff9a222d901ae25a7a46d57241adfdffc99d4"
+    },
+    {
+      "path": "checks/elo.txt",
+      "bytes": 100,
+      "sha256": "8e01a9254395c4803f64bcaa191d8fc8c3129fa96e8fe2889789cbd9bed06dd0"
+    },
+    {
+      "path": "checks/policy.attempt1.json",
+      "bytes": 437,
+      "sha256": "eec48dc585aaf33dec1fbfb25596ea93aace8fe3210349d23033747a5c751555"
+    },
+    {
+      "path": "checks/policy.attempt1.txt",
+      "bytes": 1388,
+      "sha256": "053867d6e264eb3a12f5618d5625b6dc0f4e96a7b1b876a6600e718d86ac86da"
+    },
+    {
+      "path": "checks/policy.json",
+      "bytes": 437,
+      "sha256": "0d5dfcd4a2d4eb9585338a6cfdeecfcd7735e7840f88928c2ee2aec72c2e24b1"
+    },
+    {
+      "path": "checks/policy.txt",
+      "bytes": 100,
+      "sha256": "44cc938eee6350c0c0d8be3eec30d342956f290c859846ea4b48df8253153b72"
+    },
+    {
+      "path": "checks/robot-eval.attempt1.json",
+      "bytes": 448,
+      "sha256": "734616c4206785b60512de2290c46ab62c2793596074891500578eb2ca71134d"
+    },
+    {
+      "path": "checks/robot-eval.attempt1.txt",
+      "bytes": 7379,
+      "sha256": "d6b32d61ebbd198588d7d068afc3ea3c34ffb17d116cdb3ebd68d7c98537072a"
+    },
+    {
+      "path": "checks/robot-eval.json",
+      "bytes": 448,
+      "sha256": "096cb39a91a2ae40bcdb7924274bf1a3f91b676034f9dd0fe61f5f1c1e4c99ae"
+    },
+    {
+      "path": "checks/robot-eval.txt",
+      "bytes": 100,
+      "sha256": "de1de1be84f54e69eec5a1aabbb19f4c997393b64553bd6e594d605b59d91d27"
+    },
+    {
+      "path": "checks/rubric.json",
+      "bytes": 447,
+      "sha256": "0d2eb66ac4f9ba2e9a8ccdfeb6fd5ff8d62fee60369b3c002161f99d3bc2938e"
+    },
+    {
+      "path": "checks/rubric.txt",
+      "bytes": 101,
+      "sha256": "512014dbed411d206d0f2530d4aaab6c87c394ea27e0597b3809139f1d101b44"
+    },
+    {
+      "path": "checks/tts-judge.json",
+      "bytes": 500,
+      "sha256": "fbfaa5f9eda82599b0baf71043ccf0520d63da83a6d43c5da969f5c102be7174"
+    },
+    {
+      "path": "checks/tts-judge.txt",
+      "bytes": 101,
+      "sha256": "aa693db65d34b56041e8ade984baf920a7a0025f6f7afac3ccfa8e231559e5f3"
+    },
+    {
+      "path": "cost-analysis.json",
+      "bytes": 16530,
+      "sha256": "b08b7570e4be9dd0b4ceaf3492db71e3f7709e3b309a1d0a20a60de8cb3d8c3a"
+    },
+    {
+      "path": "demos/cost-analysis.json",
+      "bytes": 487,
+      "sha256": "12bdb4ac96c25b262dda22885608677031b7bcdf1c3e7b0043e37104a331b882"
+    },
+    {
+      "path": "demos/cost-analysis.txt",
+      "bytes": 8457,
+      "sha256": "e2643f2dec27b857619aaaf307291d4341bd3e5b1c6272273adc1cf59a952eff"
+    },
+    {
+      "path": "eol-restoration.json",
+      "bytes": 1102,
+      "sha256": "a37738bf07b46927b00c59e8c473259d28f11aee0c6ef1dc3b1876f2fa6f9f2b"
+    },
+    {
+      "path": "saved-evidence-review.json",
+      "bytes": 35031,
+      "sha256": "d127126f1fded3175ed7497afec251ebe2a90a3c2303ed94cfb0f972d096df0d"
+    }
+  ]
+}

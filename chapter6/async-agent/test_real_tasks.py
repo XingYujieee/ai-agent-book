@@ -76,7 +76,12 @@ def test_cancel_terminates_real_child_process_and_freezes_progress(monkeypatch):
         assert state.progress == frozen < 100
         assert state.executable_receipt["cancelled"] is True
         assert state.returncode is not None
-        with pytest.raises(ProcessLookupError):
-            os.kill(pid, 0)
+        if os.name == "nt":
+            # Windows kill(pid, 0) is not the POSIX process-existence probe.
+            assert state._process is not None
+            assert state._process.returncode == state.returncode
+        else:
+            with pytest.raises(ProcessLookupError):
+                os.kill(pid, 0)
 
     asyncio.run(scenario())

@@ -1,0 +1,21 @@
+{
+  "chapter": 10,
+  "name": "translation",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter10/book-translation",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "tests"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 2.926,
+  "checked_at": "2026-10-25T00:19:17.757600+00:00",
+  "log": "translation.txt"
+}

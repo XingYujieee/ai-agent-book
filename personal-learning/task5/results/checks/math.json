@@ -1,0 +1,22 @@
+{
+  "chapter": 5,
+  "name": "math",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter5/code-for-math",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_campaign.py",
+    "test_empty_problems.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 1.316,
+  "checked_at": "2026-10-25T00:21:55.447293+00:00",
+  "log": "math.txt"
+}

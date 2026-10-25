@@ -1,0 +1,46 @@
+{
+  "arm": "scoped_skill",
+  "case": "missing_scope",
+  "expected": "ask",
+  "action": "ask",
+  "correct": true,
+  "seconds": 0.074,
+  "request": {
+    "model": "qwen3:0.6b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是编程助手。判断当前下一步，只输出 JSON：{\"action\":\"ask|confirm_spec|execute\",\"reason\":\"简短原因\"}。不要实际执行任何工具。\n工作规则：影响实施的目标或范围不清，先 ask。复杂任务信息已齐但完整 Spec 尚未得到确认，选 confirm_spec。Spec 已确认后 execute。范围明确的直接修改和只读请求可 execute，不需要额外确认。出现影响原计划的未明确范围变更，先 ask。"
+      },
+      {
+        "role": "user",
+        "content": "帮我把网站优化一下。"
+      }
+    ],
+    "stream": false,
+    "think": false,
+    "format": "json",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_predict": 256
+    }
+  },
+  "response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-10-25T00:25:37.8980144Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"action\":\"ask\",\"reason\":\"简短原因\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 71542900,
+    "load_duration": 5689300,
+    "prompt_eval_count": 129,
+    "prompt_eval_cached_count": 38,
+    "prompt_eval_duration": 14380000,
+    "eval_count": 12,
+    "eval_duration": 42339000
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "chapter": 4,
+  "name": "collaboration",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter4/collaboration-tools",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_run_experiment_4_5.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 4.469,
+  "checked_at": "2026-10-25T00:18:46.288147+00:00",
+  "log": "collaboration.txt"
+}

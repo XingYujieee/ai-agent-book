@@ -1,1 +1,6 @@
 personal-learning/task4/results/4-3-sample/*.pdf -text -diff
+personal-learning/task[5-9]/results/** -text whitespace=-blank-at-eof,-blank-at-eol,cr-at-eol
+personal-learning/task10/results/** -text whitespace=-blank-at-eof,-blank-at-eol,cr-at-eol
+personal-learning/task4/results/checks/** -text whitespace=-blank-at-eof,-blank-at-eol,cr-at-eol
+personal-learning/task4/results/saved-evidence-review.json -text whitespace=cr-at-eol
+personal-learning/task*/results/**/*.pt -diff

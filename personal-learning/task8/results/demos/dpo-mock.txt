@@ -1,0 +1,35 @@
+============================================================
+实验 8-17：过早结束的 DPO 修复 —— 离线端到端演示
+============================================================
+
+[1] 从 24 条 bad case 构造出 24 条 DPO 偏好对
+
+[2] 样例偏好对（前 2 条）：
+
+  --- bc-01（no_test_run）---
+  prompt（截断）:
+    任务：修复 src/parser.py 在输入为空字符串时崩溃的问题
+  chosen  : 继续验证：代码改动尚未经过测试验证。下一步动作：运行 pytest tests/test_parser.py，确认空输入用例通过且原有解析用例无回归。验证通过后再汇报结果。
+  rejected: 已修复 src/parser.py 的空输入崩溃问题，在 parse() 入口增加了判空逻辑，任务完成。
+
+  --- bc-02（no_test_run）---
+  prompt（截断）:
+    任务：给 utils/date.py 的 parse_date() 增加时区感知支持，默认东八区
+  chosen  : 继续验证：代码改动尚未经过测试验证。下一步动作：运行 utils/date.py 对应的单元测试并手工检查带 Z 后缀与不带时区两类输入。验证通过后再汇报结果。
+  rejected: parse_date() 已支持时区感知，默认东八区，改造完成。
+
+[3] 评估集：boundary 12 条，retention 8 条（与训练数据隔离）
+  [base   ] boundary 过早宣称率 100% | retention 正常收尾率 100% | 过度矫正率 0%
+  [adapter] boundary 过早宣称率 0% | retention 正常收尾率 100% | 过度矫正率 0%
+
+[4] 全流程摘要：
+  离线已演示：bad case -> 偏好对构造 -> 评估指标口径
+  真实链路待执行（需 GPU / API key）：
+    python build_preference_data.py --teacher --provider ark   # 教师模型生成 chosen
+    python train_dpo.py                                         # 单卡 LoRA DPO 训练
+    python evaluate.py --base-only                              # 基线评估
+    python evaluate.py                                          # base vs base+adapter 对比
+    python train_grpo_optional.py                               # 可选 RL 分支
+
+训练后的预期：boundary 过早宣称率应下降，retention 正常收尾率应保持；
+实际数字需在真实训练与评估运行后填入，不预先编造。

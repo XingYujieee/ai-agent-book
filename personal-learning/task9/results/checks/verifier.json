@@ -1,0 +1,24 @@
+{
+  "chapter": 9,
+  "name": "verifier",
+  "kind": "offline_test",
+  "formal_experiment_completed": false,
+  "cwd": "chapter9/trajectory-verifier",
+  "argv": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "asyncio_mode=auto",
+    "test_verifier.py",
+    "test_claim_action_order.py",
+    "test_empty_dimensions_score.py",
+    "test_llm_judge_null_fields.py"
+  ],
+  "status": "passed",
+  "returncode": 0,
+  "duration_seconds": 2.495,
+  "checked_at": "2026-10-25T00:19:14.830701+00:00",
+  "log": "verifier.txt"
+}

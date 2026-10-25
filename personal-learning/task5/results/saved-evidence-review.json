@@ -1,0 +1,1563 @@
+{
+  "baseline_ref": "faa6db95",
+  "scope": "Historical Git blobs only; at most 40 declared artifacts per evidence file, no live API reproduction.",
+  "experiments": 16,
+  "evidence_files_present": 14,
+  "rows": [
+    {
+      "experiment": "5-1",
+      "title": "跨厂商的轨迹接管",
+      "ledger_row": "| 5-1 | `provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/manifest.json` | passed | true | portability supported; redundant-call reduction not observed | `102f27e469fcc020667be93eec0e16d84dec7f454244a147401fd4f932b242be` |",
+      "evidence": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "102f27e469fcc020667be93eec0e16d84dec7f454244a147401fd4f932b242be",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 18,
+      "sample_checks": [
+        {
+          "declared_path": "anthropic-to-gemini-naive.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/anthropic-to-gemini-naive.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "anthropic-to-gemini-neutral.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/anthropic-to-gemini-neutral.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "anthropic-to-gemini-strip.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/anthropic-to-gemini-strip.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "anthropic-to-kimi-naive.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/anthropic-to-kimi-naive.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "anthropic-to-kimi-neutral.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/anthropic-to-kimi-neutral.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "anthropic-to-kimi-strip.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/anthropic-to-kimi-strip.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "gemini-to-anthropic-naive.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/gemini-to-anthropic-naive.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "gemini-to-anthropic-neutral.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/gemini-to-anthropic-neutral.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "gemini-to-anthropic-strip.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/gemini-to-anthropic-strip.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "gemini-to-kimi-naive.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/gemini-to-kimi-naive.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "gemini-to-kimi-neutral.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/gemini-to-kimi-neutral.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "gemini-to-kimi-strip.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/gemini-to-kimi-strip.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "kimi-to-anthropic-naive.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/kimi-to-anthropic-naive.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "kimi-to-anthropic-neutral.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/kimi-to-anthropic-neutral.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "kimi-to-anthropic-strip.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/kimi-to-anthropic-strip.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "kimi-to-gemini-naive.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/kimi-to-gemini-naive.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "kimi-to-gemini-neutral.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/kimi-to-gemini-neutral.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "kimi-to-gemini-strip.json",
+          "resolved_path": "chapter5/provider-failover/validation/runs/exp5-1-handoff-20260824T150228Z/kimi-to-gemini-strip.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "5-2",
+      "title": "输出到一半断掉之后的接续",
+      "ledger_row": "| 5-2 | `provider-failover/validation/runs/exp5-2-continuation-20260824T152045Z/manifest.json` | passed | true | continuation cheaper only for long prose; not safe for truncated arguments | `c513b9e8265c4ce4eaf1bb0e6f082c68f756d1cff6e7784cf13ea923357605f4` |",
+      "evidence": "chapter5/provider-failover/validation/runs/exp5-2-continuation-20260824T152045Z/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "c513b9e8265c4ce4eaf1bb0e6f082c68f756d1cff6e7784cf13ea923357605f4",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 0,
+      "sample_checks": []
+    },
+    {
+      "experiment": "5-3",
+      "title": "使用代码生成工具提升数学解题能力",
+      "ledger_row": "| 5-3 | `code-for-math/validation/runs/exp5-1-ark-doubao-flash-aime2024-20260730-v1/manifest.json` | passed | true | not supported | `3f4508457ae620efdb8864ed52ef150d3e584da128f2249ca18553904d6f571a` |",
+      "evidence": "chapter5/code-for-math/validation/runs/exp5-1-ark-doubao-flash-aime2024-20260730-v1/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "3f4508457ae620efdb8864ed52ef150d3e584da128f2249ca18553904d6f571a",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "official_complete": true
+      },
+      "declared_hash_entries": 4,
+      "sample_checks": [
+        {
+          "declared_path": "aime_2024.json",
+          "resolved_path": "chapter5/code-for-math/validation/runs/exp5-1-ark-doubao-flash-aime2024-20260730-v1/aime_2024.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "aime_2024.manifest.json",
+          "resolved_path": "chapter5/code-for-math/validation/runs/exp5-1-ark-doubao-flash-aime2024-20260730-v1/aime_2024.manifest.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "command.json",
+          "resolved_path": "chapter5/code-for-math/validation/runs/exp5-1-ark-doubao-flash-aime2024-20260730-v1/command.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "result.json",
+          "resolved_path": "chapter5/code-for-math/validation/runs/exp5-1-ark-doubao-flash-aime2024-20260730-v1/result.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "5-4",
+      "title": "使用代码生成工具提升逻辑思考能力",
+      "ledger_row": "| 5-4 | `code-for-logic/validation/real_ark_doubao_flash_hf84_20260730.json` | passed | true | contradicted | `ac602aebf67e9b2ee508f3472f4348fd7c30edd05098fed8cbc6ebef15d2df28` |",
+      "evidence": "chapter5/code-for-logic/validation/real_ark_doubao_flash_hf84_20260730.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "ac602aebf67e9b2ee508f3472f4348fd7c30edd05098fed8cbc6ebef15d2df28",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "official_complete": true
+      },
+      "declared_hash_entries": 42,
+      "sample_checks": [
+        {
+          "declared_path": "test/flip_role/people2_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/flip_role/people2_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/flip_role/people3_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/flip_role/people3_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/flip_role/people4_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/flip_role/people4_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/flip_role/people5_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/flip_role/people5_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/flip_role/people6_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/flip_role/people6_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/flip_role/people7_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/flip_role/people7_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/flip_role/people8_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/flip_role/people8_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_leaf/people2_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_leaf/people2_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_leaf/people3_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_leaf/people3_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_leaf/people4_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_leaf/people4_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_leaf/people5_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_leaf/people5_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_leaf/people6_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_leaf/people6_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_leaf/people7_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_leaf/people7_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_leaf/people8_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_leaf/people8_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_statement/people2_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_statement/people2_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_statement/people3_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_statement/people3_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_statement/people4_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_statement/people4_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_statement/people5_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_statement/people5_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_statement/people6_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_statement/people6_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/perturbed_statement/people7_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/perturbed_statement/people7_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/random_pair/people2_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/random_pair/people2_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/random_pair/people3_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/random_pair/people3_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/random_pair/people4_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/random_pair/people4_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/random_pair/people5_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/random_pair/people5_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/random_pair/people6_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/random_pair/people6_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/random_pair/people7_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/random_pair/people7_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/random_pair/people8_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/random_pair/people8_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/reorder_statement/people2_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/reorder_statement/people2_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/reorder_statement/people3_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/reorder_statement/people3_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/reorder_statement/people4_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/reorder_statement/people4_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/reorder_statement/people5_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/reorder_statement/people5_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/reorder_statement/people6_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/reorder_statement/people6_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/reorder_statement/people7_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/reorder_statement/people7_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/reorder_statement/people8_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/reorder_statement/people8_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/uncommon_name/people2_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/uncommon_name/people2_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/uncommon_name/people3_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/uncommon_name/people3_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/uncommon_name/people4_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/uncommon_name/people4_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/uncommon_name/people5_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/uncommon_name/people5_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/uncommon_name/people6_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/uncommon_name/people6_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "test/uncommon_name/people8_num100.jsonl",
+          "resolved_path": "chapter5/code-for-logic/validation/test/uncommon_name/people8_num100.jsonl",
+          "in_git": false,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "5-5",
+      "title": "小模型通过代码化知识提升执行规则的准确性",
+      "ledger_row": "| 5-5 | `small-model-codified-rules/validation/real_ollama_qwen3_4b_60x2_20260730.json` | passed | true | not supported | `003c8e0593623b700a173b463199ae080a6c7bcbcedce1f5568d579515da66ab` |",
+      "evidence": "chapter5/small-model-codified-rules/validation/real_ollama_qwen3_4b_60x2_20260730.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "003c8e0593623b700a173b463199ae080a6c7bcbcedce1f5568d579515da66ab",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "official_complete": true
+      },
+      "declared_hash_entries": 1,
+      "sample_checks": [
+        {
+          "declared_path": "experiment_protocol.json",
+          "resolved_path": "chapter5/small-model-codified-rules/experiment_protocol.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "5-6",
+      "title": "基于论文的 PPT 自动生成",
+      "ledger_row": "| 5-6 | `paper-to-ppt/validation/runs/exp5-4-real-pdf-both-20260730-v9/comparison_summary.json` | passed | true | context advantage supported; quality tied | `bfd913d311ab4d6ad5a8cae93b61ce54ce6d19f9d2d10ee2afdef06becd1e09f` |",
+      "evidence": "chapter5/paper-to-ppt/validation/runs/exp5-4-real-pdf-both-20260730-v9/comparison_summary.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "bfd913d311ab4d6ad5a8cae93b61ce54ce6d19f9d2d10ee2afdef06becd1e09f",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "official_complete": true
+      },
+      "declared_hash_entries": 1,
+      "sample_checks": [
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter5/paper-to-ppt/validation/runs/exp5-4-real-pdf-both-20260730-v9/source/paper_text.md",
+          "resolved_path": "chapter5/paper-to-ppt/validation/runs/exp5-4-real-pdf-both-20260730-v9/source/paper_text.md",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "5-7",
+      "title": "论文讲解视频的自动生成",
+      "ledger_row": "| 5-7 | `paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/manifest.json` | passed | true | supported | `93bb69a916a76d12de56270928971f6e39f47755214f7a135817d7effd8b3f09` |",
+      "evidence": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "93bb69a916a76d12de56270928971f6e39f47755214f7a135817d7effd8b3f09",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "status": "passed"
+      },
+      "declared_hash_entries": 77,
+      "sample_checks": [
+        {
+          "declared_path": "audio/page-01.mp3",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/audio/page-01.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "audio/page-02.mp3",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/audio/page-02.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "audio/page-04.mp3",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/audio/page-04.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "audio/page-06.mp3",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/audio/page-06.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "audio/page-08.mp3",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/audio/page-08.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "audio/page-10.mp3",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/audio/page-10.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "audio/page-12.mp3",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/audio/page-12.mp3",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "experiment_protocol.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/experiment_protocol.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-01-fish-tts.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-01-fish-tts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-01-vision-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-01-vision-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-02-narration-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-02-narration-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-03-fish-tts.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-03-fish-tts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-03-vision-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-03-vision-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-04-narration-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-04-narration-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-05-fish-tts.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-05-fish-tts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-05-vision-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-05-vision-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-06-narration-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-06-narration-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-07-fish-tts.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-07-fish-tts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-07-vision-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-07-vision-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-08-narration-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-08-narration-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-08-vision-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-08-vision-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-09-narration-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-09-narration-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-10-fish-tts.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-10-fish-tts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-10-vision-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-10-vision-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-11-narration-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-11-narration-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-12-fish-tts.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-12-fish-tts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_calls/page-12-narration-1.json",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/provider_calls/page-12-narration-1.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "segments/concat.txt",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/segments/concat.txt",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "segments/page-02.mp4",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/segments/page-02.mp4",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "segments/page-04.mp4",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/segments/page-04.mp4",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "segments/page-06.mp4",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/segments/page-06.mp4",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "segments/page-08.mp4",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/segments/page-08.mp4",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "segments/page-10.mp4",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/segments/page-10.mp4",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "segments/page-12.mp4",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/segments/page-12.mp4",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "slides/page-02-source-02.png",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/slides/page-02-source-02.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "slides/page-04-source-05.png",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/slides/page-04-source-05.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "slides/page-06-source-09.png",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/slides/page-06-source-09.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "slides/page-08-source-12.png",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/slides/page-08-source-12.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "slides/page-10-source-18.png",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/slides/page-10-source-18.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "slides/page-12-source-21.png",
+          "resolved_path": "chapter5/paper-to-video/validation/runs/exp5-5-kimi-fish-qwen-20260730-v1/slides/page-12-source-21.png",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "5-8",
+      "title": "基于 API 的智能视频剪辑",
+      "ledger_row": "| 5-8 | `video-edit/validation/runs/exp5-6-real-blender-20260730-055102/manifest.json` | passed | true | supported | `fd044738e812faa832863f4c112880a9583c268afb7d08f388c00623498ab7a8` |",
+      "evidence": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "fd044738e812faa832863f4c112880a9583c268afb7d08f388c00623498ab7a8",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "official_complete": true
+      },
+      "declared_hash_entries": 78,
+      "sample_checks": [
+        {
+          "declared_path": "blender_logs/corrected-final-attempt-1.log",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/blender_logs/corrected-final-attempt-1.log",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "blender_logs/corrected-final-attempt-2.log",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/blender_logs/corrected-final-attempt-2.log",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "blender_logs/corrected-final-refinement-1-attempt-1.log",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/blender_logs/corrected-final-refinement-1-attempt-1.log",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "blender_logs/negative-control-attempt-1.log",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/blender_logs/negative-control-attempt-1.log",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "final.mp4",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/final.mp4",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "frames/boundary-refinement-1/frame-008.25.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/boundary-refinement-1/frame-008.25.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/boundary-refinement-1/frame-008.75.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/boundary-refinement-1/frame-008.75.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/boundary-refinement-1/frame-009.25.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/boundary-refinement-1/frame-009.25.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/boundary-refinement-1/frame-009.75.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/boundary-refinement-1/frame-009.75.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/boundary-refinement-1/frame-010.25.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/boundary-refinement-1/frame-010.25.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/boundary-refinement-1/frame-010.75.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/boundary-refinement-1/frame-010.75.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/boundary-refinement-1/frame-011.25.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/boundary-refinement-1/frame-011.25.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/boundary-refinement-1/frame-011.75.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/boundary-refinement-1/frame-011.75.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/boundary-refinement-1/frame-012.25.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/boundary-refinement-1/frame-012.25.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/boundary-refinement-1/frame-012.75.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/boundary-refinement-1/frame-012.75.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/coarse/frame-000.00.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/coarse/frame-000.00.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/coarse/frame-020.00.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/coarse/frame-020.00.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/coarse/frame-031.50.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/coarse/frame-031.50.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/final-review-refinement-1/frame-001.32.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/final-review-refinement-1/frame-001.32.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/final-review/frame-000.35.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/final-review/frame-000.35.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/final-review/frame-004.15.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/final-review/frame-004.15.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/fine/frame-006.00.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/fine/frame-006.00.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/fine/frame-008.00.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/fine/frame-008.00.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/fine/frame-010.00.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/fine/frame-010.00.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/fine/frame-012.00.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/fine/frame-012.00.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/fine/frame-014.00.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/fine/frame-014.00.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/fine/frame-016.00.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/fine/frame-016.00.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/fine/frame-018.00.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/fine/frame-018.00.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/fine/frame-020.00.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/fine/frame-020.00.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/fine/frame-022.00.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/fine/frame-022.00.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/fine/frame-024.00.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/fine/frame-024.00.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/negative-review/frame-000.35.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/negative-review/frame-000.35.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frames/negative-review/frame-004.15.png",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/frames/negative-review/frame-004.15.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "negative_control.mp4",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/negative_control.mp4",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "provider_receipts.json",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/provider_receipts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "scripts/corrected-final-attempt-1.py",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/scripts/corrected-final-attempt-1.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "scripts/corrected-final-attempt-3.py",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/scripts/corrected-final-attempt-3.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "scripts/corrected-final-refinement-1-attempt-1.py",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/scripts/corrected-final-refinement-1-attempt-1.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "scripts/negative-control-attempt-1.py",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/scripts/negative-control-attempt-1.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "source_evidence.json",
+          "resolved_path": "chapter5/video-edit/validation/runs/exp5-6-real-blender-20260730-055102/source_evidence.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "5-9",
+      "title": "同一个零件的两种生成路线——代码与生成模型",
+      "ledger_row": "| 5-9 | `cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/manifest.json` | passed | true | supported | `ae7c5fdf685562e5e53ac625fe1b512b6ba7a8692bbc45bada888b555c702b86` |",
+      "evidence": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "ae7c5fdf685562e5e53ac625fe1b512b6ba7a8692bbc45bada888b555c702b86",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {},
+      "declared_hash_entries": 22,
+      "sample_checks": [
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/01-route-a-codegen-m5.json",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/01-route-a-codegen-m5.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/02-route-a-execute-m5.json",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/02-route-a-execute-m5.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/03-route-a-execute-m6.json",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/03-route-a-execute-m6.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/04-route-b-text2image-m5.json",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/04-route-b-text2image-m5.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/05-route-b-shape-gen-m5.json",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/05-route-b-shape-gen-m5.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/06-route-b-text2image-m6.json",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/06-route-b-text2image-m6.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/07-route-b-shape-gen-m6.json",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/07-route-b-shape-gen-m6.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/08-control-plant-text2image.json",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/08-control-plant-text2image.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "/Users/boj/book/ai-agent-book/chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/09-control-plant-vision-judge.json",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/receipts/09-control-plant-vision-judge.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "output/control/plant_generative.png",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/control/plant_generative.png",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "output/control/plant_procedural.png",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/control/plant_procedural.png",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "output/route_a/_cq_driver.py",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/route_a/_cq_driver.py",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "output/route_a/flange_m5.py",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/route_a/flange_m5.py",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "output/route_a/flange_m5.step",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/route_a/flange_m5.step",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "output/route_a/flange_m5.stl",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/route_a/flange_m5.stl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "output/route_a/flange_m6.py",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/route_a/flange_m6.py",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "output/route_a/flange_m6.step",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/route_a/flange_m6.step",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "output/route_a/flange_m6.stl",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/route_a/flange_m6.stl",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "output/route_b/flange_m5.glb",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/route_b/flange_m5.glb",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "output/route_b/flange_m5_input.png",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/route_b/flange_m5_input.png",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "output/route_b/flange_m6.glb",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/route_b/flange_m6.glb",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "output/route_b/flange_m6_input.png",
+          "resolved_path": "chapter5/cad-vs-diffusion/validation/runs/exp5-7-cad-vs-diffusion-20260821-015734-v1/output/route_b/flange_m6_input.png",
+          "in_git": false,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "5-10",
+      "title": "自适应的日志解析系统",
+      "ledger_row": "| 5-10 | `adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/manifest.json` | passed | true | supported | `00851a7b15fba8bad94422b7870b9eda1a9f3b12f3e509b2d768db244edc2507` |",
+      "evidence": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "00851a7b15fba8bad94422b7870b9eda1a9f3b12f3e509b2d768db244edc2507",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "official_complete": true
+      },
+      "declared_hash_entries": 12,
+      "sample_checks": [
+        {
+          "declared_path": "evidence.json",
+          "resolved_path": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/evidence.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "live-format-1.log",
+          "resolved_path": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/live-format-1.log",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "live-format-2.log",
+          "resolved_path": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/live-format-2.log",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "parsers/__pycache__/live_bracket_parser.cpython-311.pyc",
+          "resolved_path": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/parsers/__pycache__/live_bracket_parser.cpython-311.pyc",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "parsers/__pycache__/live_pipe_parser.cpython-311.pyc",
+          "resolved_path": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/parsers/__pycache__/live_pipe_parser.cpython-311.pyc",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "parsers/live_bracket_parser.py",
+          "resolved_path": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/parsers/live_bracket_parser.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "parsers/live_pipe_parser.py",
+          "resolved_path": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/parsers/live_pipe_parser.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "producer-1.py",
+          "resolved_path": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/producer-1.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "producer-2.py",
+          "resolved_path": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/producer-2.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts.json",
+          "resolved_path": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/receipts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "visualization.html",
+          "resolved_path": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/visualization.html",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "visualization.png",
+          "resolved_path": "chapter5/adaptive-log-parser/validation/runs/20260729T212342Z-5_7-live/visualization.png",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "5-11",
+      "title": "生产日志的智能诊断系统",
+      "ledger_row": "| 5-11 | `log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/manifest.json` | passed | true | supported | `68e09e7c8b4fc100e0612a6f81978079c393a822025bfa794b6dda85134a5813` |",
+      "evidence": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "68e09e7c8b4fc100e0612a6f81978079c393a822025bfa794b6dda85134a5813",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "official_complete": true
+      },
+      "declared_hash_entries": 12,
+      "sample_checks": [
+        {
+          "declared_path": "PRD.md",
+          "resolved_path": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/PRD.md",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "architecture.md",
+          "resolved_path": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/architecture.md",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "diagnosis.json",
+          "resolved_path": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/diagnosis.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "github_mcp_receipt.json",
+          "resolved_path": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/github_mcp_receipt.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "http_service.py",
+          "resolved_path": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/http_service.py",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "live_replays.json",
+          "resolved_path": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/live_replays.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "production_trajectories.jsonl",
+          "resolved_path": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/production_trajectories.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_receipts.checkpoint.json",
+          "resolved_path": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/provider_receipts.checkpoint.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "provider_receipts.json",
+          "resolved_path": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/provider_receipts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "regression_tests.json",
+          "resolved_path": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/regression_tests.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "service.stderr.log",
+          "resolved_path": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/service.stderr.log",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "service.stdout.jsonl",
+          "resolved_path": "chapter5/log-diagnosis/validation/runs/exp5-8-live-http-mcp-20260730-053403/service.stdout.jsonl",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "5-12",
+      "title": "动态表单生成的意图澄清系统",
+      "ledger_row": "| 5-12 | `dynamic-form/validation/runs/20260729T212542Z-5_9-live-browser/manifest.json` | passed | true | supported | `6e6b2cc9c31071c880f2c66a7f172d4933a1ee2f51ac7206b89a1cd89dca08a7` |",
+      "evidence": "chapter5/dynamic-form/validation/runs/20260729T212542Z-5_9-live-browser/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "6e6b2cc9c31071c880f2c66a7f172d4933a1ee2f51ac7206b89a1cd89dca08a7",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "official_complete": true
+      },
+      "declared_hash_entries": 6,
+      "sample_checks": [
+        {
+          "declared_path": "browser-submitted.png",
+          "resolved_path": "chapter5/dynamic-form/validation/runs/20260729T212542Z-5_9-live-browser/browser-submitted.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "generated_form.html",
+          "resolved_path": "chapter5/dynamic-form/validation/runs/20260729T212542Z-5_9-live-browser/generated_form.html",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "html",
+          "resolved_path": "chapter5/dynamic-form/validation/runs/20260729T212542Z-5_9-live-browser/html",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "receipts",
+          "resolved_path": "chapter5/dynamic-form/validation/runs/20260729T212542Z-5_9-live-browser/receipts",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "receipts.json",
+          "resolved_path": "chapter5/dynamic-form/validation/runs/20260729T212542Z-5_9-live-browser/receipts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "screenshot",
+          "resolved_path": "chapter5/dynamic-form/validation/runs/20260729T212542Z-5_9-live-browser/screenshot",
+          "in_git": false,
+          "sha256_matches": false
+        }
+      ]
+    },
+    {
+      "experiment": "5-13",
+      "title": "自然语言交互的 ERP Agent",
+      "ledger_row": "| 5-13 | `erp-agent/validation/runs/20260729T210334Z-5_10-postgresql/manifest.json` | passed | true | supported | `5b167f34d18cca867b6fa5fe2d61cd1bf4324f618d6e21221fe9131e56aaed16` |",
+      "evidence": "chapter5/erp-agent/validation/runs/20260729T210334Z-5_10-postgresql/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "5b167f34d18cca867b6fa5fe2d61cd1bf4324f618d6e21221fe9131e56aaed16",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "official_complete": true
+      },
+      "declared_hash_entries": 7,
+      "sample_checks": [
+        {
+          "declared_path": "employees.json",
+          "resolved_path": "chapter5/erp-agent/validation/runs/20260729T210334Z-5_10-postgresql/employees.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "queries_and_results.json",
+          "resolved_path": "chapter5/erp-agent/validation/runs/20260729T210334Z-5_10-postgresql/queries_and_results.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts.json",
+          "resolved_path": "chapter5/erp-agent/validation/runs/20260729T210334Z-5_10-postgresql/receipts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "results.html",
+          "resolved_path": "chapter5/erp-agent/validation/runs/20260729T210334Z-5_10-postgresql/results.html",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "results.png",
+          "resolved_path": "chapter5/erp-agent/validation/runs/20260729T210334Z-5_10-postgresql/results.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "salaries.json",
+          "resolved_path": "chapter5/erp-agent/validation/runs/20260729T210334Z-5_10-postgresql/salaries.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "schema.sql",
+          "resolved_path": "chapter5/erp-agent/validation/runs/20260729T210334Z-5_10-postgresql/schema.sql",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "5-14",
+      "title": "对话式界面定制系统",
+      "ledger_row": "| 5-14 | `conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/manifest.json` | passed | true | supported | `34d6d8f325ac598b8e55a8a93763dda2bdb019020aa0cf67aa421e861be9279c` |",
+      "evidence": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/manifest.json",
+      "evidence_in_git": true,
+      "baseline_sha256": "34d6d8f325ac598b8e55a8a93763dda2bdb019020aa0cf67aa421e861be9279c",
+      "ledger_hash_matches": true,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false,
+      "saved_status": {
+        "official_complete": true
+      },
+      "declared_hash_entries": 14,
+      "sample_checks": [
+        {
+          "declared_path": "app/frontend/src/App.jsx",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/app/frontend/src/App.jsx",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "app/frontend/src/theme.css",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/app/frontend/src/theme.css",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "backend.log",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/backend.log",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "build.json",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/build.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "final-source/src/App.jsx",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/final-source/src/App.jsx",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "final-source/src/theme.css",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/final-source/src/theme.css",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "final.png",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/final.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "frontend.log",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/frontend.log",
+          "in_git": false,
+          "sha256_matches": false
+        },
+        {
+          "declared_path": "receipts.checkpoint.json",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/receipts.checkpoint.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "receipts.json",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/receipts.json",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "round-1.png",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/round-1.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "round-2.png",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/round-2.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "round-3.png",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/round-3.png",
+          "in_git": true,
+          "sha256_matches": true
+        },
+        {
+          "declared_path": "rounds.json",
+          "resolved_path": "chapter5/conversational-ui/validation/runs/20260729T212933Z-5_11-hmr/rounds.json",
+          "in_git": true,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "experiment": "5-15",
+      "title": "动态生成软件的权限内嵌数据对象",
+      "ledger_row": "| 5-15 | `permission-embedded-data-objects/README.md` and `demo.py` | available | false | data-layer authorization and integrity remain enforceable under dynamic application code | — |",
+      "evidence": null,
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    },
+    {
+      "experiment": "5-16",
+      "title": "开发一个能创造 Agent 的 Agent",
+      "ledger_row": "| 5-16 | `agent-creator/runs/exp5-12-kimi-k3-20260730-v1/comparison.json` | passed | true | strict joint advantage not observed | `dee9c74c6b89d2563cd78752b75e96293a33159439d87133add220f7d80782ed` |",
+      "evidence": "chapter5/agent-creator/runs/exp5-12-kimi-k3-20260730-v1/comparison.json",
+      "evidence_in_git": false,
+      "baseline_sha256": null,
+      "ledger_hash_matches": null,
+      "source_kind": "author_saved_history",
+      "new_formal_run": false
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "jobs": 5,
+  "passed_jobs": 5,
+  "pytest_counts": {
+    "passed": 73
+  },
+  "rows": [
+    {
+      "chapter": 9,
+      "name": "evolution",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter9/self-evolution-eval",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_campaign_statistics.py",
+        "test_longitudinal.py",
+        "test_null_rubric_dimension.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.756,
+      "checked_at": "2026-10-25T00:19:15.480283+00:00",
+      "log": "evolution.txt",
+      "pytest_summary": "9 passed in 0.13s",
+      "counts": {
+        "passed": 9
+      }
+    },
+    {
+      "chapter": 9,
+      "name": "prompt",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter9/prompt-auto-optimization",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_non_dict_edit.py",
+        "test_release_gate_non_dict_edit.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.438,
+      "checked_at": "2026-10-25T00:19:14.781571+00:00",
+      "log": "prompt.txt",
+      "pytest_summary": "5 passed in 1.70s",
+      "counts": {
+        "passed": 5
+      }
+    },
+    {
+      "chapter": 9,
+      "name": "rpa",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter9/browser-use-rpa",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_state_predicates.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.666,
+      "checked_at": "2026-10-25T00:25:48.573496+00:00",
+      "log": "rpa.txt",
+      "pytest_summary": "3 passed in 0.04s",
+      "counts": {
+        "passed": 3
+      }
+    },
+    {
+      "chapter": 9,
+      "name": "safety",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter9/harness-safety-gate",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_evolution.py",
+        "test_safety_policy_gate.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 0.808,
+      "checked_at": "2026-10-25T00:22:08.183782+00:00",
+      "log": "safety.txt",
+      "pytest_summary": "46 passed in 0.15s",
+      "counts": {
+        "passed": 46
+      }
+    },
+    {
+      "chapter": 9,
+      "name": "verifier",
+      "kind": "offline_test",
+      "formal_experiment_completed": false,
+      "cwd": "chapter9/trajectory-verifier",
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "asyncio_mode=auto",
+        "test_verifier.py",
+        "test_claim_action_order.py",
+        "test_empty_dimensions_score.py",
+        "test_llm_judge_null_fields.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "duration_seconds": 2.495,
+      "checked_at": "2026-10-25T00:19:14.830701+00:00",
+      "log": "verifier.txt",
+      "pytest_summary": "10 passed, 4 subtests passed in 1.75s",
+      "counts": {
+        "passed": 10
+      }
+    }
+  ]
+}

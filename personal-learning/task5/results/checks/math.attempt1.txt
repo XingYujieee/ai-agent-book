@@ -1,0 +1,18 @@
+
+=================================== ERRORS ====================================
+__________ ERROR collecting chapter5/code-for-math/test_campaign.py ___________
+ImportError while importing test module 'C:\Users\21931\Documents\ChatGPT\AI Agent\ai-agent-book\chapter5\code-for-math\test_campaign.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\21931\anaconda3\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test_campaign.py:1: in <module>
+    from build_aime_2024 import convert
+build_aime_2024.py:13: in <module>
+    import pyarrow.parquet as parquet
+E   ModuleNotFoundError: No module named 'pyarrow'
+=========================== short test summary info ===========================
+ERROR test_campaign.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.30s
