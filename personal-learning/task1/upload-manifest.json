@@ -1,0 +1,108 @@
+{
+  "chapter": 1,
+  "packaged_date": "2026-10-25",
+  "source_commit": "ac6e3f016f2a8449c3fde2343dad8b627b5e0ccd",
+  "scope": "This chapter's personal notes, reflection, progress, scripts and retained results. The archive is a learning-record snapshot; execution dependencies remain in the repository.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 265,
+      "sha256": "d734811b9368aba3a8a821f4b2ffe21b3fdefba54b05e35bac274fff1b6cb88c"
+    },
+    {
+      "path": "experiment.md",
+      "bytes": 9924,
+      "sha256": "b7e2ad83fbb76dd72775986b497e3a421d4a83a3be8baaaf64e84eceba829f32"
+    },
+    {
+      "path": "notes.md",
+      "bytes": 2553,
+      "sha256": "aba8110ba0e439f2868f0ac99c4b8c75e034243322e12082b99deb7f2eb70b8f"
+    },
+    {
+      "path": "progress.md",
+      "bytes": 3324,
+      "sha256": "eab09595aa0b934d6f4d8d99b7c9703e4730bb98f5ff48cbe0de860f9c80fdc6"
+    },
+    {
+      "path": "reflection-and-feedback.md",
+      "bytes": 1261,
+      "sha256": "34ca74ccddf10bcfd9a07e8470a6f7fd72ee9360c782ee18ef5b408e1e242262"
+    },
+    {
+      "path": "results/1-1-no_history.json",
+      "bytes": 65827,
+      "sha256": "807fcc6768959db03e29690ced7599f5f2605a145ba5acc0c882b5317e6ea924"
+    },
+    {
+      "path": "results/1-1-no_reasoning.json",
+      "bytes": 13924,
+      "sha256": "f75524e521bbf9f0a37177095b6863ce43dc97a722a9b2641f92ee356bd59aae"
+    },
+    {
+      "path": "results/1-1-no_tool_calls.json",
+      "bytes": 5036,
+      "sha256": "6f561b5d7b8b2301e5db4a24f5ec866819ebad7a03f806538c403fb333929a7f"
+    },
+    {
+      "path": "results/1-2-equivalent-trace.json",
+      "bytes": 1568,
+      "sha256": "53187df7c068ba21fe7aa1652b74280f465724b6e6dfc7bdb21fc2e81b0ece0e"
+    },
+    {
+      "path": "results/1-3-clarification.json",
+      "bytes": 188703,
+      "sha256": "474906baf35325414db9d0ad628df9b7ebbb671a36452817e6e83d32d1c9ac9d"
+    },
+    {
+      "path": "results/experiment-1-3-asean.json",
+      "bytes": 70498,
+      "sha256": "b1b4ea38517eab25d5d73d1afbaf73a3d0ff759577ce975f39a20cc443d40a12"
+    },
+    {
+      "path": "results/experiment-1-4/README.md",
+      "bytes": 1641,
+      "sha256": "7ede9634009c96d8119b6b1e77e83467926fc72d91599fcc98a90c8fdf5d8a22"
+    },
+    {
+      "path": "results/experiment-1-4/agi-direct.png",
+      "bytes": 2353106,
+      "sha256": "2b46a88444203270314ff44f6a1e8e4612847fd0d192d7ae7c606c0b634d2ebd"
+    },
+    {
+      "path": "results/experiment-1-4/agi-rewritten.png",
+      "bytes": 2379241,
+      "sha256": "c20543fbd0e43be693a7d5f6ebe6c239d26177e5e13166bfa8cca650c92ad7a7"
+    },
+    {
+      "path": "results/experiment-1-4/comparison.md",
+      "bytes": 1825,
+      "sha256": "4a46801030358a8aefe7e2cc53f7fe2ba7121f327d4140bbea0cb7e9998c0c1e"
+    },
+    {
+      "path": "results/experiment-1-4/headphone-direct.png",
+      "bytes": 1758563,
+      "sha256": "3f8f07bd18c3697dff417ff5045fd6d11d9e5451d1122bf6e2c6f5641b49dbd2"
+    },
+    {
+      "path": "results/experiment-1-4/headphone-rewritten.png",
+      "bytes": 1930640,
+      "sha256": "27b9f74a13b41ef60f245917e69b25a8e1683068e135d2d333ec28c282a3aec0"
+    },
+    {
+      "path": "results/full.json",
+      "bytes": 13790,
+      "sha256": "b31e86192f755e1410207b5b13d86639530f03d14d2e28ce2046e7f6b8b89a1a"
+    },
+    {
+      "path": "results/no-tool-results.json",
+      "bytes": 64707,
+      "sha256": "297903c8971b5566282f0216dfdcfee25b6ccaeea89379fc0273490ea540813c"
+    },
+    {
+      "path": "results/offline-demo.json",
+      "bytes": 2262,
+      "sha256": "2c77a5c603b0b171bb35679d45b63f3a337c1b4d8bf9529728d588fee540f75f"
+    }
+  ]
+}
