@@ -1,0 +1,168 @@
+{
+  "chapter": 2,
+  "packaged_date": "2026-10-25",
+  "source_commit": "ac6e3f016f2a8449c3fde2343dad8b627b5e0ccd",
+  "scope": "This chapter's personal notes, reflection, progress, scripts and retained results. The archive is a learning-record snapshot; execution dependencies remain in the repository.",
+  "files": [
+    {
+      "path": "2-7-calibration.md",
+      "bytes": 1956,
+      "sha256": "d729877a48a5a764c1932fe38034a6860f73c2e8133e539c5f5a81ccb05df7b6"
+    },
+    {
+      "path": "2-7-generated-samples.md",
+      "bytes": 2115,
+      "sha256": "755cca2e610415ce842dd1b1f669a6739a3f0ec5cf316814384abfef89c7bad7"
+    },
+    {
+      "path": "README.md",
+      "bytes": 764,
+      "sha256": "450da6a47a13dd72aab15e2b2fce5b60b2ce2b02f47249b67685f44fb470cc5e"
+    },
+    {
+      "path": "experiment.md",
+      "bytes": 7519,
+      "sha256": "df1d7a8cb57ebacdadaf9c6f4a7b01bd63f0cdf0263e49c68cf2a7463597e64f"
+    },
+    {
+      "path": "notes.md",
+      "bytes": 3219,
+      "sha256": "7096845fbf8e99f626039c92c1300a1b5d898497b31b546e42082ab3418c28e8"
+    },
+    {
+      "path": "personal-cn-writing/SKILL.md",
+      "bytes": 2958,
+      "sha256": "c8e7ab5a29fce6b5b6c90c244792d86486be02b78fbcc4f92b3edec970c28bb9"
+    },
+    {
+      "path": "progress.md",
+      "bytes": 3450,
+      "sha256": "40ce1470c51d82334323f53e68a91a99d2741e01acb2149b9f33f11b6fd0ae90"
+    },
+    {
+      "path": "reflection-and-feedback.md",
+      "bytes": 1026,
+      "sha256": "825d7fe58c278e1a4cf0ebae99402420373eb8887306ff375afbba000b781551"
+    },
+    {
+      "path": "results/2-1-local-benchmark.json",
+      "bytes": 2886,
+      "sha256": "dbe0bc4fd19da08992c373923bea7b35787acac6f0aae363d377e1134835631b"
+    },
+    {
+      "path": "results/2-1-local-corrected-trace.txt",
+      "bytes": 9746,
+      "sha256": "d8e29b574bd51963df49e4aeb358cc6702b4f5b0a6d44bb41a3d7207dbfc9469"
+    },
+    {
+      "path": "results/2-1-local-environment.json",
+      "bytes": 257,
+      "sha256": "a67156ec3f934ac960a1efb13f59cac83b6c44e7d541c7ac268e7cfc0df8ba33"
+    },
+    {
+      "path": "results/2-1-local-evaluation.json",
+      "bytes": 1757,
+      "sha256": "5f5b56a5bda960ee8e27d59afa40aaf88c886e04c4ea2fd298d42b86a5a46e18"
+    },
+    {
+      "path": "results/2-1-local-guided-trace.txt",
+      "bytes": 7605,
+      "sha256": "7b0dbc8dde617ad7b141fc27f7e90eec76efaf609f9daff0f329d1ac104eb501"
+    },
+    {
+      "path": "results/2-1-local-tool-trace.txt",
+      "bytes": 7772,
+      "sha256": "6eb45de6d3cc5886c5e88c520de455147ff3e187365228696811219e3b61dd43"
+    },
+    {
+      "path": "results/2-1-reanalysis.json",
+      "bytes": 1378,
+      "sha256": "8bfcc04d3acb4c3d4f6a26c36267dfd7c2edbf5f7a3e82ca67d8f87c34aa7ec9"
+    },
+    {
+      "path": "results/2-10-analysis.json",
+      "bytes": 2537,
+      "sha256": "fff737bfc1f1ad5c0d446147001ad988deaa447f82a0de21e1a065c6f00e1c85"
+    },
+    {
+      "path": "results/2-10-qwen-six-strategies.json",
+      "bytes": 2966,
+      "sha256": "5a93597e4dba86b5b83dba702a26f1396557498fff2cbd230b0b15ae0720e7a7"
+    },
+    {
+      "path": "results/2-10-smoke.json",
+      "bytes": 3300,
+      "sha256": "a159df85d8b3da0a2f8699b3995299a158c3e440cad27a4bcc045b7e2843ab41"
+    },
+    {
+      "path": "results/2-2-reanalysis.json",
+      "bytes": 1089,
+      "sha256": "6bbc0211e84501ddc6ac68e1eb8af41c78bf62714fea50f0a7ec3267105eff6a"
+    },
+    {
+      "path": "results/2-2-replotted-heatmap.png",
+      "bytes": 37990,
+      "sha256": "a86457fd09f118ba18648ae239ac96fff079339c0e62d4c924ad40787ec922de"
+    },
+    {
+      "path": "results/2-3-reanalysis.json",
+      "bytes": 2602,
+      "sha256": "8ea9dbfc815cd0bf76818a444ca4eabd682b36f40b710ec247562af0db680e96"
+    },
+    {
+      "path": "results/2-4-reanalysis.json",
+      "bytes": 1412,
+      "sha256": "06f7bd2260917de0dba2afb7897a5cdc1dadd03023257a989a04ee0d3575e1b3"
+    },
+    {
+      "path": "results/2-5-qwen-matrix.json",
+      "bytes": 741,
+      "sha256": "b3b3db2b94d36a2a933bc95214794692feb4077caeda45ea20075b5cc620922a"
+    },
+    {
+      "path": "results/2-5-smoke.json",
+      "bytes": 240,
+      "sha256": "a41c6a48e04e113fe53e1648342ac2b32f5166bb9fdcdf28768d1f65a52c2a2d"
+    },
+    {
+      "path": "results/2-6-reanalysis.json",
+      "bytes": 706,
+      "sha256": "aed7101f5ef1302436fddbe4941325e72323d86bdb22a2ea0dff16477360bcc7"
+    },
+    {
+      "path": "results/2-8-reanalysis.json",
+      "bytes": 1270,
+      "sha256": "6e421ce72dd1b2703658ddb7f9735e82cfde7f9152f20f6b35a1f573405eb1a5"
+    },
+    {
+      "path": "results/2-9-disabled-trajectory.json",
+      "bytes": 11005,
+      "sha256": "eeff709d530713309e797e418edf86dc7124762434614ac4a7f2b12862a1ec03"
+    },
+    {
+      "path": "results/2-9-full-trajectory.json",
+      "bytes": 11581,
+      "sha256": "f61c92882bfe4765388888216420e8e909e24f4a6ee2143597201a13f628c92c"
+    },
+    {
+      "path": "results/2-9-historical-reanalysis.json",
+      "bytes": 1385,
+      "sha256": "62c5dfbe4f2e0ebe1ead66c6600274cfc5d5de0312abb93deef7db32854a0e73"
+    },
+    {
+      "path": "results/2-9-qwen-comparison.json",
+      "bytes": 889,
+      "sha256": "10dd52ab2dcb37b11cc7ecf2e155c44f6f4786af0236aff1d8286a094c5a63da"
+    },
+    {
+      "path": "results/demo-presentation.pptx",
+      "bytes": 39612,
+      "sha256": "05dd36ac92c9bc72befc7a3e3996bb09838aeacf6f73794641e4be6c041a9ed0"
+    },
+    {
+      "path": "run_2_9_qwen.py",
+      "bytes": 2192,
+      "sha256": "a64a8151bc9b42bb8d2c166d3add591f24bdab9a660dac5b239e86db2e78243c"
+    }
+  ]
+}
