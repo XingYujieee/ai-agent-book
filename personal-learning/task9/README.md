@@ -9,3 +9,5 @@
 - [运行结果](results/)
 
 原文：[第 9 章](../../book/chapter9.md)。
+
+本章单独上传：[文件清单](upload-manifest.json) · [下载本章学习档案](chapter9.zip)。
