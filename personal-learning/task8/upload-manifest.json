@@ -1,0 +1,153 @@
+{
+  "chapter": 8,
+  "packaged_date": "2026-10-25",
+  "source_commit": "ac6e3f016f2a8449c3fde2343dad8b627b5e0ccd",
+  "scope": "This chapter's personal notes, reflection, progress, scripts and retained results. The archive is a learning-record snapshot; execution dependencies remain in the repository.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 514,
+      "sha256": "dad53aecf6646eb7e1779aaafc89fef40a274ef8b3d4d8965f2605e28fb0900e"
+    },
+    {
+      "path": "experiment.md",
+      "bytes": 8220,
+      "sha256": "13ff554e44bc70fe344a91c62789ec9f05ff38a2dcdfda8a87d0376f0df05270"
+    },
+    {
+      "path": "notes.md",
+      "bytes": 2538,
+      "sha256": "93e6ef223eadb04f8ec924c0189a08e3d6fb16c1d4f0cf83f09b08fa81b0cdc5"
+    },
+    {
+      "path": "progress.md",
+      "bytes": 4957,
+      "sha256": "ac7368649b83f1e09d1c92276c8b4fb02a9b83d0012adc33df80d9fc99fd7f5e"
+    },
+    {
+      "path": "reflection-and-feedback.md",
+      "bytes": 807,
+      "sha256": "28ddd956796ef23dd05dc75ca3c5612e79fa093686c5b16066dd7afb7371961b"
+    },
+    {
+      "path": "results/check-summary.json",
+      "bytes": 4199,
+      "sha256": "f6afda2eff3d77983e9639eec2422cd3817243223fc13fa53b84e0af6ad55fc1"
+    },
+    {
+      "path": "results/checks/copy.json",
+      "bytes": 437,
+      "sha256": "8008063193c2b16cb86eeb66268de8899d758e82b2fa086214843f37721752b6"
+    },
+    {
+      "path": "results/checks/copy.txt",
+      "bytes": 100,
+      "sha256": "81210a9bc55db4ac3f3c8605b72fa6ee66cc5879116a3c8b7bc7c69ee83e98e6"
+    },
+    {
+      "path": "results/checks/cot.json",
+      "bytes": 596,
+      "sha256": "695a7094aea38950bf9eff46ffee96f7b1d8413f92754fabb07bd6d09f1f1617"
+    },
+    {
+      "path": "results/checks/cot.txt",
+      "bytes": 101,
+      "sha256": "67079529a5d00b11ed5e0933d88c44ae45e959f1939751fe72caf6aba6521af3"
+    },
+    {
+      "path": "results/checks/dpo.json",
+      "bytes": 434,
+      "sha256": "b3326d45a7279dd16d31d79802871b4f2cd1ebfda6ea8f4f227c137313174ba0"
+    },
+    {
+      "path": "results/checks/dpo.txt",
+      "bytes": 101,
+      "sha256": "b8a503cf19056a94d63a4c1eb31637a3ad8616a8b0c5501f017a3745bad90929"
+    },
+    {
+      "path": "results/checks/prompt-distillation.json",
+      "bytes": 614,
+      "sha256": "d80546ec3eee833f8acb351f5dca6ff8e39f1665da417bdc380ccdb5d2c1bef8"
+    },
+    {
+      "path": "results/checks/prompt-distillation.txt",
+      "bytes": 101,
+      "sha256": "d1123a4f5df8123685d50a69eb3c6337164afa03e22ae7968d729c49c2d3f960"
+    },
+    {
+      "path": "results/checks/quotes.json",
+      "bytes": 443,
+      "sha256": "1fe80c5bd85e7b79e9e52fcff91fb02ddd97ac2be28405218997f0fba6da552e"
+    },
+    {
+      "path": "results/checks/quotes.txt",
+      "bytes": 100,
+      "sha256": "8993c5f25ebe6f94fa4d5474be6296a9909d94b40b01830a8b47da1cf7be3bb9"
+    },
+    {
+      "path": "results/checks/speech-sft.attempt1.json",
+      "bytes": 447,
+      "sha256": "85ee3192b52c8bdd02ef3eb9caf13392b114982117e55c08425f551f320e9f0e"
+    },
+    {
+      "path": "results/checks/speech-sft.attempt1.txt",
+      "bytes": 907,
+      "sha256": "e69d27abc1f8a27f7a3abaab04dde5a0b1d8b1bd1e4b157107a3574fddab0577"
+    },
+    {
+      "path": "results/checks/speech-sft.attempt2.json",
+      "bytes": 446,
+      "sha256": "79a34dc059ceb3dfb1ca03181ee134bd39f083a982f8a26d33f354b723406cae"
+    },
+    {
+      "path": "results/checks/speech-sft.attempt2.txt",
+      "bytes": 5651,
+      "sha256": "ab4084589ea5bc0532c279c8823a178da1971dff941ac087aa194e9178ffa15f"
+    },
+    {
+      "path": "results/checks/speech-sft.json",
+      "bytes": 447,
+      "sha256": "3251940d01bb38cf638fcb5bfc61a7b44c85c66330dbf1adf0e026cf44493c46"
+    },
+    {
+      "path": "results/checks/speech-sft.txt",
+      "bytes": 100,
+      "sha256": "bb38789e1d0f5589830ced651fef8137130722cf9b940f9fd577a7eb23c1b673"
+    },
+    {
+      "path": "results/demos/dpo-mock.json",
+      "bytes": 292,
+      "sha256": "ce5fccd8e553d919317627b1a89aa7317693dbf52509b3ddb968c55c707690fb"
+    },
+    {
+      "path": "results/demos/dpo-mock.txt",
+      "bytes": 2256,
+      "sha256": "8958b9e36a71e904dc0d5b0f6f8999fff7811652b90a7d850f3aad728337fde2"
+    },
+    {
+      "path": "results/local-manifest.json",
+      "bytes": 3685,
+      "sha256": "779a4c3add27ff2660f0885dc1ab68267a2812eb7f853ffc00aea5f86be7b950"
+    },
+    {
+      "path": "results/q-learning-curve.png",
+      "bytes": 35672,
+      "sha256": "e3a5bf0f585a019f10f1f007ea206f9b2484537efda1218160dc2e6cf727e0aa"
+    },
+    {
+      "path": "results/q-learning.json",
+      "bytes": 3447,
+      "sha256": "e2f4fba311174e02f6dc2dd91af8c71217e756d05a97b9234c3836586c91c89d"
+    },
+    {
+      "path": "results/saved-evidence-review.json",
+      "bytes": 40476,
+      "sha256": "deaa276c2f610526c893c07263d35008f136cc0ce9aaffab8cbff6f51106a4fa"
+    },
+    {
+      "path": "run_q_learning.py",
+      "bytes": 1780,
+      "sha256": "911b289b4fb30dc83848dee5807a918401eea5d379ce6d07d527091fb238c39e"
+    }
+  ]
+}
